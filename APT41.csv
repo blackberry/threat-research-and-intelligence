@@ -1,0 +1,59 @@
+Indicator,Type,Description
+b3e6b9dd84dae6be68cb40cda4366b77,Public Key,SSL Public Key MD5
+185.14.29.72,IP,"Team Server, www.microsoftbooks.dns-dns.com"
+144.202.98.198,IP,Team Server
+149.28.78.89,IP,"Team Server, www.mlcrosoft.site"
+107.182.24.70,IP,Team Server
+193.42.114.73,IP,"Team Server, www.microsoftbooks.dns-dns.com"
+23.67.95.153 ,IP,ns.mircosoftdoc.com
+104.27.132.211,IP,"cdn.microsoftdocs.workers.dev, ccdn.microsoftdocs.workers.dev "
+cdn.microsoftdocs.workers.dev/en-us/windows/apps/,URL,C2 Server URL
+www.microsoftbooks.dns-dns.com/jquery-3.3.1.min.js,URL,C2 Server URL
+144.202.98.198/jquery-3.3.1.min.js,URL,C2 Server URL
+www.mlcrosoft.site/search,URL,C2 Server URL
+ccdn.microsoftdocs.workers.dev/en-us/windows/apps/,URL,C2 Server URL
+107.182.24.70/jquery-3.3.1.min.js,URL,C2 Server URL
+ns.mircosoftdoc.com/en-us/learn,URL,C2 Server URL
+cdn.microsoftdocs.workers.dev,URL,C2 Server URL
+www.microsoftbooks.dns-dns.com,URL,C2 Server URL
+ns.mircosoftdoc.com,URL,C2 Server URL
+ccdn.microsoftdocs.workers.dev,URL,C2 Server URL
+www.mlcrosoft.site,URL,C2 Server URL
+5bba4e9fd057d4727d454518f05ff89ddec6391bafd0420f3418d36962963721,SHA256,Beacon shellcode
+1f9c11f13604e57d0dcf36e639458a8713d2149e2091db3b0b9ab89007a2746a,SHA256,Beacon shellcode
+ac48715eb0c9872cb67405b31c11b997de1e151e8afc87e45a32a5e278617531,SHA256,Beacon shellcode
+f7561c283d37307f86653ad984b832b088e4a32fa23bfeaae46b320c6c51bb7c,SHA256,Beacon shellcode
+278b898172a729dff62b8587d7608d9478ec132edf5e210eb277e75bc2251091,SHA256,Beacon shellcode
+84ca67aa686066865553de64b72ac3bf2a9f8493c9a06fefc3c3977f3f80ca99,SHA256,Beacon shellcode
+chaindefend.bid ,Domain,185.14.29.72
+defendchain.xyz ,Domain,185.14.29.72
+assistcustody.xyz ,Domain,185.14.29.72
+Microsoftonlineupdate.dynamic-dns.net,Domain,185.14.29.72
+ae7adf40dfc136be99d6d0d60c367b121219d46ce400b318860fa51f4d1bd223,SHA256,Beacon 
+3e3073741d5c3b27b79fa563da0eb68cd5b02e00af8a778b61219f76538c52e4,SHA256,Beacon 
+a911e0a1c750c0abbe7bc193b8e002aa3ceeaf466f4a3b05d6a74e3c36f6fc27,SHA256,Beacon 
+4cac0f8b79a741c677799489bc7b21bc9b5fdef191d0a92c6c651ee0cbcbcc30,SHA256,Beacon 
+aa8e324a75f41ba273e22229f57aa7502a9c00bd112d4aaccffdc3009891c6e3,SHA256,Beacon 
+f3e766cfb85419ac229b27ece0acd169a2899f59bc6ae267427c0596638c1759,SHA256,Beacon 
+6f19a33e9cb47f91c89af7fe0f9fdfed9591b2ee46e33fbeb4dae6c14016be7d,SHA256,Beacon 
+c1ab2558c28ab8cd05ef87fe6b19461859c36c8111cd871ee4707150cf991f59,SHA256,Beacon 
+09adb7ff9f73d889f1dc941db74e2a557b6b3555d481407311cc86e20d0a1a9d,SHA256,Beacon 
+10153e7ebe0dc57d15eceff16e2631157181c2125b29226d779d5fa00d641821,SHA256,Beacon 
+3058815c1f6ef83a66a022cbd9b8fa1a08db7ad90c71272f4efe3a42b3ce5bc6,SHA256,Beacon 
+bf89c26372de6d0c5dac52f0b86717ff2c7854177f36b1e9a9fa6f72a96a4f42,SHA256,Beacon 
+78b9b4c66a1d7a605d51209afe6049020e21056d6051d37946ff07daa531f742,SHA256,Beacon 
+8642843752bab88e7d6ee13647de19ab60e312e42a9a629f46efe94606b6c83f,SHA256,Beacon 
+97191fa8ce8bb57e488fd111a2ae479a9796e2253e12956d17baab4f6db56075,SHA256,Beacon 
+a0f2d31977a55cadc8959a07c8f7ab7796e1ce90a0a66f1d896c36dc8b80b698,SHA256,Income tax new rules for NRI.pdf.lnk
+bac2bd46719223c605a7bce281a4b2d3e5b5703031a675155577cf8a3d079fc0,SHA256,conhost.exe
+3058815c1f6ef83a66a022cbd9b8fa1a08db7ad90c71272f4efe3a42b3ce5bc6,SHA256,event.dat
+2d8121231b803b336005d4374635cb76e7ff2ef45b44dd7b4dd3d218573222c8,SHA256,India records highest ever single day COVID_19 recoveries.zip
+8d5510ec251ee3d504f56670a8ad37058bea029400acb1151b32b7a9db5d32d9,SHA256,India records highest ever single day covid_19 recoveries.pdf.exe
+eefd527c61bfff88b368e1e197bf17aa30c00b0a6b71e0b1ce6bbca53b69189b,SHA256,conhost.exe
+3e3073741d5c3b27b79fa563da0eb68cd5b02e00af8a778b61219f76538c52e4,SHA256,event.log
+dfb507d503c50a842e617f80dac3127a47518d6eccdd7687ac3857b07f658253,SHA256,India records highest ever single day COVID-19 recoveries.zip
+cdb46a214f9d5a338b8a14b9f0b03b81ef8a5f597a6254cab974961e418e9df7,SHA256,India records highest ever single day COVID-19 recoveries.pdf.exe
+2d9e25876950ccce143b1157979d5eeba1dc1201ff68003aa558692634416d07,SHA256,conhost.exe
+ae7adf40dfc136be99d6d0d60c367b121219d46ce400b318860fa51f4d1bd223,SHA256,event.log
+zalofilescdn.com,Domain,144.202.98.198
+isbigfish.xyz,Domain,107.182.24.70
