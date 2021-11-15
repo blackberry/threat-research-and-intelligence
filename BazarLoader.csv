@@ -1,0 +1,21 @@
+Indicator,Type,Description
+217.12.202.115,IP,Team Server
+dd66646db5fdd236e5d5e4cf992d1f3e8a37694a4403cb0d50c457b2f776e1ea,SHA256,Beacon Shellcode
+197dc7858fdac090a36b9fc526f87509165631ad944df01d31204241e183a11e,SHA256,Beacon Shellcode
+88.119.171.105/s/ref=nb_sb_noss_1/167-3294888-0262949/field-keywords=books,URL,C2 Server URL
+door-framesolutions.com,Domain,C2 Server Domain
+driveautoupdate.com,Domain,C2 Server Domain
+freightsexpressdelivery.com,Domain,C2 Server Domain
+gazeteaxpres.com,Domain,C2 Server Domain
+montgomeryglaspro.com,Domain,C2 Server Domain
+parcelabcstat.com,Domain,C2 Server Domain
+resolutionplatform.com,Domain,C2 Server Domain
+scott-exteriors.com,Domain,C2 Server Domain
+secure-device-now.com,Domain,C2 Server Domain
+secure-phone-now.com,Domain,C2 Server Domain
+secure-system-now.com,Domain,C2 Server Domain
+service1elevate.com,Domain,C2 Server Domain
+servicessilverroomhotspot.com,Domain,C2 Server Domain
+thomasincoatings.com,Domain,C2 Server Domain
+b78e2ec0b77fa26b62cee25e86aac382757734473a9de49a7ba3e3674896d627,SHA256,Beacon
+244799d104876ea4d0073fb27b4736ffeae9c2b5006f327138af7ba7fd0dfb3a,SHA256,Beacon

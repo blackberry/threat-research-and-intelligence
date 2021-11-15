@@ -1,0 +1,31 @@
+Indicator,Type,Description
+99.83.154.118,IP,"Darkside C2, rumahsia.com"
+6cd1825b4e9946eafa9c3a4c3c6c6785,MD5,SETTING_PROCINJ_STUB
+4a87961e2545570e44bd4afd1aa3eaecd0d3339506913d7a79a223838f30a210,SHA256,Beacon Shellcode
+5188a078b256cbb1f49457420caab769c9d8e9d0b151af29c09a3a2e96dcf95e,SHA256,Beacon Shellcode
+00a55bc3cdf42a86333d0ff1c78b1d2366ec9c07996b2bef27a054234b4c3d30,SHA256,Beacon Shellcode
+fb93d838b0d388fccf69dff0e7e914912399a7fb14b6e9f0699019a559ca463b,SHA256,Beacon Shellcode
+41b2ce074284e9d0d6e8379793a16e8b50496a428d99617a6ad3b77706ee13ec,SHA256,Beacon
+29776d5653809772c9a935cde2d394bd54c6452c2f2ef19804c7b0e6776194f5,SHA256,Beacon
+8ebf73905035ba281f425cbdc8a7602be404efaa34add951bc91ac78a927e454,SHA256,Beacon
+195.123.221.182,IP,Team Server
+103.140.186.35,IP,Team Server
+9796aaf7c318168ef74a0d31eaa08f9b,Public Key,SSL Public Key MD5
+login.eyetomsky.com/videoplayback,URL,C2 Server URL
+login.eyetomsky.com/videoplayback,URL,C2 Server URL
+abc.tgbyhnedc.com/videoplayback,URL,C2 Server URL
+abc.tgbyhnedc.com/videoplayback,URL,C2 Server URL
+login.eyetomsky.com/videoplayback,URL,C2 Server URL
+login.eyetomsky.com/videoplayback,URL,C2 Server URL
+cafebizup.com/j.ad,URL,C2 Server URL
+login.eyetomsky.com,Domain,C2 Server Domain
+login.eyetomsky.com,Domain,C2 Server Domain
+abc.tgbyhnedc.com,Domain,C2 Server Domain
+abc.tgbyhnedc.com,Domain,C2 Server Domain
+login.eyetomsky.com,Domain,C2 Server Domain
+login.eyetomsky.com,Domain,C2 Server Domain
+cafebizup.com,Domain,C2 Server Domain
+ddbb484bd5768a1480f1905f6e065bbf6b5895f7e143ab2ac75455237c0f6d5e,SHA256,Beacon
+871a4dcc200b158a64d5dc8a2a0e63a6e820a75d2c43ed14e187f254784f3ad6,SHA256,Beacon
+96e70f11ef9563a221ac15721b84eb42421640eb3e9b2b523bf5b63d3f654929,SHA256,Beacon
+9bdc1c679a873f2f7bbb284009866e7c76820b2a90e0ffe7f189e3b19e6292b1,SHA256,Beacon
