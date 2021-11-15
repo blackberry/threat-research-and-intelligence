@@ -1,0 +1,105 @@
+Indicator,Type,Description
+147.135.78.200,IP,Team Server
+0f0cf5e9b35012fc51306179ba4c8cfdaa4f60bf293d8140a77a74db548182e5,SHA256,Beacon Shellcode
+93008b078e8358c948877c7fde261231fc72bcd45143132070761550046701f2,SHA256,Beacon Shellcode
+147.135.78.200/cx,URL,C2 Server URL
+147.135.78.200/push,URL,C2 Server URL
+23.108.57.39,IP,Team Server
+91d6230999853424f158fd58bd343c781fd687c71173ee39ed98429181d3cdb4,SHA256,Beacon Shellcode
+8cf43734e0d187aaad93e950646a883820b20ca2837480c1140e1751cf6557b2,SHA256,Beacon Shellcode
+fe250fd68fd30cac8ba4dc090362f602,Public Key,SSL Public Key MD5
+wideri.com/tab_shop.css,URL,C2 Server URL
+wideri.com/language.css,URL,C2 Server URL
+wideri.com,Domain,C2 Server Domain
+172.82.179.170,IP,Team Server
+108.62.141.5,IP,Team Server
+74.118.138.139,IP,Team Server
+e75e83c4910c6604d95131bb33dc7a9a1126094e3aed5a8ef8e8654750e730fe,SHA256,Beacon Shellcode
+9f5cdfc1d136f5e9e55ec81193d7c5e999e470765d590bd0e21222ccd59aa427,SHA256,Beacon Shellcode
+f8f21867fcc86fa8802099a058fa9b12,Public Key,SSL Public Key MD5
+"touchroof.com/modcp,focuslex.com/modcp",URL,C2 Server URL
+touchroof.com,Domain,C2 Server Domain
+focuslex.com,Domain,C2 Server Domain
+newiro.com/remove,URL,C2 Server URL
+newiro.com,Domain,C2 Server Domain
+db352e9bb0d6c08928ff6ee5ea69ac17,Public Key,SSL Public Key MD5
+108.62.118.232,IP,Team Server
+4981a65d882d91dd06dde503f2caa2bc272b191fd0b5b744de68566893155a06,SHA256,Beacon Shellcode
+61302522f01f2ba0ba7209d22a4ef59bd5fa5d467e7e0ac829faaf050377ac22,SHA256,Beacon Shellcode
+derotin.com,Domain,C2 Server Domain
+cloudstomes.com,Domain,C2 Server Domain
+pipipub.com,Domain,C2 Server Domain
+pipipub.com/admin,URL,C2 Server URL
+d7741f13441bbeaedd0f1a036fd71ba7,Public Key,SSL Public Key MD5
+23.108.57.15,IP,Team Server
+658d8224c4b0c8530915af5e12fc5ebbb2bdc3dce340df050426efe48ebfa986,SHA256,Beacon Shellcode
+9845dc48b603bf54bfb4388d56616fdb215eb458d16b89c6b4dffa2e4bd7ac22,SHA256,Beacon Shellcode
+hireja.com ,Domain,C2 Server Domain
+hireja.com/Content,URL,C2 Server URL
+879a07e34428244e33c3a01efc385a0e,Public Key,SSL Public Key MD5
+23.106.160.51,IP,Team Server
+cce5fdb66104227964626bbfec247609a1a6d1296d48a840e806896edd941865,SHA256,Beacon Shellcode
+1c508e545eb34e88ec446591595298b9d16f1fc721bbbf3d763dc1a2cb3f8a26,SHA256,Beacon Shellcode
+slicemia.com,Domain,C2 Server Domain
+slicemia.com/es.js,URL,C2 Server URL
+844c5196e19fd64136fad6e644b25989,Public Key,SSL Public Key MD5
+23.81.246.177,IP,Team Server
+bc1c501af295b981a6819319cc70a9db7644be66edace84511efbc5a64a7c626,SHA256,Beacon Shellcode
+108bc21e66d44838dda4a12ff80aec4c24d82ec798edf27b07522306c3bee6a9,SHA256,Beacon Shellcode
+mebonux.com ,URL,C2 Server URL
+mebonux.com/modcp.html,Domain,C2 Server Domain
+61c4e40106357b8711f17f8cbed844c3,Public Key,SSL Public Key MD5
+172.241.27.233,IP,Team Server
+12d4d94757fe2aabb560bfd4d751407af29d5185d9211d18ba14ab3e50d18e5e,SHA256,Beacon Shellcode
+1963050e1c2613a4373adcf7de34826a94e9726df25b98d1032343a4fcc618ec,SHA256,Beacon Shellcode
+tucosu.com/ur.html,URL,C2 Server URL
+tucosu.com/Content.html,URL,C2 Server URL
+tucosu.com,Domain,C2 Server Domain
+5084f8c547ef2411791e3541ee179b98,Public Key,SSL Public Key MD5
+173.234.155.98,IP,Team Server
+12ddd0e2074c56e3ab029b8797f2291ec096f943eec396e77beb352c79d3a1e1,SHA256,Beacon Shellcode
+224e079f91de72a3a24d91512107a6914bcb8d7f93bc1ee2d70891b3f9186d91,SHA256,Beacon Shellcode
+wuluxo.com/as.css,URL,C2 Server URL
+wuluxo.com,Domain,C2 Server Domain
+e7e6341a4aa47c58177995d2276bb908,Public Key,SSL Public Key MD5
+108.62.118.185,IP,Team Server
+97074677a6aca881487a67d3548317f8ff16e3fd167e908fb50e61fb20e53efc,SHA256,Beacon Shellcode
+1856af6ed770e564bfd163b619a8035f6b035c0e5d12085ba0030b43fb505005,SHA256,Beacon Shellcode
+dimuyum.com/lt,URL,C2 Server URL
+dimuyum.com,Domain,C2 Server Domain
+9099e3256434a373f292af3def51a452,Public Key,SSL Public Key MD5
+108.62.12.80,IP,Team Server
+6a1c9b98765a1b1f905c0c96224fe80b8a08eed926f5a7a3202d831af0e74a5d,SHA256,Beacon Shellcode
+aff52716e1b3530780d0ede6a13d12a90c93efe9f75f6ac9b74aac4b8f270cdf,SHA256,Beacon Shellcode
+buremih.com/styles.html,URL,C2 Server URL
+buremih.com,Domain,C2 Server Domain
+f15880a573e26566a473b5dab53412bd,Public Key,SSL Public Key MD5
+108.177.235.115,IP,Team Server
+8f0ce914d2b3e31aa453ca152ba03640d6e09105ba8e3e83f805a38809194a15,SHA256,Beacon Shellcode
+27284a9371bcb7f0984d6bd7ce7ef9c0289d2d25c6b8d0dda8f5fa5f3e43694c,SHA256,Beacon Shellcode
+nokuje.com ,Domain,C2 Server Domain
+d67baca49193bd23451cca76ff7a08f79262bf17fb1d8eb7adaf7296dca77ad6 ,SHA256,Beacon
+b40777e01ddd881158e7a8756b48d9f989f1ecac13d0740d3f17ff92a82168c3,SHA256,Beacon
+1158775c197f97a9bd3dd1ed8ebf9784848d852c249edf40780f6dc3ba1c50c8,SHA256,Beacon
+98232d636edff9be8c5535f663d7ed82054116f2fe3fdad384a15bb3cdfd5c70,SHA256,Beacon
+92fa6d7d1ac5bc0f8e3f8cf6c37fc749715bc88aa0023c7a714dbdf24f7c11d9,SHA256,Beacon
+973869af0b5db59ea050b5f2efd26444d47deea2e7fdd2d793cdf253aa8c1b2e,SHA256,Beacon
+f35823ed7251fd2a590477a37bf2981d1c45f985750a40f4928ac08755c8481d,SHA256,Beacon
+832fe3b536a04da859b93fea333de1b10fadd6016cf5de8000e9e0f219d46ced,SHA256,Beacon
+68e77f45689987d35f056465630d8469d2933fca8cc434a779efdb4331a4b3a4,SHA256,Beacon
+cb9ca23508f0696e991c0954969faea1cb3ea77076ba72e94c5f1326552301d6,SHA256,Beacon
+47d7bcde30be475a4e390c2656a1a128083b54f2655014fdbc027704b80ba8cc,SHA256,Beacon
+16946fb63f31351dca6579db05c4e16f3209ec123a1a3dc90c14c4c42a923271,SHA256,Beacon
+8b6a4d5e63e5df9a1ebe5011ebf0690b4fb79871afa85037ca791b15e0e37979,SHA256,Beacon
+a825715a67bd49d1d3d43afc749ad4d01e3f91eff76946c124fd9be7a93952d3,SHA256,Beacon
+a7c129d7401ce48dc08aa86cc278fb1b6e238c048acc4db1c13d23bcad21d689,SHA256,Beacon
+5114171a13e049c966cba797c9c7ab01401081d62473efff48aa5bf8bcaf0e8a,SHA256,Beacon
+946bda2e8559508023c8cdb6b4e8097b52a3a723dac9f19180762cbf94d8c917,SHA256,Beacon
+8636458597092597a3d06e47a165e368642452d1f33732022bdd61fc1fbe63d5,SHA256,Beacon
+a27ab4bfb0784fd671f4270605f439c00ee817ecc40cef66c51cb6b5b80c5984,SHA256,Beacon
+f0849a8a07f3d38c6ba896b00718fdf2e3e50d607d273d1eb3817e4123c2f471,SHA256,Beacon
+fb885a2f81c432bd449dedf561d6a02da813e12235f5b01db152e6b39e77aa8e,SHA256,Beacon
+558274f3032019f83a58f8c135f466fc895a8e7aebe5187f09268a2c69d92992,SHA256,Beacon
+6d8aa3a33ba0bf92da6e0446f4e3822d6f239c96710aebcf1c7fd38e9f1dac62,SHA256,Beacon
+1899f98ed8e788b3feffcf4eed84f7d00798e2c5f563a2256cd6078e17a5e296,SHA256,Beacon
+06b5d7d5858b5f805ec39d405038356a4fe126228955951a7457905db08a964c,SHA256,Beacon

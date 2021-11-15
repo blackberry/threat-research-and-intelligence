@@ -1,0 +1,10 @@
+﻿Indicator,Type,Description
+146.0.72.76 ,IP,TeamServer IP
+146.0.72.84 ,IP,TeamServer IP
+52db7fe807308c7ace34f89bf4ffa1229da4a66012f44907dea81eef3594c06d,SHA256,Shellcode
+4c0ce3e52e2f2366542861e969892c7ed5c5ad3447fdbb34a46687ceead84bd3,SHA256,Shellcode
+f34a6b143c66b0992fd2175a7a0c8aa3bdc3b7e522aa102f115853294eadadab,SHA256,Beacon
+7ba2182fdf63ebbd72eda1df7779017811d31d3cb2a0654448d7c6e31ef86ee6,SHA256,Beacon
+146.0.72.76/questions/32251816/c-sharp-directives-compilation-error,URL,C2 Server URL
+16:dd:aa:08:7c:0a:dc:5c:89:00:29:f1:aa:ca:24:f7,Certificate,Signing certificate
+5bc96b4214f54ef5aede48d782f0f549,Public Key,SSL Public Key MD5
