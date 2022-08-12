@@ -9,17 +9,7 @@
 	"description": "Symbiote, Orbit and Red Alert ELF families with its shared TTPs",
 	"filters": {
 		"platforms": [
-			"Linux",
-			"PRE",
-			"Containers",
-			"Network",
-			"Office 365",
-			"SaaS",
-			"Google Workspace",
-			"IaaS",
-			"Azure AD",
-			"Windows",
-			"macOS"
+			"Linux"
 		]
 	},
 	"sorting": 0,
