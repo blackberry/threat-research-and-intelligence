@@ -1,6 +1,6 @@
 # BianLian Ransomware Encrypts Files in the Blink of an Eye
 
-## Sumary
+## Summary
 
 Minutes make the difference to defenders in responding to a ransomware attack on a victim’s network. BianLian ransomware raises the cybercriminal bar by encrypting files with exceptional speed.
 

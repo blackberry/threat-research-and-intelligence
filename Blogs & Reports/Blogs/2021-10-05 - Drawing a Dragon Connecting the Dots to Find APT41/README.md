@@ -1,6 +1,6 @@
 # Drawing a Dragon: Connecting the Dots to Find APT41
 
-## Sumary
+## Summary
 
 The [BlackBerry Research & Intelligence Team](https://blogs.blackberry.com/en/category/research-and-intelligence) recently connected seemingly disparate malware campaigns, which began with an unusual Cobalt Strike configuration that was first included in a [blog post](https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html) published the same month as COVID-19 lockdowns began in Europe and the U.S. What we found led us through a malicious infrastructure that had been partially documented in articles by several other research organizations.
 

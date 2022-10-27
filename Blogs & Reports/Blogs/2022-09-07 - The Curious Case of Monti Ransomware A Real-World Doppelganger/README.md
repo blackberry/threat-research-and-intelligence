@@ -1,6 +1,6 @@
 # The Curious Case of “Monti” Ransomware: A Real-World Doppelganger
 
-## Sumary
+## Summary
 
 A ransomware victim called in the BlackBerry Incident Response (IR) team during this year's 4th of July holiday weekend. We quickly realized we were investigating an attack by a previously unknown group, calling themselves "MONTI." They encrypted nearly 20 user hosts along with a multi-host VMware ESXi cluster that brought down over 20 servers.
 

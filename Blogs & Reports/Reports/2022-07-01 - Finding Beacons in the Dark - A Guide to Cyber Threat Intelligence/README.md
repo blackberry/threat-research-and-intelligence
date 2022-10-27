@@ -1,6 +1,6 @@
 # Finding Beacons in the Dark: A Guide to Cyber Threat Intelligence
 
-## Sumary
+## Summary
 
 Cobalt Strike provides adversary simulation and threat emulation software that is widely used by red teams and heavily abused by malicious threat actors. It has become a highly prevalent threat, employed by a vast number of Advanced Persistent Threat (APT) and cybercrime groups across the globe. 
 

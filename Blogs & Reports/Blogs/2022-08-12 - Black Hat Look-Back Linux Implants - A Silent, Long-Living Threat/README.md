@@ -1,6 +1,6 @@
 # Black Hat Look-Back: Linux Implants – A Silent, Long-Living Threat
 
-## Sumary
+## Summary
 
 As implants on Linux® systems continue to gain prevalence and create blind spots in organizations’ security posture, the BlackBerry Threat Research and Intelligence team continues to advise practitioners on how to best fortify their Linux defenses. In fact, I recently returned from Black Hat 2022 in Las Vegas, where my team members and I spent time doing [just that](https://blogs.blackberry.com/en/2022/08/linux-threats-a-black-hat-2022-hot-topic).
 
