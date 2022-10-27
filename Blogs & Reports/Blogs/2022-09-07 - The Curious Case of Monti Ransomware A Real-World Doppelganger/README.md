@@ -16,10 +16,10 @@ This article provides a general overview of the incident, denotes the unique cha
 
 | File | Description | Type | 
 |--------|--------|--------|
-| [MONTI_Strain_ChaCha8_version_IOCs.csv](http://) | Indicators of compromise related to MONTI Strain | CSV File |
-| [Veeam_Credential_Dumper_IOCs.csv](http://) | Indicators of compromise related to Veeam Credential Dumper | CSV File |
-| [veeamp_dumper.yar](http://) | Detects Veeam credential Dumper | Yara Rule |
-| [monti_ransomware.yar](http://) | Detects MONTI Strain in ChaCha8 encrypted ransom note with no key and nonce | Yara Rule |
+| [MONTI_Strain_ChaCha8_version_IOCs.csv](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2022-09-07%20-%20The%20Curious%20Case%20of%20Monti%20Ransomware%20A%20Real-World%20Doppelganger/MONTI_Strain_ChaCha8_version_IOCs.csv) | Indicators of compromise related to MONTI Strain | CSV File |
+| [Veeam_Credential_Dumper_IOCs.csv](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2022-09-07%20-%20The%20Curious%20Case%20of%20Monti%20Ransomware%20A%20Real-World%20Doppelganger/Veeam_Credential_Dumper_IOCs.csv) | Indicators of compromise related to Veeam Credential Dumper | CSV File |
+| [veeamp_dumper.yar](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2022-09-07%20-%20The%20Curious%20Case%20of%20Monti%20Ransomware%20A%20Real-World%20Doppelganger/veeamp_dumper.yar) | Detects Veeam credential Dumper | Yara Rule |
+| [monti_ransomware.yar](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2022-09-07%20-%20The%20Curious%20Case%20of%20Monti%20Ransomware%20A%20Real-World%20Doppelganger/monti_ransomware.yar) | Detects MONTI Strain in ChaCha8 encrypted ransom note with no key and nonce | Yara Rule |
 
 ## Reference
 

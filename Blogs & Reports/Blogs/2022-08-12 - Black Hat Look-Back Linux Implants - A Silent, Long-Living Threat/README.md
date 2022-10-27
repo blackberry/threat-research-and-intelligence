@@ -12,7 +12,7 @@ By studying three prevalent malware families — [Symbiote](https://blogs.blackb
 
 | File | Description | Type | 
 |--------|--------|--------|
-| [Linux_Implants-TTPs.json](http://) | Symbiote, Orbit and Red Alert ELF families with its shared TTPs | MITRE ATT&CK Navigator Layer |
+| [Linux_Implants-TTPs.json](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2022-08-12%20-%20Black%20Hat%20Look-Back%20Linux%20Implants%20-%20A%20Silent%2C%20Long-Living%20Threat/Linux_Implants-TTPs.json) | Symbiote, Orbit and Red Alert ELF families with its shared TTPs | MITRE ATT&CK Navigator Layer |
 
 ## Reference
 

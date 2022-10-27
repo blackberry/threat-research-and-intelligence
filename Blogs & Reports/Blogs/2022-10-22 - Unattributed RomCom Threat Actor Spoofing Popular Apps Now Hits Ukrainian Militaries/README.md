@@ -8,8 +8,8 @@ The previously unknown RomCom RAT threat actor is now targeting Ukrainian milita
 
 | File | Description | Type | 
 |--------|--------|--------|
-| [RomCom_RAT_UA.yar](http://) | Rule detecting RomCom RAT used to attack Military Institutions from Ukraine | YARA Rule |
-| [RomCom_RAT-iocs.csv](http://) | Indicators of compromise related to RomCom RAT | CSV File |
+| [RomCom_RAT_UA.yar](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2022-10-22%20-%20Unattributed%20RomCom%20Threat%20Actor%20Spoofing%20Popular%20Apps%20Now%20Hits%20Ukrainian%20Militaries/RomCom_RAT_UA.yar) | Rule detecting RomCom RAT used to attack Military Institutions from Ukraine | YARA Rule |
+| [RomCom_RAT-iocs.csv](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2022-10-22%20-%20Unattributed%20RomCom%20Threat%20Actor%20Spoofing%20Popular%20Apps%20Now%20Hits%20Ukrainian%20Militaries/RomCom_RAT-iocs.csv) | Indicators of compromise related to RomCom RAT | CSV File |
 
 ## Reference
 

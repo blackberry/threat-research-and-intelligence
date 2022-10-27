@@ -12,8 +12,8 @@ In addition to an overview of the BianLian ransomware, this post also highlights
 
 | File | Description | Type | 
 |--------|--------|--------|
-| [BianLian-iocs.csv](http://) | Indicators of compromise related to BianLian Ransomware | CSV File |
-| [BianLian_Go_ransomware.yar](http://) | Detects BianLian ransomware | YARA Rule |
+| [BianLian-iocs.csv](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2022-10-13%20-%20BianLian%20Ransomware%20Encrypts%20Files%20in%20the%20Blink%20of%20an%20Eye/BianLian-iocs.csv) | Indicators of compromise related to BianLian Ransomware | CSV File |
+| [BianLian_Go_ransomware.yar](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2022-10-13%20-%20BianLian%20Ransomware%20Encrypts%20Files%20in%20the%20Blink%20of%20an%20Eye/BianLian_Go_ransomware.yar) | Detects BianLian ransomware | YARA Rule |
 
 ## Reference
 

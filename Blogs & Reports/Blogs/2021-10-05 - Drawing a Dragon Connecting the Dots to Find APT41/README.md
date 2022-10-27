@@ -10,7 +10,7 @@ The image we uncovered was that of a state-sponsored campaign that plays on peop
 
 | File | Description | Type | 
 |--------|--------|--------|
-| [APT41-iocs.csv](http://) | Indicators of compromise related to APT41   | CSV File  |
+| [APT41-iocs.csv](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2021-10-05%20-%20Drawing%20a%20Dragon%20Connecting%20the%20Dots%20to%20Find%20APT41/APT41.csv) | Indicators of compromise related to APT41   | CSV File  |
 
 ## Reference
 

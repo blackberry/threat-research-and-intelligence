@@ -8,7 +8,7 @@ The BlackBerry® Research & Intelligence team has been tracking and monitoring C
 
 | File | Description | Type | 
 |--------|--------|--------|
-| [TA575-Dridex-iocs.csv](http://) | Indicators of compromise related to TA575/Dridex | CSV File  |
+| [TA575-Dridex-iocs.csv](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2021-08-19%20-%20Threat%20Thursday%20TA575-Dridex/TA575-Dridex-iocs.csv) | Indicators of compromise related to TA575/Dridex | CSV File  |
 
 ## Reference
 
