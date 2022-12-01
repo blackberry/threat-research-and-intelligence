@@ -1,0 +1,36 @@
+source,target,value
+APT29,Government,1
+APT29,Private sector,1
+Cleaver,Private sector,1
+Cleaver,Government,1
+IR,Cleaver,1
+RU,APT29,1
+APT37,Financial,1
+APT37,Government,1
+APT37,Health,1
+APT37,Private sector,1
+KP,APT37,1
+Lazarus Group,Government,1
+Lazarus Group,Private sector,1
+Lazarus Group,Financial,1
+KP,Lazarus Group,1
+OilRig,Financial,1
+OilRig,Government,1
+OilRig,Petroleum,1
+OilRig,Health,1
+OilRig,Private sector,1
+IR,OilRig,1
+Guacamaya Hackers,Government,1
+Non Attributed,Guacamaya Hackers,1
+TA505,Financial,1
+TA505,Education,1
+TA505,Health,1
+RU,TA505,1
+APT20,Defense,1
+APT20,Education,1
+APT20,Financial,1
+APT20,Pharmacy,1
+APT20,Private sector,1
+CN,APT20,1
+ARCrypter,Government,1
+Non Attributed,ARCrypter,1

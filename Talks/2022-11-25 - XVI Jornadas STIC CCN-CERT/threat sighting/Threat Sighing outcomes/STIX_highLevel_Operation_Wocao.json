@@ -1,0 +1,2545 @@
+[
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--305d53f0-14f3-4877-8ce0-4600509f49a1",
+        "created": "2022-11-25T11:38:31.265592Z",
+        "modified": "2022-11-25T11:38:31.265592Z",
+        "name": "cmd.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--e0200344-eb77-445b-8a3f-47f8f1bc8e14",
+        "created": "2022-11-25T11:38:31.26659Z",
+        "modified": "2022-11-25T11:38:31.26659Z",
+        "name": "schtasks.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--556bcefd-7c0c-4189-9b1d-d0be3bd5c83a",
+        "created": "2022-11-25T11:38:31.26659Z",
+        "modified": "2022-11-25T11:38:31.26659Z",
+        "name": "cscript.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--542b1d2e-fd59-4d5b-811a-4168fbdd36c2",
+        "created": "2022-11-25T11:38:31.267587Z",
+        "modified": "2022-11-25T11:38:31.267587Z",
+        "name": "sc.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--99184cb1-27b2-4107-a558-aceb09d61d23",
+        "created": "2022-11-25T11:38:31.267587Z",
+        "modified": "2022-11-25T11:38:31.267587Z",
+        "name": "wmic.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--15a994b4-abaa-4d7f-b1da-ad4adf8c3958",
+        "created": "2022-11-25T11:38:31.268584Z",
+        "modified": "2022-11-25T11:38:31.268584Z",
+        "name": "doscmd/copy"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--fb2d6adf-0b90-4057-bee0-d33ce93346fd",
+        "created": "2022-11-25T11:38:31.268584Z",
+        "modified": "2022-11-25T11:38:31.268584Z",
+        "name": "procdump.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--4e1391be-5bf7-4518-8079-c38c4d9d88ed",
+        "created": "2022-11-25T11:38:31.268584Z",
+        "modified": "2022-11-25T11:38:31.268584Z",
+        "name": "doscmd/time"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--6dff14cd-89f9-4014-9496-e739d1bdbcfa",
+        "created": "2022-11-25T11:38:31.269582Z",
+        "modified": "2022-11-25T11:38:31.269582Z",
+        "name": "doscmd/type"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--b03499a7-7334-413a-81b2-efc76a97c20a",
+        "created": "2022-11-25T11:38:31.269582Z",
+        "modified": "2022-11-25T11:38:31.269582Z",
+        "name": "doscmd/dir"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--0d32eff0-32b3-44cf-901d-15407940a1a9",
+        "created": "2022-11-25T11:38:31.269582Z",
+        "modified": "2022-11-25T11:38:31.269582Z",
+        "name": "makecab.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--e4d14db7-cd2a-49ff-88a9-c64d49931d3c",
+        "created": "2022-11-25T11:38:31.270587Z",
+        "modified": "2022-11-25T11:38:31.270587Z",
+        "name": "doscmd/del"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--98f31bbe-dd18-46b2-9040-6f1d1ab94452",
+        "created": "2022-11-25T11:38:31.270587Z",
+        "modified": "2022-11-25T11:38:31.270587Z",
+        "name": "reg.exe"
+    },
+    {
+        "type": "malware",
+        "spec_version": "2.1",
+        "id": "malware--4d8f6719-ac03-4a79-9d4a-9837b4733e99",
+        "created": "2022-11-25T11:38:31.262513Z",
+        "modified": "2022-11-25T11:38:31.262513Z",
+        "name": "JexBoss",
+        "is_family": true
+    },
+    {
+        "type": "malware",
+        "spec_version": "2.1",
+        "id": "malware--93146cc3-f4dd-49c3-9ae2-2e45487cc445",
+        "created": "2022-11-25T11:38:31.263509Z",
+        "modified": "2022-11-25T11:38:31.263509Z",
+        "name": "Unknown webshell",
+        "is_family": true
+    },
+    {
+        "type": "malware",
+        "spec_version": "2.1",
+        "id": "malware--05c86c6a-2b9a-4304-93b4-afe3b126b1cc",
+        "created": "2022-11-25T11:38:31.264082Z",
+        "modified": "2022-11-25T11:38:31.264082Z",
+        "name": "XServer",
+        "is_family": true
+    },
+    {
+        "type": "malware",
+        "spec_version": "2.1",
+        "id": "malware--a71b7d9b-3700-4402-a2a4-d0672076324c",
+        "created": "2022-11-25T11:38:31.26461Z",
+        "modified": "2022-11-25T11:38:31.26461Z",
+        "name": "keylogger",
+        "is_family": true
+    },
+    {
+        "type": "malware",
+        "spec_version": "2.1",
+        "id": "malware--765c5432-c98c-45a4-83fc-278fb347d26a",
+        "created": "2022-11-25T11:38:31.265592Z",
+        "modified": "2022-11-25T11:38:31.265592Z",
+        "name": "OAKMZ.vbs",
+        "is_family": true
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--d6063acc-ed6b-4ea9-bbc9-b6296fae4cfc",
+        "created": "2022-11-25T11:38:31.254537Z",
+        "modified": "2022-11-25T11:38:31.254537Z",
+        "name": "powershell.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--9005d438-b1a5-4a05-a1f0-042fb97ece45",
+        "created": "2022-11-25T11:38:31.255531Z",
+        "modified": "2022-11-25T11:38:31.255531Z",
+        "name": "dir.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--53825b66-f4df-4adf-9042-edc2e498df69",
+        "created": "2022-11-25T11:38:31.255531Z",
+        "modified": "2022-11-25T11:38:31.255531Z",
+        "name": "Process Launcher"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--11fbcb0f-0d94-431e-8ec5-0a22434a4309",
+        "created": "2022-11-25T11:38:31.255531Z",
+        "modified": "2022-11-25T11:38:31.255531Z",
+        "name": "CheckAdmin.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--2161d28c-0253-49af-ae1d-5acf635b65bb",
+        "created": "2022-11-25T11:38:31.256538Z",
+        "modified": "2022-11-25T11:38:31.256538Z",
+        "name": "getos.py"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--2bf472a0-1aa6-4209-ba69-275eff819d13",
+        "created": "2022-11-25T11:38:31.256538Z",
+        "modified": "2022-11-25T11:38:31.256538Z",
+        "name": "Mimikatz"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--7d519198-4176-4ccd-aab4-4456a3d3efc8",
+        "created": "2022-11-25T11:38:31.257526Z",
+        "modified": "2022-11-25T11:38:31.257526Z",
+        "name": "PowerSploit"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--ada47523-0f19-4f87-b6e6-867eee4d6cee",
+        "created": "2022-11-25T11:38:31.257526Z",
+        "modified": "2022-11-25T11:38:31.257526Z",
+        "name": "net.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--543a9f9f-6059-4b4c-8ab1-6afd55f71b28",
+        "created": "2022-11-25T11:38:31.258523Z",
+        "modified": "2022-11-25T11:38:31.258523Z",
+        "name": "wevtutil.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--75a8d23d-bfec-48af-a20e-98f4154ceae0",
+        "created": "2022-11-25T11:38:31.258523Z",
+        "modified": "2022-11-25T11:38:31.258523Z",
+        "name": "WinRar.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--4b310b58-bc47-4e3b-bd5a-29769fe4a605",
+        "created": "2022-11-25T11:38:31.258523Z",
+        "modified": "2022-11-25T11:38:31.258523Z",
+        "name": "netstat.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--4d6f8170-7cf5-4e2a-95fa-64b24b9e9ebd",
+        "created": "2022-11-25T11:38:31.259521Z",
+        "modified": "2022-11-25T11:38:31.259521Z",
+        "name": "taskkill.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--ac2644d0-0180-4f54-96e3-aabd8c44779d",
+        "created": "2022-11-25T11:38:31.259521Z",
+        "modified": "2022-11-25T11:38:31.259521Z",
+        "name": "SharpHound"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--07191613-9d5e-4453-9a53-987a928203d5",
+        "created": "2022-11-25T11:38:31.259521Z",
+        "modified": "2022-11-25T11:38:31.259521Z",
+        "name": "zos.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--4e54c002-c6a6-4182-b7e5-bbf6a47646f5",
+        "created": "2022-11-25T11:38:31.260519Z",
+        "modified": "2022-11-25T11:38:31.260519Z",
+        "name": "ntbscan"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--1badad70-dbf4-4402-abed-8d5835501da4",
+        "created": "2022-11-25T11:38:31.260519Z",
+        "modified": "2022-11-25T11:38:31.260519Z",
+        "name": "iie.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--54677e94-0eac-425c-90c2-ffff74ccaba1",
+        "created": "2022-11-25T11:38:31.260519Z",
+        "modified": "2022-11-25T11:38:31.260519Z",
+        "name": "dnsquery"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--6d784878-f10d-4a36-8efe-7b2191296a3b",
+        "created": "2022-11-25T11:38:31.261522Z",
+        "modified": "2022-11-25T11:38:31.261522Z",
+        "name": "tasklist.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--6c403269-68c0-4f6b-a884-9cc9c9c5c39f",
+        "created": "2022-11-25T11:38:31.261522Z",
+        "modified": "2022-11-25T11:38:31.261522Z",
+        "name": "ping.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--79f00af6-f82d-4705-a6dd-7205f5df134b",
+        "created": "2022-11-25T11:38:31.261522Z",
+        "modified": "2022-11-25T11:38:31.261522Z",
+        "name": "ipconfig.exe"
+    },
+    {
+        "type": "tool",
+        "spec_version": "2.1",
+        "id": "tool--6bf774c6-953f-4c20-a8b8-f6a261ee160b",
+        "created": "2022-11-25T11:38:31.262513Z",
+        "modified": "2022-11-25T11:38:31.262513Z",
+        "name": "dnscmd.exe"
+    },
+    {
+        "type": "threat-actor",
+        "spec_version": "2.1",
+        "id": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "created": "2022-11-25T11:38:31.253537Z",
+        "modified": "2022-11-25T11:38:31.253537Z",
+        "name": "APT20"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--d16ecec7-62e1-441b-a3d9-435f2e7479be",
+        "created": "2022-11-25T11:38:31.270587Z",
+        "modified": "2022-11-25T11:38:31.270587Z",
+        "name": "T1190"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--7e204914-3fa8-4e6d-949b-09a55ed7f6f0",
+        "created": "2022-11-25T11:38:31.271576Z",
+        "modified": "2022-11-25T11:38:31.271576Z",
+        "name": "T1505.003"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--fb89a4e1-b81c-496f-8c18-46352aec15be",
+        "created": "2022-11-25T11:38:31.271576Z",
+        "modified": "2022-11-25T11:38:31.271576Z",
+        "name": "T1071.001"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--22d76bfb-ec8f-481f-9ef1-da52f07fa5fa",
+        "created": "2022-11-25T11:38:31.271576Z",
+        "modified": "2022-11-25T11:38:31.271576Z",
+        "name": "T1095"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--ca531068-efb4-4869-ac3d-f494d52ef26c",
+        "created": "2022-11-25T11:38:31.271576Z",
+        "modified": "2022-11-25T11:38:31.271576Z",
+        "name": "T1090"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--ccb569d1-12da-43e9-b875-dd72000f18ee",
+        "created": "2022-11-25T11:38:31.272573Z",
+        "modified": "2022-11-25T11:38:31.272573Z",
+        "name": "T1059.001"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--f51a228a-d637-4f7f-9c51-25aaf3008901",
+        "created": "2022-11-25T11:38:31.272573Z",
+        "modified": "2022-11-25T11:38:31.272573Z",
+        "name": "T1140"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--434b2900-de89-4390-8c75-b46891cba059",
+        "created": "2022-11-25T11:38:31.272573Z",
+        "modified": "2022-11-25T11:38:31.272573Z",
+        "name": "T1059.003"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--1a90c8eb-f52c-483e-92f9-0400ae542569",
+        "created": "2022-11-25T11:38:31.273571Z",
+        "modified": "2022-11-25T11:38:31.273571Z",
+        "name": "T1106"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--71582abd-260e-403e-832b-79c87409cabe",
+        "created": "2022-11-25T11:38:31.273571Z",
+        "modified": "2022-11-25T11:38:31.273571Z",
+        "name": "T1090.003"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--26af698d-fa44-4ace-9187-2b91f5cba308",
+        "created": "2022-11-25T11:38:31.273571Z",
+        "modified": "2022-11-25T11:38:31.273571Z",
+        "name": "T1083"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--7dfe5538-98b8-49f1-b9bb-08823a60185b",
+        "created": "2022-11-25T11:38:31.274568Z",
+        "modified": "2022-11-25T11:38:31.274568Z",
+        "name": "T1055"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--63f40ee0-1137-444a-8170-41fa1b39f188",
+        "created": "2022-11-25T11:38:31.274568Z",
+        "modified": "2022-11-25T11:38:31.274568Z",
+        "name": "T1069.001"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--15df2bd9-3d1c-4a3b-953c-45183be1d51c",
+        "created": "2022-11-25T11:38:31.274568Z",
+        "modified": "2022-11-25T11:38:31.274568Z",
+        "name": "T1082"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--f1686d35-7816-4ccb-80f5-a4d5651352dc",
+        "created": "2022-11-25T11:38:31.275566Z",
+        "modified": "2022-11-25T11:38:31.275566Z",
+        "name": "T1018"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--0e0c203d-6c2c-4299-9320-d36431073d53",
+        "created": "2022-11-25T11:38:31.275566Z",
+        "modified": "2022-11-25T11:38:31.275566Z",
+        "name": "T1056.001"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--57091f57-fd26-43b1-b2a7-c310589d02ab",
+        "created": "2022-11-25T11:38:31.275566Z",
+        "modified": "2022-11-25T11:38:31.275566Z",
+        "name": "T1053.005"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--60c8d057-1ebe-434e-9164-f4b652ee94eb",
+        "created": "2022-11-25T11:38:31.276563Z",
+        "modified": "2022-11-25T11:38:31.276563Z",
+        "name": "T1070"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--585309c0-a489-43d1-bbf7-36a4ed8f35aa",
+        "created": "2022-11-25T11:38:31.276563Z",
+        "modified": "2022-11-25T11:38:31.276563Z",
+        "name": "T1059.005"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--985111a6-32fc-4d2a-80f1-35446d667095",
+        "created": "2022-11-25T11:38:31.27756Z",
+        "modified": "2022-11-25T11:38:31.27756Z",
+        "name": "T1543.003"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--79591651-4ffa-484c-a93d-2e1b7f739e8b",
+        "created": "2022-11-25T11:38:31.27756Z",
+        "modified": "2022-11-25T11:38:31.27756Z",
+        "name": "T1047"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--dd07a9f8-a335-43a2-894f-a03adc012600",
+        "created": "2022-11-25T11:38:31.27756Z",
+        "modified": "2022-11-25T11:38:31.27756Z",
+        "name": "T1027"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--879231a7-dc66-4194-98e7-f2753a792a17",
+        "created": "2022-11-25T11:38:31.27756Z",
+        "modified": "2022-11-25T11:38:31.27756Z",
+        "name": "T1003.006"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--608ed28a-9e04-47b8-89fa-4db8defea2b3",
+        "created": "2022-11-25T11:38:31.27756Z",
+        "modified": "2022-11-25T11:38:31.27756Z",
+        "name": "T1003.001"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--284ba5d0-26cf-4dd6-b48d-1484fbe7b9bf",
+        "created": "2022-11-25T11:38:31.278557Z",
+        "modified": "2022-11-25T11:38:31.278557Z",
+        "name": "T1558.003"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--5ee195d1-06d5-45ad-ab16-c118443540b1",
+        "created": "2022-11-25T11:38:31.278557Z",
+        "modified": "2022-11-25T11:38:31.278557Z",
+        "name": "T1552.004"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--379bded0-0250-4f31-82ff-85a7573bf244",
+        "created": "2022-11-25T11:38:31.278557Z",
+        "modified": "2022-11-25T11:38:31.278557Z",
+        "name": "T1087.002"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--b7024477-cc67-49e8-9887-642f60851fc3",
+        "created": "2022-11-25T11:38:31.279555Z",
+        "modified": "2022-11-25T11:38:31.279555Z",
+        "name": "T1005"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--2ba61ee4-0c6a-48b7-928d-18020ea5fa50",
+        "created": "2022-11-25T11:38:31.279555Z",
+        "modified": "2022-11-25T11:38:31.279555Z",
+        "name": "T1124"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--3d5d9a10-fcec-439f-bcab-9fa2c14e6f8f",
+        "created": "2022-11-25T11:38:31.280552Z",
+        "modified": "2022-11-25T11:38:31.280552Z",
+        "name": "T1039"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--d5b0c855-4e44-462e-9f25-7769b242786e",
+        "created": "2022-11-25T11:38:31.280552Z",
+        "modified": "2022-11-25T11:38:31.280552Z",
+        "name": "T1135"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--8e82c8f2-916e-47e6-9885-e481986934e0",
+        "created": "2022-11-25T11:38:31.281549Z",
+        "modified": "2022-11-25T11:38:31.281549Z",
+        "name": "T1560.001"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--8def9d7f-3970-47b4-a204-50324f6f7402",
+        "created": "2022-11-25T11:38:31.281549Z",
+        "modified": "2022-11-25T11:38:31.281549Z",
+        "name": "T1070.004"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--33fffd99-6087-4412-abfb-625b25a544b4",
+        "created": "2022-11-25T11:38:31.281549Z",
+        "modified": "2022-11-25T11:38:31.281549Z",
+        "name": "T1070.001"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--13ad90b8-a23c-4c0f-91cf-0901ce2c6e02",
+        "created": "2022-11-25T11:38:31.281549Z",
+        "modified": "2022-11-25T11:38:31.281549Z",
+        "name": "T1049"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--339e5dd4-5eca-4d69-b859-51e78e9df811",
+        "created": "2022-11-25T11:38:31.282546Z",
+        "modified": "2022-11-25T11:38:31.282546Z",
+        "name": "T1562.001"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--95a6c0fc-e637-4f0e-8906-01bdd84465f9",
+        "created": "2022-11-25T11:38:31.282546Z",
+        "modified": "2022-11-25T11:38:31.282546Z",
+        "name": "T1112"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--0bfcb133-a77d-44d6-bae9-a8f71a3f5f34",
+        "created": "2022-11-25T11:38:31.282546Z",
+        "modified": "2022-11-25T11:38:31.282546Z",
+        "name": "T1482"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--fe6379cc-02b7-4869-8c30-eedfc29ba9d4",
+        "created": "2022-11-25T11:38:31.283544Z",
+        "modified": "2022-11-25T11:38:31.283544Z",
+        "name": "T1552.001"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--0efd75ee-f21f-4e89-a8ff-7bb90daf7f68",
+        "created": "2022-11-25T11:38:31.283544Z",
+        "modified": "2022-11-25T11:38:31.283544Z",
+        "name": "T1033"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--1ab672fd-e0e9-4291-a27e-5c1f94ef5603",
+        "created": "2022-11-25T11:38:31.283544Z",
+        "modified": "2022-11-25T11:38:31.283544Z",
+        "name": "T1016"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--c8d1cb4e-1f08-4fae-9c36-653c38b708c3",
+        "created": "2022-11-25T11:38:31.283544Z",
+        "modified": "2022-11-25T11:38:31.283544Z",
+        "name": "T1057"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--72b4a4f1-065e-45b6-9e16-383c5e27eb00",
+        "created": "2022-11-25T11:38:31.284541Z",
+        "modified": "2022-11-25T11:38:31.284541Z",
+        "name": "T1012"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--12e2e18e-d95f-464c-ab08-8cc887e85bdd",
+        "created": "2022-11-25T11:38:31.284541Z",
+        "modified": "2022-11-25T11:38:31.284541Z",
+        "name": "initialAccess"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--f464b3f1-97b3-4285-839d-5d753e6c48e6",
+        "created": "2022-11-25T11:38:31.284541Z",
+        "modified": "2022-11-25T11:38:31.284541Z",
+        "name": "persistence"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--2b14f9d8-5bf8-4516-84f1-1aaa8e46f07a",
+        "created": "2022-11-25T11:38:31.285538Z",
+        "modified": "2022-11-25T11:38:31.285538Z",
+        "name": "commandAndControl"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--d8934bdf-286e-4684-90bf-0fd17e7adb26",
+        "created": "2022-11-25T11:38:31.285538Z",
+        "modified": "2022-11-25T11:38:31.285538Z",
+        "name": "execution"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--68eac9e3-b380-4522-8147-1ce07fddb440",
+        "created": "2022-11-25T11:38:31.286543Z",
+        "modified": "2022-11-25T11:38:31.286543Z",
+        "name": "defenseEvasion"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f",
+        "created": "2022-11-25T11:38:31.286543Z",
+        "modified": "2022-11-25T11:38:31.286543Z",
+        "name": "discovery"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--878c2c05-87e6-440d-98e7-be897fe100c6",
+        "created": "2022-11-25T11:38:31.286543Z",
+        "modified": "2022-11-25T11:38:31.286543Z",
+        "name": "credentialAccess"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--74a98479-3053-44b7-afc3-b125e832c665",
+        "created": "2022-11-25T11:38:31.287533Z",
+        "modified": "2022-11-25T11:38:31.287533Z",
+        "name": "collection"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--914f1fc3-e1c4-4623-97a0-d7c6949951b3",
+        "created": "2022-11-25T11:38:31.350187Z",
+        "modified": "2022-11-25T11:38:31.350187Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--d6063acc-ed6b-4ea9-bbc9-b6296fae4cfc"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--03b8b018-1202-43c1-b502-802cb8c2f99a",
+        "created": "2022-11-25T11:38:31.350187Z",
+        "modified": "2022-11-25T11:38:31.350187Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--9005d438-b1a5-4a05-a1f0-042fb97ece45"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--71127468-36bb-4195-8d3a-83804c42cf50",
+        "created": "2022-11-25T11:38:31.351185Z",
+        "modified": "2022-11-25T11:38:31.351185Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--53825b66-f4df-4adf-9042-edc2e498df69"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--d8e42aa2-cbda-40c4-aef5-db19e3461bf1",
+        "created": "2022-11-25T11:38:31.351185Z",
+        "modified": "2022-11-25T11:38:31.351185Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--11fbcb0f-0d94-431e-8ec5-0a22434a4309"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--ceaef931-1bfb-4669-905f-97ad770d4e52",
+        "created": "2022-11-25T11:38:31.352183Z",
+        "modified": "2022-11-25T11:38:31.352183Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--2161d28c-0253-49af-ae1d-5acf635b65bb"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--d636a868-314c-47b7-a5e6-d5a06799c9ee",
+        "created": "2022-11-25T11:38:31.352183Z",
+        "modified": "2022-11-25T11:38:31.352183Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--2bf472a0-1aa6-4209-ba69-275eff819d13"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--784b9bfc-46c1-4f9c-9b7d-632bd63b47c9",
+        "created": "2022-11-25T11:38:31.353179Z",
+        "modified": "2022-11-25T11:38:31.353179Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--7d519198-4176-4ccd-aab4-4456a3d3efc8"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--80519688-c26f-4a51-b6bb-c34b78a63d9a",
+        "created": "2022-11-25T11:38:31.353179Z",
+        "modified": "2022-11-25T11:38:31.353179Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--ada47523-0f19-4f87-b6e6-867eee4d6cee"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--b286934f-479a-4d11-9135-2872a1cab7f0",
+        "created": "2022-11-25T11:38:31.354177Z",
+        "modified": "2022-11-25T11:38:31.354177Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--543a9f9f-6059-4b4c-8ab1-6afd55f71b28"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--819b3d67-20fd-4281-8fa5-3d8baabf1b92",
+        "created": "2022-11-25T11:38:31.355175Z",
+        "modified": "2022-11-25T11:38:31.355175Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--75a8d23d-bfec-48af-a20e-98f4154ceae0"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--0600b741-26c8-4b27-b39a-073cf6cf3f1d",
+        "created": "2022-11-25T11:38:31.356172Z",
+        "modified": "2022-11-25T11:38:31.356172Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--4b310b58-bc47-4e3b-bd5a-29769fe4a605"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--66af3ea5-da42-4986-82a0-3ac50c1f6ef3",
+        "created": "2022-11-25T11:38:31.35717Z",
+        "modified": "2022-11-25T11:38:31.35717Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--4d6f8170-7cf5-4e2a-95fa-64b24b9e9ebd"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--aaadc41a-fd4a-4fb7-808c-1d17499f501d",
+        "created": "2022-11-25T11:38:31.358168Z",
+        "modified": "2022-11-25T11:38:31.358168Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--ac2644d0-0180-4f54-96e3-aabd8c44779d"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--092891ee-ed25-4e11-ad2e-357f2c4b7974",
+        "created": "2022-11-25T11:38:31.358168Z",
+        "modified": "2022-11-25T11:38:31.358168Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--07191613-9d5e-4453-9a53-987a928203d5"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--e3269bbf-c340-4b78-8d43-76b548595974",
+        "created": "2022-11-25T11:38:31.358168Z",
+        "modified": "2022-11-25T11:38:31.358168Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--4e54c002-c6a6-4182-b7e5-bbf6a47646f5"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--11c65097-2c0d-4d89-a004-09c1751653af",
+        "created": "2022-11-25T11:38:31.359165Z",
+        "modified": "2022-11-25T11:38:31.359165Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--1badad70-dbf4-4402-abed-8d5835501da4"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--d7986022-dd77-4f70-bd7d-7dc7de898dc7",
+        "created": "2022-11-25T11:38:31.359165Z",
+        "modified": "2022-11-25T11:38:31.359165Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--54677e94-0eac-425c-90c2-ffff74ccaba1"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--387dd6c3-d831-4daf-903c-e33b2e2d9f10",
+        "created": "2022-11-25T11:38:31.360162Z",
+        "modified": "2022-11-25T11:38:31.360162Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--6d784878-f10d-4a36-8efe-7b2191296a3b"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--2b14e6e5-3bba-4533-ba04-54817145bc3f",
+        "created": "2022-11-25T11:38:31.360162Z",
+        "modified": "2022-11-25T11:38:31.360162Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--6c403269-68c0-4f6b-a884-9cc9c9c5c39f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--ce23fc11-7fe2-43d7-9041-1ea85478d0f4",
+        "created": "2022-11-25T11:38:31.361159Z",
+        "modified": "2022-11-25T11:38:31.361159Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--79f00af6-f82d-4705-a6dd-7205f5df134b"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--484cac81-c441-45cc-af68-5a258cc1cf2a",
+        "created": "2022-11-25T11:38:31.361159Z",
+        "modified": "2022-11-25T11:38:31.361159Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--6bf774c6-953f-4c20-a8b8-f6a261ee160b"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--9a5bafed-2596-4271-9ea1-c415cfe6d076",
+        "created": "2022-11-25T11:38:31.362156Z",
+        "modified": "2022-11-25T11:38:31.362156Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "malware--4d8f6719-ac03-4a79-9d4a-9837b4733e99"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--be267160-cd00-4cca-aabe-347c9cab4d47",
+        "created": "2022-11-25T11:38:31.362156Z",
+        "modified": "2022-11-25T11:38:31.362156Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "malware--93146cc3-f4dd-49c3-9ae2-2e45487cc445"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--9fb2254c-2302-46d3-82f7-fb8986b469a6",
+        "created": "2022-11-25T11:38:31.363154Z",
+        "modified": "2022-11-25T11:38:31.363154Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "malware--05c86c6a-2b9a-4304-93b4-afe3b126b1cc"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--78ebd11b-4762-44a0-a34d-1062d9b45a43",
+        "created": "2022-11-25T11:38:31.363154Z",
+        "modified": "2022-11-25T11:38:31.363154Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "malware--a71b7d9b-3700-4402-a2a4-d0672076324c"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--8baa7adc-5baa-4ad7-81b7-a6f40af0eae1",
+        "created": "2022-11-25T11:38:31.364151Z",
+        "modified": "2022-11-25T11:38:31.364151Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "malware--765c5432-c98c-45a4-83fc-278fb347d26a"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--8ebefef0-3e39-43cf-97dd-6e6a3b4f2cd6",
+        "created": "2022-11-25T11:38:31.364151Z",
+        "modified": "2022-11-25T11:38:31.364151Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--305d53f0-14f3-4877-8ce0-4600509f49a1"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--ce6ba32d-b081-426e-a394-a791b7438e29",
+        "created": "2022-11-25T11:38:31.365148Z",
+        "modified": "2022-11-25T11:38:31.365148Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--e0200344-eb77-445b-8a3f-47f8f1bc8e14"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--08ffa7b7-6576-4798-a4fe-a36f3773992a",
+        "created": "2022-11-25T11:38:31.365148Z",
+        "modified": "2022-11-25T11:38:31.365148Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--556bcefd-7c0c-4189-9b1d-d0be3bd5c83a"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--b8e8b054-2a0c-4b20-add7-8854eb07836d",
+        "created": "2022-11-25T11:38:31.366146Z",
+        "modified": "2022-11-25T11:38:31.366146Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--542b1d2e-fd59-4d5b-811a-4168fbdd36c2"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--9a59a2bc-1546-4a05-8256-3fa94f0ab23e",
+        "created": "2022-11-25T11:38:31.366146Z",
+        "modified": "2022-11-25T11:38:31.366146Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--99184cb1-27b2-4107-a558-aceb09d61d23"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--73cfb2bc-e21e-4c86-a6ff-760730304bdf",
+        "created": "2022-11-25T11:38:31.367143Z",
+        "modified": "2022-11-25T11:38:31.367143Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--15a994b4-abaa-4d7f-b1da-ad4adf8c3958"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--2a93b696-b6f9-4c55-be35-6cc91d9bbd1f",
+        "created": "2022-11-25T11:38:31.367143Z",
+        "modified": "2022-11-25T11:38:31.367143Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--fb2d6adf-0b90-4057-bee0-d33ce93346fd"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--70da582d-1cc2-42ee-9a91-1e184fb642a9",
+        "created": "2022-11-25T11:38:31.36814Z",
+        "modified": "2022-11-25T11:38:31.36814Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--4e1391be-5bf7-4518-8079-c38c4d9d88ed"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--8806aff2-5731-49f2-b924-6740090f6d4d",
+        "created": "2022-11-25T11:38:31.36814Z",
+        "modified": "2022-11-25T11:38:31.36814Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--6dff14cd-89f9-4014-9496-e739d1bdbcfa"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--fe34aa87-d8cb-482d-aaaf-e9d0eeed465e",
+        "created": "2022-11-25T11:38:31.369138Z",
+        "modified": "2022-11-25T11:38:31.369138Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--b03499a7-7334-413a-81b2-efc76a97c20a"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--57413559-9dd8-4ff6-b56b-8e2e992f5621",
+        "created": "2022-11-25T11:38:31.371132Z",
+        "modified": "2022-11-25T11:38:31.371132Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--0d32eff0-32b3-44cf-901d-15407940a1a9"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--fd641838-136e-4b32-b444-eef7bd97b104",
+        "created": "2022-11-25T11:38:31.372137Z",
+        "modified": "2022-11-25T11:38:31.372137Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--e4d14db7-cd2a-49ff-88a9-c64d49931d3c"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--985fd719-2e99-41a1-ba6e-2522a465ea89",
+        "created": "2022-11-25T11:38:31.372137Z",
+        "modified": "2022-11-25T11:38:31.372137Z",
+        "relationship_type": "uses",
+        "source_ref": "threat-actor--0240b30a-4a51-4d59-af23-233e7904574c",
+        "target_ref": "tool--98f31bbe-dd18-46b2-9040-6f1d1ab94452"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--49ba847b-8783-4920-bf17-76994f0d513b",
+        "created": "2022-11-25T11:38:31.375131Z",
+        "modified": "2022-11-25T11:38:31.375131Z",
+        "relationship_type": "uses",
+        "source_ref": "malware--4d8f6719-ac03-4a79-9d4a-9837b4733e99",
+        "target_ref": "attack-pattern--d16ecec7-62e1-441b-a3d9-435f2e7479be"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--b866b648-81c7-4290-adba-c009493122f8",
+        "created": "2022-11-25T11:38:31.378114Z",
+        "modified": "2022-11-25T11:38:31.378114Z",
+        "relationship_type": "uses",
+        "source_ref": "malware--4d8f6719-ac03-4a79-9d4a-9837b4733e99",
+        "target_ref": "attack-pattern--7e204914-3fa8-4e6d-949b-09a55ed7f6f0"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--8c3e6f50-fb46-4df2-b4e1-4258f450f640",
+        "created": "2022-11-25T11:38:31.37911Z",
+        "modified": "2022-11-25T11:38:31.37911Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--d16ecec7-62e1-441b-a3d9-435f2e7479be",
+        "target_ref": "attack-pattern--12e2e18e-d95f-464c-ab08-8cc887e85bdd"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--01ac149e-c0df-47bc-bad3-1cc6538f1c53",
+        "created": "2022-11-25T11:38:31.381106Z",
+        "modified": "2022-11-25T11:38:31.381106Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--7e204914-3fa8-4e6d-949b-09a55ed7f6f0",
+        "target_ref": "attack-pattern--f464b3f1-97b3-4285-839d-5d753e6c48e6"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--7a1dc878-a4bf-4bab-ba02-4e11c06a50f6",
+        "created": "2022-11-25T11:38:31.3831Z",
+        "modified": "2022-11-25T11:38:31.3831Z",
+        "relationship_type": "uses",
+        "source_ref": "malware--4d8f6719-ac03-4a79-9d4a-9837b4733e99",
+        "target_ref": "attack-pattern--fb89a4e1-b81c-496f-8c18-46352aec15be"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--c8ad0c73-1ffd-401c-83a4-4276504b6b02",
+        "created": "2022-11-25T11:38:31.385069Z",
+        "modified": "2022-11-25T11:38:31.385069Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--fb89a4e1-b81c-496f-8c18-46352aec15be",
+        "target_ref": "attack-pattern--2b14f9d8-5bf8-4516-84f1-1aaa8e46f07a"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--4b0e0279-f9af-487a-978b-20b19cc05e59",
+        "created": "2022-11-25T11:38:31.388066Z",
+        "modified": "2022-11-25T11:38:31.388066Z",
+        "relationship_type": "uses",
+        "source_ref": "malware--93146cc3-f4dd-49c3-9ae2-2e45487cc445",
+        "target_ref": "attack-pattern--7e204914-3fa8-4e6d-949b-09a55ed7f6f0"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--e3278668-6a87-4a65-91c1-c0dbf800028e",
+        "created": "2022-11-25T11:38:31.390063Z",
+        "modified": "2022-11-25T11:38:31.390063Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--7e204914-3fa8-4e6d-949b-09a55ed7f6f0",
+        "target_ref": "attack-pattern--f464b3f1-97b3-4285-839d-5d753e6c48e6"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--b595b381-1c91-464f-8bfa-c7b8ee684596",
+        "created": "2022-11-25T11:38:31.392057Z",
+        "modified": "2022-11-25T11:38:31.392057Z",
+        "relationship_type": "uses",
+        "source_ref": "malware--93146cc3-f4dd-49c3-9ae2-2e45487cc445",
+        "target_ref": "attack-pattern--7e204914-3fa8-4e6d-949b-09a55ed7f6f0"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--18f4a9f4-b309-44e7-8762-6c432c373fca",
+        "created": "2022-11-25T11:38:31.393053Z",
+        "modified": "2022-11-25T11:38:31.393053Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--7e204914-3fa8-4e6d-949b-09a55ed7f6f0",
+        "target_ref": "attack-pattern--f464b3f1-97b3-4285-839d-5d753e6c48e6"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--9ee1b877-6087-4835-b6db-b47d2b033a30",
+        "created": "2022-11-25T11:38:31.394051Z",
+        "modified": "2022-11-25T11:38:31.394051Z",
+        "relationship_type": "uses",
+        "source_ref": "malware--93146cc3-f4dd-49c3-9ae2-2e45487cc445",
+        "target_ref": "attack-pattern--22d76bfb-ec8f-481f-9ef1-da52f07fa5fa"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--844eea90-2d7c-4b94-b9cf-3cba229c49d1",
+        "created": "2022-11-25T11:38:31.395047Z",
+        "modified": "2022-11-25T11:38:31.395047Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--22d76bfb-ec8f-481f-9ef1-da52f07fa5fa",
+        "target_ref": "attack-pattern--2b14f9d8-5bf8-4516-84f1-1aaa8e46f07a"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--98518fc8-73f9-4364-beac-138e0b2f65af",
+        "created": "2022-11-25T11:38:31.396045Z",
+        "modified": "2022-11-25T11:38:31.396045Z",
+        "relationship_type": "uses",
+        "source_ref": "malware--93146cc3-f4dd-49c3-9ae2-2e45487cc445",
+        "target_ref": "attack-pattern--22d76bfb-ec8f-481f-9ef1-da52f07fa5fa"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--c8f14b07-be73-49a7-b466-af29e521915f",
+        "created": "2022-11-25T11:38:31.397045Z",
+        "modified": "2022-11-25T11:38:31.397045Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--22d76bfb-ec8f-481f-9ef1-da52f07fa5fa",
+        "target_ref": "attack-pattern--2b14f9d8-5bf8-4516-84f1-1aaa8e46f07a"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--b79903fa-a8ea-447a-bd0f-f4f08a637e71",
+        "created": "2022-11-25T11:38:31.398039Z",
+        "modified": "2022-11-25T11:38:31.398039Z",
+        "relationship_type": "uses",
+        "source_ref": "malware--05c86c6a-2b9a-4304-93b4-afe3b126b1cc",
+        "target_ref": "attack-pattern--ca531068-efb4-4869-ac3d-f494d52ef26c"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--e25a6f57-3599-4fa2-b809-2a158a06f753",
+        "created": "2022-11-25T11:38:31.399036Z",
+        "modified": "2022-11-25T11:38:31.399036Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--ca531068-efb4-4869-ac3d-f494d52ef26c",
+        "target_ref": "attack-pattern--2b14f9d8-5bf8-4516-84f1-1aaa8e46f07a"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--9d83ad13-cf6d-482b-985d-2e5fe33700d4",
+        "created": "2022-11-25T11:38:31.401032Z",
+        "modified": "2022-11-25T11:38:31.401032Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--d6063acc-ed6b-4ea9-bbc9-b6296fae4cfc",
+        "target_ref": "attack-pattern--ccb569d1-12da-43e9-b875-dd72000f18ee"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--dbb7e432-408b-4e0d-b121-1ff5c7731404",
+        "created": "2022-11-25T11:38:31.402029Z",
+        "modified": "2022-11-25T11:38:31.402029Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--d6063acc-ed6b-4ea9-bbc9-b6296fae4cfc",
+        "target_ref": "attack-pattern--f51a228a-d637-4f7f-9c51-25aaf3008901"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--923fe396-096e-4e79-b0fc-b4967a9d2c87",
+        "created": "2022-11-25T11:38:31.403026Z",
+        "modified": "2022-11-25T11:38:31.403026Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--ccb569d1-12da-43e9-b875-dd72000f18ee",
+        "target_ref": "attack-pattern--d8934bdf-286e-4684-90bf-0fd17e7adb26"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--fbf3e491-0c21-4bf1-b0bb-7a47d326b318",
+        "created": "2022-11-25T11:38:31.404023Z",
+        "modified": "2022-11-25T11:38:31.404023Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--f51a228a-d637-4f7f-9c51-25aaf3008901",
+        "target_ref": "attack-pattern--68eac9e3-b380-4522-8147-1ce07fddb440"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--0e93d604-f4cf-40f7-9180-59a2f8e8e663",
+        "created": "2022-11-25T11:38:31.405022Z",
+        "modified": "2022-11-25T11:38:31.405022Z",
+        "relationship_type": "uses",
+        "source_ref": "malware--05c86c6a-2b9a-4304-93b4-afe3b126b1cc",
+        "target_ref": "attack-pattern--434b2900-de89-4390-8c75-b46891cba059"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--827ced8d-93d4-4248-a3ee-7d8e70bff0b1",
+        "created": "2022-11-25T11:38:31.406018Z",
+        "modified": "2022-11-25T11:38:31.406018Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--434b2900-de89-4390-8c75-b46891cba059",
+        "target_ref": "attack-pattern--d8934bdf-286e-4684-90bf-0fd17e7adb26"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--9e41bf21-8321-4520-a6c8-6e7fb1b69a88",
+        "created": "2022-11-25T11:38:31.409011Z",
+        "modified": "2022-11-25T11:38:31.409011Z",
+        "relationship_type": "uses",
+        "source_ref": "malware--05c86c6a-2b9a-4304-93b4-afe3b126b1cc",
+        "target_ref": "attack-pattern--1a90c8eb-f52c-483e-92f9-0400ae542569"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--3848c4d3-fcbf-4fc7-bf0e-79f19f2a7271",
+        "created": "2022-11-25T11:38:31.411005Z",
+        "modified": "2022-11-25T11:38:31.411005Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--1a90c8eb-f52c-483e-92f9-0400ae542569",
+        "target_ref": "attack-pattern--d8934bdf-286e-4684-90bf-0fd17e7adb26"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--17980b5b-38c4-474a-88cb-54f95c0db277",
+        "created": "2022-11-25T11:38:31.413002Z",
+        "modified": "2022-11-25T11:38:31.413002Z",
+        "relationship_type": "uses",
+        "source_ref": "malware--05c86c6a-2b9a-4304-93b4-afe3b126b1cc",
+        "target_ref": "attack-pattern--71582abd-260e-403e-832b-79c87409cabe"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--c789600d-b165-4abb-a6d3-9b68eb6a5403",
+        "created": "2022-11-25T11:38:31.414839Z",
+        "modified": "2022-11-25T11:38:31.414839Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--71582abd-260e-403e-832b-79c87409cabe",
+        "target_ref": "attack-pattern--2b14f9d8-5bf8-4516-84f1-1aaa8e46f07a"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--e5e68485-524a-4ccc-bc66-5a86aa7e4062",
+        "created": "2022-11-25T11:38:31.416839Z",
+        "modified": "2022-11-25T11:38:31.416839Z",
+        "relationship_type": "uses",
+        "source_ref": "malware--05c86c6a-2b9a-4304-93b4-afe3b126b1cc",
+        "target_ref": "attack-pattern--26af698d-fa44-4ace-9187-2b91f5cba308"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--55ee8788-2658-4ffa-a886-799eea719bc6",
+        "created": "2022-11-25T11:38:31.418833Z",
+        "modified": "2022-11-25T11:38:31.418833Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--26af698d-fa44-4ace-9187-2b91f5cba308",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--0b02ab37-6403-4bcd-b909-c11236ab1bad",
+        "created": "2022-11-25T11:38:31.420827Z",
+        "modified": "2022-11-25T11:38:31.420827Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--9005d438-b1a5-4a05-a1f0-042fb97ece45",
+        "target_ref": "attack-pattern--26af698d-fa44-4ace-9187-2b91f5cba308"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--2775f1d5-4d58-4089-a07b-f39e9b41011f",
+        "created": "2022-11-25T11:38:31.421824Z",
+        "modified": "2022-11-25T11:38:31.421824Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--26af698d-fa44-4ace-9187-2b91f5cba308",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--9950c5b4-0a82-4aa3-a601-6ea81e3036e3",
+        "created": "2022-11-25T11:38:31.423822Z",
+        "modified": "2022-11-25T11:38:31.423822Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--53825b66-f4df-4adf-9042-edc2e498df69",
+        "target_ref": "attack-pattern--7dfe5538-98b8-49f1-b9bb-08823a60185b"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--599532e6-8461-4a02-b88f-9006f428f4fb",
+        "created": "2022-11-25T11:38:31.424817Z",
+        "modified": "2022-11-25T11:38:31.424817Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--7dfe5538-98b8-49f1-b9bb-08823a60185b",
+        "target_ref": "attack-pattern--68eac9e3-b380-4522-8147-1ce07fddb440"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--bd61d2ac-1fca-4fa3-afc1-bfd91dc37bb2",
+        "created": "2022-11-25T11:38:31.425814Z",
+        "modified": "2022-11-25T11:38:31.425814Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--53825b66-f4df-4adf-9042-edc2e498df69",
+        "target_ref": "attack-pattern--1a90c8eb-f52c-483e-92f9-0400ae542569"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--7c4d4d77-a4e8-4a8f-b34f-0b7aff8e0c15",
+        "created": "2022-11-25T11:38:31.426812Z",
+        "modified": "2022-11-25T11:38:31.426812Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--1a90c8eb-f52c-483e-92f9-0400ae542569",
+        "target_ref": "attack-pattern--d8934bdf-286e-4684-90bf-0fd17e7adb26"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--cf86e03b-012e-4472-8563-0ccebbd134a1",
+        "created": "2022-11-25T11:38:31.427808Z",
+        "modified": "2022-11-25T11:38:31.427808Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--11fbcb0f-0d94-431e-8ec5-0a22434a4309",
+        "target_ref": "attack-pattern--63f40ee0-1137-444a-8170-41fa1b39f188"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--8f4c84e7-ea69-4314-a0b0-bffff5a1f98b",
+        "created": "2022-11-25T11:38:31.429805Z",
+        "modified": "2022-11-25T11:38:31.429805Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--63f40ee0-1137-444a-8170-41fa1b39f188",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--fd1a181c-c4bc-41cb-b84d-db8d18bebaae",
+        "created": "2022-11-25T11:38:31.431801Z",
+        "modified": "2022-11-25T11:38:31.431801Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--11fbcb0f-0d94-431e-8ec5-0a22434a4309",
+        "target_ref": "attack-pattern--26af698d-fa44-4ace-9187-2b91f5cba308"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--51156224-f00d-48a6-b251-4da96be61c5d",
+        "created": "2022-11-25T11:38:31.433793Z",
+        "modified": "2022-11-25T11:38:31.433793Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--26af698d-fa44-4ace-9187-2b91f5cba308",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--ce94d4f5-14d3-42a9-96f3-5115f8dc250a",
+        "created": "2022-11-25T11:38:31.435787Z",
+        "modified": "2022-11-25T11:38:31.435787Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--11fbcb0f-0d94-431e-8ec5-0a22434a4309",
+        "target_ref": "attack-pattern--63f40ee0-1137-444a-8170-41fa1b39f188"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--739981ca-a529-41e0-bf56-31291d3239d3",
+        "created": "2022-11-25T11:38:31.436784Z",
+        "modified": "2022-11-25T11:38:31.436784Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--63f40ee0-1137-444a-8170-41fa1b39f188",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--617c7c4d-69de-4efc-ae7a-7600df4bdcb4",
+        "created": "2022-11-25T11:38:31.438779Z",
+        "modified": "2022-11-25T11:38:31.438779Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--2161d28c-0253-49af-ae1d-5acf635b65bb",
+        "target_ref": "attack-pattern--15df2bd9-3d1c-4a3b-953c-45183be1d51c"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--84f02df9-9491-4223-8d84-84fa76f99e17",
+        "created": "2022-11-25T11:38:31.440776Z",
+        "modified": "2022-11-25T11:38:31.440776Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--15df2bd9-3d1c-4a3b-953c-45183be1d51c",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--ee033d98-5c46-41e7-b7d1-08e69a663a76",
+        "created": "2022-11-25T11:38:31.442779Z",
+        "modified": "2022-11-25T11:38:31.442779Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--2161d28c-0253-49af-ae1d-5acf635b65bb",
+        "target_ref": "attack-pattern--f1686d35-7816-4ccb-80f5-a4d5651352dc"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--40bab499-5801-4022-a312-29f307b822e1",
+        "created": "2022-11-25T11:38:31.444475Z",
+        "modified": "2022-11-25T11:38:31.444475Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--f1686d35-7816-4ccb-80f5-a4d5651352dc",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--99d5e13f-f4bd-4b1a-8ab7-1c828bf23741",
+        "created": "2022-11-25T11:38:31.446474Z",
+        "modified": "2022-11-25T11:38:31.446474Z",
+        "relationship_type": "uses",
+        "source_ref": "malware--a71b7d9b-3700-4402-a2a4-d0672076324c",
+        "target_ref": "attack-pattern--0e0c203d-6c2c-4299-9320-d36431073d53"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--1a485d39-0837-4353-83e4-d1c93bcfadca",
+        "created": "2022-11-25T11:38:31.448469Z",
+        "modified": "2022-11-25T11:38:31.448469Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--0e0c203d-6c2c-4299-9320-d36431073d53",
+        "target_ref": "attack-pattern--878c2c05-87e6-440d-98e7-be897fe100c6"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--52f89ef7-5a13-4371-a671-644dcd0be1e4",
+        "created": "2022-11-25T11:38:31.450463Z",
+        "modified": "2022-11-25T11:38:31.450463Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--305d53f0-14f3-4877-8ce0-4600509f49a1",
+        "target_ref": "attack-pattern--434b2900-de89-4390-8c75-b46891cba059"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--06975045-952b-4ac4-b05a-16d45b01a59b",
+        "created": "2022-11-25T11:38:31.45146Z",
+        "modified": "2022-11-25T11:38:31.45146Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--434b2900-de89-4390-8c75-b46891cba059",
+        "target_ref": "attack-pattern--d8934bdf-286e-4684-90bf-0fd17e7adb26"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--f52206fa-0ee2-4245-ab8d-884e0f44d782",
+        "created": "2022-11-25T11:38:31.453455Z",
+        "modified": "2022-11-25T11:38:31.453455Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--e0200344-eb77-445b-8a3f-47f8f1bc8e14",
+        "target_ref": "attack-pattern--57091f57-fd26-43b1-b2a7-c310589d02ab"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--5a01bd15-c89c-48cb-96e8-4fb1b283fb3c",
+        "created": "2022-11-25T11:38:31.45545Z",
+        "modified": "2022-11-25T11:38:31.45545Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--57091f57-fd26-43b1-b2a7-c310589d02ab",
+        "target_ref": "attack-pattern--d8934bdf-286e-4684-90bf-0fd17e7adb26"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--a016970c-d285-4ec6-abd3-834f423994ec",
+        "created": "2022-11-25T11:38:31.45745Z",
+        "modified": "2022-11-25T11:38:31.45745Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--e0200344-eb77-445b-8a3f-47f8f1bc8e14",
+        "target_ref": "attack-pattern--57091f57-fd26-43b1-b2a7-c310589d02ab"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--a2920fb3-68e8-43fe-a294-e83491addbee",
+        "created": "2022-11-25T11:38:31.458442Z",
+        "modified": "2022-11-25T11:38:31.458442Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--57091f57-fd26-43b1-b2a7-c310589d02ab",
+        "target_ref": "attack-pattern--d8934bdf-286e-4684-90bf-0fd17e7adb26"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--8d49b4af-ac4f-41f9-8edc-10f26dd506db",
+        "created": "2022-11-25T11:38:31.46044Z",
+        "modified": "2022-11-25T11:38:31.46044Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--d6063acc-ed6b-4ea9-bbc9-b6296fae4cfc",
+        "target_ref": "attack-pattern--57091f57-fd26-43b1-b2a7-c310589d02ab"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--24edfa06-abaf-4eec-85e9-b1cd7aa829c8",
+        "created": "2022-11-25T11:38:31.462433Z",
+        "modified": "2022-11-25T11:38:31.462433Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--57091f57-fd26-43b1-b2a7-c310589d02ab",
+        "target_ref": "attack-pattern--d8934bdf-286e-4684-90bf-0fd17e7adb26"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--cd6fc9f7-d11c-451d-a133-f947b434537c",
+        "created": "2022-11-25T11:38:31.463429Z",
+        "modified": "2022-11-25T11:38:31.463429Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--e0200344-eb77-445b-8a3f-47f8f1bc8e14",
+        "target_ref": "attack-pattern--ccb569d1-12da-43e9-b875-dd72000f18ee"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--b4a71d8e-7737-4143-aedb-8c7b746b17d9",
+        "created": "2022-11-25T11:38:31.465423Z",
+        "modified": "2022-11-25T11:38:31.465423Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--ccb569d1-12da-43e9-b875-dd72000f18ee",
+        "target_ref": "attack-pattern--d8934bdf-286e-4684-90bf-0fd17e7adb26"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--5f04003c-ca2b-495b-b523-a56e4c852d86",
+        "created": "2022-11-25T11:38:31.467418Z",
+        "modified": "2022-11-25T11:38:31.467418Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--e0200344-eb77-445b-8a3f-47f8f1bc8e14",
+        "target_ref": "attack-pattern--60c8d057-1ebe-434e-9164-f4b652ee94eb"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--9a228a3e-02f4-4a24-b1b0-500854010a64",
+        "created": "2022-11-25T11:38:31.469413Z",
+        "modified": "2022-11-25T11:38:31.469413Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--60c8d057-1ebe-434e-9164-f4b652ee94eb",
+        "target_ref": "attack-pattern--68eac9e3-b380-4522-8147-1ce07fddb440"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--741d010c-b064-4ee3-9472-c8d4ae950417",
+        "created": "2022-11-25T11:38:31.471407Z",
+        "modified": "2022-11-25T11:38:31.471407Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--556bcefd-7c0c-4189-9b1d-d0be3bd5c83a",
+        "target_ref": "attack-pattern--585309c0-a489-43d1-bbf7-36a4ed8f35aa"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--027fe841-840c-4427-a269-e6393cfa80c7",
+        "created": "2022-11-25T11:38:31.473403Z",
+        "modified": "2022-11-25T11:38:31.473403Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--585309c0-a489-43d1-bbf7-36a4ed8f35aa",
+        "target_ref": "attack-pattern--d8934bdf-286e-4684-90bf-0fd17e7adb26"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--f689866d-16f8-48e0-a59e-f25c73f70886",
+        "created": "2022-11-25T11:38:31.475404Z",
+        "modified": "2022-11-25T11:38:31.475404Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--305d53f0-14f3-4877-8ce0-4600509f49a1",
+        "target_ref": "attack-pattern--434b2900-de89-4390-8c75-b46891cba059"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--dedb2aec-c422-4875-a068-be98477e0533",
+        "created": "2022-11-25T11:38:31.477391Z",
+        "modified": "2022-11-25T11:38:31.477391Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--434b2900-de89-4390-8c75-b46891cba059",
+        "target_ref": "attack-pattern--d8934bdf-286e-4684-90bf-0fd17e7adb26"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--16aaaad1-6279-4d0e-9dae-1b81c81d97bb",
+        "created": "2022-11-25T11:38:31.479386Z",
+        "modified": "2022-11-25T11:38:31.479386Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--542b1d2e-fd59-4d5b-811a-4168fbdd36c2",
+        "target_ref": "attack-pattern--985111a6-32fc-4d2a-80f1-35446d667095"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--377f5f6a-84fa-4e66-a566-02ddf850f6a6",
+        "created": "2022-11-25T11:38:31.48138Z",
+        "modified": "2022-11-25T11:38:31.48138Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--985111a6-32fc-4d2a-80f1-35446d667095",
+        "target_ref": "attack-pattern--f464b3f1-97b3-4285-839d-5d753e6c48e6"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--5d728095-6ffc-4b07-afa9-6ce45a1c2790",
+        "created": "2022-11-25T11:38:31.483382Z",
+        "modified": "2022-11-25T11:38:31.483382Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--542b1d2e-fd59-4d5b-811a-4168fbdd36c2",
+        "target_ref": "attack-pattern--985111a6-32fc-4d2a-80f1-35446d667095"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--c8d7d9eb-9c95-4605-a7fe-b71ff629248f",
+        "created": "2022-11-25T11:38:31.484372Z",
+        "modified": "2022-11-25T11:38:31.484372Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--985111a6-32fc-4d2a-80f1-35446d667095",
+        "target_ref": "attack-pattern--f464b3f1-97b3-4285-839d-5d753e6c48e6"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--1ea14b8b-2c0f-4e53-8f29-ae9135a1df67",
+        "created": "2022-11-25T11:38:31.486367Z",
+        "modified": "2022-11-25T11:38:31.486367Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--99184cb1-27b2-4107-a558-aceb09d61d23",
+        "target_ref": "attack-pattern--79591651-4ffa-484c-a93d-2e1b7f739e8b"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--ed19bffa-6763-4488-afd2-3515f57ccffd",
+        "created": "2022-11-25T11:38:31.488361Z",
+        "modified": "2022-11-25T11:38:31.488361Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--79591651-4ffa-484c-a93d-2e1b7f739e8b",
+        "target_ref": "attack-pattern--d8934bdf-286e-4684-90bf-0fd17e7adb26"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--cac0e835-3498-408c-a3bd-1758df6c58ca",
+        "created": "2022-11-25T11:38:31.491357Z",
+        "modified": "2022-11-25T11:38:31.491357Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--d6063acc-ed6b-4ea9-bbc9-b6296fae4cfc",
+        "target_ref": "attack-pattern--ccb569d1-12da-43e9-b875-dd72000f18ee"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--ae3fac37-61ce-4ca9-8803-dda5062b132b",
+        "created": "2022-11-25T11:38:31.492352Z",
+        "modified": "2022-11-25T11:38:31.492352Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--d6063acc-ed6b-4ea9-bbc9-b6296fae4cfc",
+        "target_ref": "attack-pattern--dd07a9f8-a335-43a2-894f-a03adc012600"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--cd0896c1-014f-45e7-aa26-49bda1be8b50",
+        "created": "2022-11-25T11:38:31.493351Z",
+        "modified": "2022-11-25T11:38:31.493351Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--ccb569d1-12da-43e9-b875-dd72000f18ee",
+        "target_ref": "attack-pattern--d8934bdf-286e-4684-90bf-0fd17e7adb26"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--3228a655-ecea-49e5-bed6-86d9e7b844a0",
+        "created": "2022-11-25T11:38:31.493351Z",
+        "modified": "2022-11-25T11:38:31.493351Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--dd07a9f8-a335-43a2-894f-a03adc012600",
+        "target_ref": "attack-pattern--68eac9e3-b380-4522-8147-1ce07fddb440"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--ce5809e1-a2bb-40be-9b0e-4012121cee2d",
+        "created": "2022-11-25T11:38:31.505112Z",
+        "modified": "2022-11-25T11:38:31.505112Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--2bf472a0-1aa6-4209-ba69-275eff819d13",
+        "target_ref": "attack-pattern--879231a7-dc66-4194-98e7-f2753a792a17"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--695e4a22-aa30-4a86-9d44-686433abae1b",
+        "created": "2022-11-25T11:38:31.507106Z",
+        "modified": "2022-11-25T11:38:31.507106Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--879231a7-dc66-4194-98e7-f2753a792a17",
+        "target_ref": "attack-pattern--878c2c05-87e6-440d-98e7-be897fe100c6"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--3681e77c-75bf-413f-a358-b9481e927381",
+        "created": "2022-11-25T11:38:31.509099Z",
+        "modified": "2022-11-25T11:38:31.509099Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--fb2d6adf-0b90-4057-bee0-d33ce93346fd",
+        "target_ref": "attack-pattern--608ed28a-9e04-47b8-89fa-4db8defea2b3"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--f6a729c4-78d4-4947-8570-60e607b87885",
+        "created": "2022-11-25T11:38:31.510098Z",
+        "modified": "2022-11-25T11:38:31.510098Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--608ed28a-9e04-47b8-89fa-4db8defea2b3",
+        "target_ref": "attack-pattern--878c2c05-87e6-440d-98e7-be897fe100c6"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--89018e36-02a7-45fb-84ac-2cd175ba86fd",
+        "created": "2022-11-25T11:38:31.511106Z",
+        "modified": "2022-11-25T11:38:31.511106Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--7d519198-4176-4ccd-aab4-4456a3d3efc8",
+        "target_ref": "attack-pattern--284ba5d0-26cf-4dd6-b48d-1484fbe7b9bf"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--6f37c918-b664-4e75-a4b5-46b22581ced6",
+        "created": "2022-11-25T11:38:31.512092Z",
+        "modified": "2022-11-25T11:38:31.512092Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--284ba5d0-26cf-4dd6-b48d-1484fbe7b9bf",
+        "target_ref": "attack-pattern--878c2c05-87e6-440d-98e7-be897fe100c6"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--709a7ce2-1d89-42a2-8314-e90534384ca4",
+        "created": "2022-11-25T11:38:31.513089Z",
+        "modified": "2022-11-25T11:38:31.513089Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--2bf472a0-1aa6-4209-ba69-275eff819d13",
+        "target_ref": "attack-pattern--5ee195d1-06d5-45ad-ab16-c118443540b1"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--93db1cf7-397d-4423-b726-c448b482795d",
+        "created": "2022-11-25T11:38:31.514087Z",
+        "modified": "2022-11-25T11:38:31.514087Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--5ee195d1-06d5-45ad-ab16-c118443540b1",
+        "target_ref": "attack-pattern--878c2c05-87e6-440d-98e7-be897fe100c6"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--5e39b775-23af-4c45-8af0-69e11dd5e3ee",
+        "created": "2022-11-25T11:38:31.515091Z",
+        "modified": "2022-11-25T11:38:31.515091Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--ada47523-0f19-4f87-b6e6-867eee4d6cee",
+        "target_ref": "attack-pattern--379bded0-0250-4f31-82ff-85a7573bf244"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--cd567737-4fb7-4080-8ff0-c4ca6a9049cb",
+        "created": "2022-11-25T11:38:31.516083Z",
+        "modified": "2022-11-25T11:38:31.516083Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--379bded0-0250-4f31-82ff-85a7573bf244",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--35b90446-8ced-45b3-942a-04de2502d28d",
+        "created": "2022-11-25T11:38:31.517079Z",
+        "modified": "2022-11-25T11:38:31.517079Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--543a9f9f-6059-4b4c-8ab1-6afd55f71b28",
+        "target_ref": "attack-pattern--b7024477-cc67-49e8-9887-642f60851fc3"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--b0a7dc60-6850-4d0a-a730-ba2bf3892de4",
+        "created": "2022-11-25T11:38:31.518075Z",
+        "modified": "2022-11-25T11:38:31.518075Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--b7024477-cc67-49e8-9887-642f60851fc3",
+        "target_ref": "attack-pattern--74a98479-3053-44b7-afc3-b125e832c665"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--865daf15-15fd-4ae1-b87b-b274a90dd75c",
+        "created": "2022-11-25T11:38:31.520071Z",
+        "modified": "2022-11-25T11:38:31.520071Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--4e1391be-5bf7-4518-8079-c38c4d9d88ed",
+        "target_ref": "attack-pattern--2ba61ee4-0c6a-48b7-928d-18020ea5fa50"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--57294cc5-f349-4fe1-a376-e7a958f33306",
+        "created": "2022-11-25T11:38:31.521067Z",
+        "modified": "2022-11-25T11:38:31.521067Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--2ba61ee4-0c6a-48b7-928d-18020ea5fa50",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--b98c3f17-c9a3-4a93-a884-77caa476ba77",
+        "created": "2022-11-25T11:38:31.522064Z",
+        "modified": "2022-11-25T11:38:31.522064Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--6dff14cd-89f9-4014-9496-e739d1bdbcfa",
+        "target_ref": "attack-pattern--3d5d9a10-fcec-439f-bcab-9fa2c14e6f8f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--644c6d6d-2ebf-4889-8741-9ce1d4f839a4",
+        "created": "2022-11-25T11:38:31.524059Z",
+        "modified": "2022-11-25T11:38:31.524059Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--3d5d9a10-fcec-439f-bcab-9fa2c14e6f8f",
+        "target_ref": "attack-pattern--74a98479-3053-44b7-afc3-b125e832c665"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--970e40cd-cf80-47ab-9eaf-4231bb658941",
+        "created": "2022-11-25T11:38:31.525056Z",
+        "modified": "2022-11-25T11:38:31.525056Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--b03499a7-7334-413a-81b2-efc76a97c20a",
+        "target_ref": "attack-pattern--d5b0c855-4e44-462e-9f25-7769b242786e"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--bacda0e0-d912-4ae9-b0d5-99a11375c793",
+        "created": "2022-11-25T11:38:31.526053Z",
+        "modified": "2022-11-25T11:38:31.526053Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--d5b0c855-4e44-462e-9f25-7769b242786e",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--d29761cd-8b50-4091-98a6-c507e5f89ddc",
+        "created": "2022-11-25T11:38:31.527058Z",
+        "modified": "2022-11-25T11:38:31.527058Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--0d32eff0-32b3-44cf-901d-15407940a1a9",
+        "target_ref": "attack-pattern--8e82c8f2-916e-47e6-9885-e481986934e0"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--77a39935-1bc8-486e-8a36-6cc51924b3d1",
+        "created": "2022-11-25T11:38:31.528047Z",
+        "modified": "2022-11-25T11:38:31.528047Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--8e82c8f2-916e-47e6-9885-e481986934e0",
+        "target_ref": "attack-pattern--74a98479-3053-44b7-afc3-b125e832c665"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--d12b867b-81bf-4b52-ac13-0b14a69344f1",
+        "created": "2022-11-25T11:38:31.529045Z",
+        "modified": "2022-11-25T11:38:31.529045Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--e4d14db7-cd2a-49ff-88a9-c64d49931d3c",
+        "target_ref": "attack-pattern--8def9d7f-3970-47b4-a204-50324f6f7402"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--970573ea-130c-4dcc-8048-6e07143c7806",
+        "created": "2022-11-25T11:38:31.530042Z",
+        "modified": "2022-11-25T11:38:31.530042Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--8def9d7f-3970-47b4-a204-50324f6f7402",
+        "target_ref": "attack-pattern--68eac9e3-b380-4522-8147-1ce07fddb440"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--5ac5713c-b798-46e8-b639-1f0f50cb8389",
+        "created": "2022-11-25T11:38:31.531039Z",
+        "modified": "2022-11-25T11:38:31.531039Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--543a9f9f-6059-4b4c-8ab1-6afd55f71b28",
+        "target_ref": "attack-pattern--33fffd99-6087-4412-abfb-625b25a544b4"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--18a94110-e4b9-4363-9f59-910eba9ce2ba",
+        "created": "2022-11-25T11:38:31.532038Z",
+        "modified": "2022-11-25T11:38:31.532038Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--33fffd99-6087-4412-abfb-625b25a544b4",
+        "target_ref": "attack-pattern--68eac9e3-b380-4522-8147-1ce07fddb440"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--01c03614-793e-4c74-9cd2-2caaa804ee9a",
+        "created": "2022-11-25T11:38:31.533034Z",
+        "modified": "2022-11-25T11:38:31.533034Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--4b310b58-bc47-4e3b-bd5a-29769fe4a605",
+        "target_ref": "attack-pattern--13ad90b8-a23c-4c0f-91cf-0901ce2c6e02"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--4610d314-d725-4c33-b5f8-d5c8a3c17732",
+        "created": "2022-11-25T11:38:31.534113Z",
+        "modified": "2022-11-25T11:38:31.534113Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--13ad90b8-a23c-4c0f-91cf-0901ce2c6e02",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--b1af7a03-8fa9-4cca-89b3-e4a0f2eb611c",
+        "created": "2022-11-25T11:38:31.535622Z",
+        "modified": "2022-11-25T11:38:31.535622Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--4d6f8170-7cf5-4e2a-95fa-64b24b9e9ebd",
+        "target_ref": "attack-pattern--339e5dd4-5eca-4d69-b859-51e78e9df811"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--4f180a1e-f053-4d1f-b785-e115f602b13f",
+        "created": "2022-11-25T11:38:31.536619Z",
+        "modified": "2022-11-25T11:38:31.536619Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--339e5dd4-5eca-4d69-b859-51e78e9df811",
+        "target_ref": "attack-pattern--68eac9e3-b380-4522-8147-1ce07fddb440"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--e19c79c2-de0b-4ffc-af82-960804f54ac6",
+        "created": "2022-11-25T11:38:31.537617Z",
+        "modified": "2022-11-25T11:38:31.537617Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--98f31bbe-dd18-46b2-9040-6f1d1ab94452",
+        "target_ref": "attack-pattern--95a6c0fc-e637-4f0e-8906-01bdd84465f9"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--61d4ec11-feca-43b0-bc91-d1b5a499365a",
+        "created": "2022-11-25T11:38:31.538615Z",
+        "modified": "2022-11-25T11:38:31.538615Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--95a6c0fc-e637-4f0e-8906-01bdd84465f9",
+        "target_ref": "attack-pattern--68eac9e3-b380-4522-8147-1ce07fddb440"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--0df105c7-0e48-4a72-8068-63b5151411ab",
+        "created": "2022-11-25T11:38:31.539612Z",
+        "modified": "2022-11-25T11:38:31.539612Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--ac2644d0-0180-4f54-96e3-aabd8c44779d",
+        "target_ref": "attack-pattern--0bfcb133-a77d-44d6-bae9-a8f71a3f5f34"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--a736ac58-f468-44de-889e-81b10d70cce1",
+        "created": "2022-11-25T11:38:31.541606Z",
+        "modified": "2022-11-25T11:38:31.541606Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--0bfcb133-a77d-44d6-bae9-a8f71a3f5f34",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--96cd2186-ecea-457a-97b4-1552e3d9705f",
+        "created": "2022-11-25T11:38:31.543602Z",
+        "modified": "2022-11-25T11:38:31.543602Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--6dff14cd-89f9-4014-9496-e739d1bdbcfa",
+        "target_ref": "attack-pattern--fe6379cc-02b7-4869-8c30-eedfc29ba9d4"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--5bc40a87-13be-457e-bf2b-5172492026b3",
+        "created": "2022-11-25T11:38:31.544599Z",
+        "modified": "2022-11-25T11:38:31.544599Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--fe6379cc-02b7-4869-8c30-eedfc29ba9d4",
+        "target_ref": "attack-pattern--878c2c05-87e6-440d-98e7-be897fe100c6"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--9d414075-58e2-4cc0-9204-e32c9dd78e32",
+        "created": "2022-11-25T11:38:31.545596Z",
+        "modified": "2022-11-25T11:38:31.545596Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--b03499a7-7334-413a-81b2-efc76a97c20a",
+        "target_ref": "attack-pattern--26af698d-fa44-4ace-9187-2b91f5cba308"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--85bd2407-c556-43f8-a52a-a1c15d8ddbff",
+        "created": "2022-11-25T11:38:31.546593Z",
+        "modified": "2022-11-25T11:38:31.546593Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--26af698d-fa44-4ace-9187-2b91f5cba308",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--f2900eb8-d3b3-44c8-b76d-55ec566b15e5",
+        "created": "2022-11-25T11:38:31.548588Z",
+        "modified": "2022-11-25T11:38:31.548588Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--07191613-9d5e-4453-9a53-987a928203d5",
+        "target_ref": "attack-pattern--26af698d-fa44-4ace-9187-2b91f5cba308"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--486034d4-4e12-4453-962a-1ff49040f934",
+        "created": "2022-11-25T11:38:31.549585Z",
+        "modified": "2022-11-25T11:38:31.549585Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--26af698d-fa44-4ace-9187-2b91f5cba308",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--ad69f5e8-742a-451a-87cc-53ffc492627b",
+        "created": "2022-11-25T11:38:31.552579Z",
+        "modified": "2022-11-25T11:38:31.552579Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--4e54c002-c6a6-4182-b7e5-bbf6a47646f5",
+        "target_ref": "attack-pattern--f1686d35-7816-4ccb-80f5-a4d5651352dc"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--39a8941d-ac57-405e-87db-afc36ee54f3a",
+        "created": "2022-11-25T11:38:31.553606Z",
+        "modified": "2022-11-25T11:38:31.553606Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--f1686d35-7816-4ccb-80f5-a4d5651352dc",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--323803be-a770-4a8a-a140-c7fa2df194cd",
+        "created": "2022-11-25T11:38:31.556566Z",
+        "modified": "2022-11-25T11:38:31.556566Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--1badad70-dbf4-4402-abed-8d5835501da4",
+        "target_ref": "attack-pattern--0efd75ee-f21f-4e89-a8ff-7bb90daf7f68"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--0c616f1b-1606-4122-b40e-805a60ae91fc",
+        "created": "2022-11-25T11:38:31.558596Z",
+        "modified": "2022-11-25T11:38:31.558596Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--0efd75ee-f21f-4e89-a8ff-7bb90daf7f68",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--f7c66bda-c51f-4436-9fd4-76798a6284e7",
+        "created": "2022-11-25T11:38:31.560589Z",
+        "modified": "2022-11-25T11:38:31.560589Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--54677e94-0eac-425c-90c2-ffff74ccaba1",
+        "target_ref": "attack-pattern--1ab672fd-e0e9-4291-a27e-5c1f94ef5603"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--8392eaa8-49c9-4038-be0a-0b681b1dfdd7",
+        "created": "2022-11-25T11:38:31.561588Z",
+        "modified": "2022-11-25T11:38:31.561588Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--1ab672fd-e0e9-4291-a27e-5c1f94ef5603",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--b47bf434-d06a-4f0f-a81b-7f8824dc82e0",
+        "created": "2022-11-25T11:38:31.56358Z",
+        "modified": "2022-11-25T11:38:31.56358Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--4b310b58-bc47-4e3b-bd5a-29769fe4a605",
+        "target_ref": "attack-pattern--d5b0c855-4e44-462e-9f25-7769b242786e"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--29100456-670f-4590-896b-6a8566d90631",
+        "created": "2022-11-25T11:38:31.566242Z",
+        "modified": "2022-11-25T11:38:31.566242Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--d5b0c855-4e44-462e-9f25-7769b242786e",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--d91919d9-f3d9-4aa2-9fd2-defbcc5ad6e9",
+        "created": "2022-11-25T11:38:31.568236Z",
+        "modified": "2022-11-25T11:38:31.568236Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--ada47523-0f19-4f87-b6e6-867eee4d6cee",
+        "target_ref": "attack-pattern--63f40ee0-1137-444a-8170-41fa1b39f188"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--776df7ac-4f01-40bb-9cca-bd38204e22eb",
+        "created": "2022-11-25T11:38:31.569266Z",
+        "modified": "2022-11-25T11:38:31.569266Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--63f40ee0-1137-444a-8170-41fa1b39f188",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--57ad6a0b-61e3-496b-aa06-16e3fb91c622",
+        "created": "2022-11-25T11:38:31.572258Z",
+        "modified": "2022-11-25T11:38:31.572258Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--6d784878-f10d-4a36-8efe-7b2191296a3b",
+        "target_ref": "attack-pattern--c8d1cb4e-1f08-4fae-9c36-653c38b708c3"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--0cf5021b-6921-4785-81f4-4d763f1ba797",
+        "created": "2022-11-25T11:38:31.573224Z",
+        "modified": "2022-11-25T11:38:31.573224Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--c8d1cb4e-1f08-4fae-9c36-653c38b708c3",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--788ec388-cda5-4953-89df-ca18b4bf443d",
+        "created": "2022-11-25T11:38:31.576216Z",
+        "modified": "2022-11-25T11:38:31.576216Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--98f31bbe-dd18-46b2-9040-6f1d1ab94452",
+        "target_ref": "attack-pattern--72b4a4f1-065e-45b6-9e16-383c5e27eb00"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--40db1bef-c541-46be-bef4-91f719c8a462",
+        "created": "2022-11-25T11:38:31.577215Z",
+        "modified": "2022-11-25T11:38:31.577215Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--72b4a4f1-065e-45b6-9e16-383c5e27eb00",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--106ac2a0-2a70-401b-90d1-c52575f52fb8",
+        "created": "2022-11-25T11:38:31.578212Z",
+        "modified": "2022-11-25T11:38:31.578212Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--98f31bbe-dd18-46b2-9040-6f1d1ab94452",
+        "target_ref": "attack-pattern--72b4a4f1-065e-45b6-9e16-383c5e27eb00"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--f060b562-a997-448a-aba4-8ecf1bbc4ca2",
+        "created": "2022-11-25T11:38:31.579216Z",
+        "modified": "2022-11-25T11:38:31.579216Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--72b4a4f1-065e-45b6-9e16-383c5e27eb00",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--344b01e7-28c2-4d10-824b-68339f906e4b",
+        "created": "2022-11-25T11:38:31.581204Z",
+        "modified": "2022-11-25T11:38:31.581204Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--6c403269-68c0-4f6b-a884-9cc9c9c5c39f",
+        "target_ref": "attack-pattern--f1686d35-7816-4ccb-80f5-a4d5651352dc"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--98e39151-9bb7-49e8-8b49-d7abc91f7c01",
+        "created": "2022-11-25T11:38:31.5822Z",
+        "modified": "2022-11-25T11:38:31.5822Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--f1686d35-7816-4ccb-80f5-a4d5651352dc",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--855ccb24-26d9-4caa-b871-24299969ca83",
+        "created": "2022-11-25T11:38:31.583197Z",
+        "modified": "2022-11-25T11:38:31.583197Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--6c403269-68c0-4f6b-a884-9cc9c9c5c39f",
+        "target_ref": "attack-pattern--f1686d35-7816-4ccb-80f5-a4d5651352dc"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--6df4d024-e800-4acb-adb6-ee161e890292",
+        "created": "2022-11-25T11:38:31.5842Z",
+        "modified": "2022-11-25T11:38:31.5842Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--f1686d35-7816-4ccb-80f5-a4d5651352dc",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--2d9eac76-d822-42fb-84cb-1a8cb7e9eb69",
+        "created": "2022-11-25T11:38:31.585192Z",
+        "modified": "2022-11-25T11:38:31.585192Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--b03499a7-7334-413a-81b2-efc76a97c20a",
+        "target_ref": "attack-pattern--379bded0-0250-4f31-82ff-85a7573bf244"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--dd027c10-8cba-42cf-98e1-d5c68cbf2924",
+        "created": "2022-11-25T11:38:31.58619Z",
+        "modified": "2022-11-25T11:38:31.58619Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--379bded0-0250-4f31-82ff-85a7573bf244",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--66ba4cc0-ee96-4cf8-829e-f6f087333c62",
+        "created": "2022-11-25T11:38:31.587187Z",
+        "modified": "2022-11-25T11:38:31.587187Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--6d784878-f10d-4a36-8efe-7b2191296a3b",
+        "target_ref": "attack-pattern--c8d1cb4e-1f08-4fae-9c36-653c38b708c3"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--0479edf7-e55b-44d5-963e-9114edc92e30",
+        "created": "2022-11-25T11:38:31.588185Z",
+        "modified": "2022-11-25T11:38:31.588185Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--c8d1cb4e-1f08-4fae-9c36-653c38b708c3",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--1a8c3f51-660d-4d9e-92ae-e599a6f2295f",
+        "created": "2022-11-25T11:38:31.589181Z",
+        "modified": "2022-11-25T11:38:31.589181Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--b03499a7-7334-413a-81b2-efc76a97c20a",
+        "target_ref": "attack-pattern--26af698d-fa44-4ace-9187-2b91f5cba308"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--ce71bd40-8eb5-45b1-9117-a0c6923c41ef",
+        "created": "2022-11-25T11:38:31.590178Z",
+        "modified": "2022-11-25T11:38:31.590178Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--26af698d-fa44-4ace-9187-2b91f5cba308",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--bd59ff6b-791d-4f4c-a8f2-9d569bc8c18f",
+        "created": "2022-11-25T11:38:31.592174Z",
+        "modified": "2022-11-25T11:38:31.592174Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--79f00af6-f82d-4705-a6dd-7205f5df134b",
+        "target_ref": "attack-pattern--1ab672fd-e0e9-4291-a27e-5c1f94ef5603"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--b89ab6fd-d964-416f-a62c-a349d0427e46",
+        "created": "2022-11-25T11:38:31.593171Z",
+        "modified": "2022-11-25T11:38:31.593171Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--1ab672fd-e0e9-4291-a27e-5c1f94ef5603",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--10a950c5-5c62-46a8-bb56-c8347556b775",
+        "created": "2022-11-25T11:38:31.594168Z",
+        "modified": "2022-11-25T11:38:31.594168Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--4b310b58-bc47-4e3b-bd5a-29769fe4a605",
+        "target_ref": "attack-pattern--13ad90b8-a23c-4c0f-91cf-0901ce2c6e02"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--4efaff19-5fe5-4e96-96c5-d3c77675599c",
+        "created": "2022-11-25T11:38:31.595554Z",
+        "modified": "2022-11-25T11:38:31.595554Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--13ad90b8-a23c-4c0f-91cf-0901ce2c6e02",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--662884f3-d17d-44ad-bc19-248c94928726",
+        "created": "2022-11-25T11:38:31.598063Z",
+        "modified": "2022-11-25T11:38:31.598063Z",
+        "relationship_type": "uses",
+        "source_ref": "tool--6bf774c6-953f-4c20-a8b8-f6a261ee160b",
+        "target_ref": "attack-pattern--1ab672fd-e0e9-4291-a27e-5c1f94ef5603"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--9c972981-4180-4f46-a2e3-9193044d8461",
+        "created": "2022-11-25T11:38:31.59909Z",
+        "modified": "2022-11-25T11:38:31.59909Z",
+        "relationship_type": "uses",
+        "source_ref": "attack-pattern--1ab672fd-e0e9-4291-a27e-5c1f94ef5603",
+        "target_ref": "attack-pattern--c9e54186-edb3-4f7b-92fb-fd60b13bd06f"
+    }
+]

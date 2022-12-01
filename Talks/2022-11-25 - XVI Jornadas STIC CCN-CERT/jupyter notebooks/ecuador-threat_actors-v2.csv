@@ -1,0 +1,17 @@
+source,target,value
+El Machete,Military,1
+El Machete,Government,1
+Sowbug,Government,1
+Guacamaya Hackers,Government,1
+CO,El Machete,1
+Non Attributed,Guacamaya Hackers,1
+TA505,Financial,1
+TA505,Education,1
+TA505,Health,1
+RU,TA505,1
+APT38,Financial,1
+KP,APT38,1
+Non Attributed,Sowbug,1
+BlackCat,Military,1
+Non Attributed,BlackCat,1
+BlackCat,Government,1

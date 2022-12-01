@@ -1,0 +1,14 @@
+source,target,value
+El Machete,Military,1
+El Machete,Government,1
+APT-C-36,Financial,1
+APT-C-36,Government,1
+APT-C-36,Petroleum,1
+Non Attributed,APT-C-36,1
+CO,El Machete,1
+TA505,Financial,1
+TA505,Education,1
+TA505,Health,1
+RU,TA505,1
+Non Attributed,ARCrypter,1
+ARCrypter,Government,1

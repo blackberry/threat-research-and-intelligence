@@ -1,0 +1,82 @@
+adversaries,behaviors,weapons,techniques,tactics
+APT20,Other threat actors not related to Operation Wocao deployed JexBoss webshells in the web servers.,JexBoss,T1190 - Exploit Public-Facing Application,initialAccess
+APT20,Other threat actors not related to Operation Wocao deployed JexBoss webshells in the web servers.,JexBoss,T1505.003 - Server Software Component: Web Shell,persistence
+APT20,"To make connections between threat actors and webservers, they have to connect using HTTP and GET method along with a specific parameter",JexBoss,T1071.001 - Application Layer Protocol: Web Protocols,commandAndControl
+APT20,"Using the previous webshell, threat actors upload their own webshells",Unknown webshell,T1505.003 - Server Software Component: Web Shell,persistence
+APT20,"Using the previous webshell, threat actors upload another own webshell with more features",Unknown webshell,T1505.003 - Server Software Component: Web Shell,persistence
+APT20,A modified version of a publicly JSP sock tunnel was uploaded using the webshell,Unknown webshell,T1095 - Non-Application Layer Protocol,commandAndControl
+APT20,"The actor makes use of a reconnaissance script, written in Visual Basic Script (VBS), to retrieve detailed information from a system",Unknown webshell,T1095 - Non-Application Layer Protocol,commandAndControl
+APT20,The XServer backdoor is deployed on the victim system. Is a C# tool which is executed using PowerShell.,XServer,T1090 - Proxy,commandAndControl
+APT20,The XServer backdoor is deployed on the victim system. Is a C# tool which is executed using PowerShell.,XServer,T1090.003 - Proxy: Multi-hop Proxy,commandAndControl
+APT20,The XServer backdoor is deployed on the victim system. Is a C# tool which is executed using PowerShell.,XServer,T1095 - Non-Application Layer Protocol,commandAndControl
+APT20,XServer backdoor is executed using PowerShell,powershell.exe,T1059.001 - Command and Scripting Interpreter: PowerShell,execution
+APT20,XServer backdoor is executed using PowerShell,powershell.exe,T1140 - Deobfuscate/Decode Files or Information,defenseEvasion
+APT20,There are two ways used by XServer to execute commands on the victim system. This is the first one using cmd.exe,XServer,T1059.003 - Command and Scripting Interpreter: Windows Command Shell,execution
+APT20,"There are two ways used by XServer to execute commands on the victim system. This is the second one, using API Calls",XServer,T1106 - Native API,execution
+APT20,Two versions of Agent were found on the systems. One was written in C# and the other one in Python and compiled with py2exe.,XServer,T1090.003 - Proxy: Multi-hop Proxy,commandAndControl
+APT20,A basic custom tool is deployed in the victim system to get info from files and directories,XServer,T1083 - File and Directory Discovery,discovery
+APT20,The custom tool dir.exe is executed to get information from the directory set,dir.exe,T1083 - File and Directory Discovery,discovery
+APT20,A custom process launcher tool was used to execute processes as a child of others already running,Process Launcher,T1055 - Process Injection,defenseEvasion
+APT20,Process Launcher use the Windows API to launch and inject processes if needed,Process Launcher,T1106 - Native API,execution
+APT20,Threat actors deploy an old version checkadmin.exe to identify on local and remote computers privileged users,CheckAdmin.exe,T1069.001 - Permission Groups Discovery: Local Groups,discovery
+APT20,CheckAdmin is launched to get information about privileges on the local machine,CheckAdmin.exe,T1083 - File and Directory Discovery,discovery
+APT20,"Besides the old version of checkadmin.exe, threat actors deploy another new version of this tool less verbose",CheckAdmin.exe,T1069.001 - Permission Groups Discovery: Local Groups,discovery
+APT20,Threat actors deploy a custom tool to get information about OS versions of systems connected to the network sending SMB packets to every IP.,getos.py
+APT20,The tool to get information about the OS was executed to retrieve such information,getos.py,T1082 - System Information Discovery,discovery
+APT20,getos.py uses SMB to get information from remote systems,getos.py,T1018 - Remote System Discovery,discovery
+APT20,A custom keylogger was used to obtain password for the victims. This keylogger logs the victim's keystrokes and clipboard in plaintext file.,keylogger,T1056.001 - Input Capture: Keylogging,credentialAccess
+APT20,Cmd.exe is executed to load a command received from the webshell to spawn schtasks.exe,cmd.exe,T1059.003 - Command and Scripting Interpreter: Windows Command Shell,execution
+APT20,Scheduled tasks is used to execute malicious code,schtasks.exe,T1053.005 - Scheduled Task/Job: Scheduled Task,execution
+APT20,The task is created in the system,schtasks.exe,T1053.005 - Scheduled Task/Job: Scheduled Task,execution
+APT20,The scheduled task is executed using PowerShell,powershell.exe,T1053.005 - Scheduled Task/Job: Scheduled Task,execution
+APT20,"After executing the PowerShell code, the scheduled task is removed, to limit traces on thecompromised system",schtasks.exe,T1059.001 - Command and Scripting Interpreter: PowerShell,execution
+APT20,The task is removed from the s ystem,schtasks.exe,T1070 - Indicator Removal,defenseEvasion
+APT20,"The VBS Script which was created in the initial stage, is executed using cscript.exe",cscript.exe,T1059.005 - Command and Scripting Interpreter: Visual Basic,execution
+APT20,A text file is created to store the information from the VBS Script,OAKMZ.vbs
+APT20,Cmd.exe is executed to load a command received from the webshell to create a service using sc,cmd.exe,T1059.003 - Command and Scripting Interpreter: Windows Command Shell,execution
+APT20,Sc.exe is spawned to create services,sc.exe,T1543.003 - Create or Modify System Process: Windows Service,persistence
+APT20,The service is created in the system,sc.exe,T1543.003 - Create or Modify System Process: Windows Service,persistence
+APT20,WMI is used to get information from the system,wmic.exe,T1047 - Windows Management Instrumentation,execution
+APT20,Threat actors overwrite ps1 files created previously with a legitimate DLL to hide its steps,doscmd/copy
+APT20,Encoded commands in base64 are executed on the system using PowerShell,powershell.exe,T1027 - Obfuscated Files or Information,defenseEvasion
+APT20,Encoded commands in base64 are executed on the system using PowerShell,powershell.exe,T1059.001 - Command and Scripting Interpreter: PowerShell,execution
+APT20,Threat Actors uses Mimikatz to dump credentials of accounts with elevated privileges,Mimikatz,T1003.006 - OS Credential Dumping: DCSync,credentialAccess
+APT20,A file is created with the execution of Mimikatz lsadump,Mimikatz
+APT20,Another way to dump credentials from LSASS process used by threat actors is using ProcDump,procdump.exe,T1003.001 - OS Credential Dumping: LSASS Memory,credentialAccess
+APT20,"To be able to bruteforce the passwords of Windows service accounts , the actor uses PowerSploits Invoke-Kerberoast module to request encrypted service tickets",PowerSploit,T1558.003 - Steal or Forge Kerberos Tickets: Kerberoasting,credentialAccess
+APT20,Threat actor use Mimikatz to dump certificates and private keys from Windows certificate stores.,Mimikatz,T1552.004 - Unsecured Credentials: Private Keys,credentialAccess
+APT20,Threat actor use net to retrieve information of a specific target,net.exe,T1087.002 - Account Discovery: Domain Account,discovery
+APT20,On compromised domain controllers the actor queries the Windows event logs to identify on which systems in the network highly privileged users are working,wevtutil.exe,T1005 - Data from Local System,collection
+APT20,Threat actors retrieves the current time of a compromised system,doscmd/time,T1124 - System Time Discovery,discovery
+APT20,Threat actors uses the C$ and IPC$ shares to access files on a remote system.,doscmd/type,T1039 - Data from Network Shared Drive,collection
+APT20,Threat actors uses the C$ and IPC$ shares to access files on a remote system.,doscmd/dir,T1135 - Network Share Discovery,discovery
+APT20,Makecab is used to create a self extracting archive,makecab.exe,T1560.001 - Archive Collected Data: Archive via Utility,collection
+APT20,WinRar is used too to compress files. The WinRar used was renamed,WinRAR.exe,T1560.001 - Archive Collected Data: Archive via Utility,collection
+APT20,Threat actors are very consistent in removing its files from system once they have served its purpose. Some files are removed.,doscmd/del,T1070.004 - Indicator Removal: File Deletion,defenseEvasion
+APT20,Threat actors delete system and security event logs,wevtutil.exe,T1070.001 - Indicator Removal: Clear Windows Event Logs,defenseEvasion
+APT20,Threat Actor cleans up running backdoors from systems that are no longer of use. First search for the PID,netstat.exe,T1049 - System Network Connections Discovery,discovery
+APT20,"Once threat actors have the PID of the backdoor that they want to stop, they use taskkill to stop it",taskkill.exe,T1562.001 - Impair Defenses: Disable or Modify Tools,defenseEvasion
+APT20,Threat actors modify the WDigest registry value from 0 to 1 to store the plain-text password of the logged in Windows domain user in memory,reg.exe,T1112 - Modify Registry,defenseEvasion
+APT20,Threat actor use SharpHound to ingest the data from BloodHound,SharpHound,T1482 - Domain Trust Discovery,discovery
+APT20,Threat actors tries to get information from the KeePass configuration file,doscmd/type,T1552.001 - Unsecured Credentials: Credentials In Files,credentialAccess
+APT20,Another interest of the threat actors is get all the files under some path related to keepass,doscmd/dir,T1083 - File and Directory Discovery,discovery
+APT20,A custom find/walk tool used by the threat actors tries to list recursive paths and save it into a file,zos.exe,T1083 - File and Directory Discovery,discovery
+APT20,A file is created with the result of the find/walk custom tool,zos.exe
+APT20,A public tool called nbtscan renamed is used to scan for NETBIOS nameservers,ntbscan,T1018 - Remote System Discovery,discovery
+APT20,A file is created with the result of ntbscan,ntbscan
+APT20,Threat Actors also uses a custom scanning tool that is capable of enumerating sessions and users on remote hosts,iie.exe,T1033 - System Owner/User Discovery,discovery
+APT20,A file is created with the result of the custom tool for enumerating sessions and users on remote hosts,iie.exe
+APT20,Threat Actors use dnsquery on a domain controller to retrieve all subnets in the AD,dnsquery,T1016 - System Network Configuration Discovery,discovery
+APT20,Threat Actors attempts to identify file shares and other remote systems,netstat.exe,T1135 - Network Share Discovery,discovery
+APT20,Threat Actors attempts to identify which administrator to target,net.exe,T1069.001 - Permission Groups Discovery: Local Groups,discovery
+APT20,Threat Actors tries to identify specific processes using tasklist and find command,tasklist.exe,T1057 - Process Discovery,discovery
+APT20,Threat Actors use reg.exe to query the registry,reg.exe,T1012 - Query Registry,discovery
+APT20,Threat actors queries the registry to identify recent PuTTy sessions,reg.exe,T1012 - Query Registry,discovery
+APT20,Threat Actor often checks for the availability of systems using the ping command,ping.exe,T1018 - Remote System Discovery,discovery
+APT20,"After the use of ping, there are network telemetry to other devices",ping.exe,T1018 - Remote System Discovery,discovery
+APT20,"To get a list of all users that have authenticated with a specific domain and have a user profile, the actor executes the following command on a domain controller",doscmd/dir,T1087.002 - Account Discovery: Domain Account,discovery
+APT20,"Threat Actor tries to get information from processes related to security vendors to stop it. In this case, Carbon Black was installed",tasklist.exe,T1057 - Process Discovery,discovery
+APT20,"Once discovered the security solution installed, it tries to get information from the path where it was installed",doscmd/dir,T1083 - File and Directory Discovery,discovery
+APT20,"Under compromised systems, threat actors retrieve basic network configuration",ipconfig.exe,T1016 - System Network Configuration Discovery,discovery
+APT20,Threat Actors executes a netstat process using find command to identify specific ports of interest,netstat.exe,T1049 - System Network Connections Discovery,discovery
+APT20,Threat Actors executes dnscmd.exe to get records in a zone,dnscmd.exe,T1016 - System Network Configuration Discovery,discovery

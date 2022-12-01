@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<OpenIOC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://openioc.org/schemas/OpenIOC_1.1" id="7e70bb32-5774-4a68-a524-48e36ed2bcd4" last-modified="2022-11-25T11:38:41" published-date="0001-01-01T00:00:00">
+  <metadata>
+    <short_description>OpenIOC generated automatically from Threat Sighting</short_description>
+    <description>Operation Wocao</description>
+    <keywords/>
+    <authored_by>BlackBerry Threat Research and Intelligence Team</authored_by>
+    <authored_date>2022-11-25T11:38:41</authored_date>
+    <links/>
+  </metadata>
+  <criteria>
+    <Indicator id="30cd1d83-aa66-40ab-bb46-099b2eefeec7" operator="OR">
+      <Indicator id="e002cff9-74d9-4a8b-87f5-9b43a5877ee5" operator="OR">
+        <IndicatorItem id="98eb9434-40ba-4d6c-bf7f-238e1a30cd6b" condition="is" preserve-case="false" negate="false">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="string">a34a7430936ce37e78b995c321ff626933c364c50f1e7689aa1b0660432b4618</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ec14ec5b-4313-4214-b178-9455e7d69504" condition="is" preserve-case="false" negate="false">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="string">fdc94d0dedf6e53dd435d2b5eacb4c34923fadee50529db6f3de38c71f325e05</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7ffb6019-58f5-44f8-9bc0-383768e5dd3b" condition="is" preserve-case="false" negate="false">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="string">08f87f8c64a4c98b0e99592a436d601249feeaec4a2c4effbf69a166e4f592a0</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7e8fa6c3-73dc-4bf9-921b-0811b65236f1" condition="is" preserve-case="false" negate="false">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="string">2047e464627e36410b3458e23062f23eecbd383e7854b55b497ec8db017c0d5e</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3033305d-96af-497f-a036-31f736be03ef" condition="is" preserve-case="false" negate="false">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="string">d43251480775f224517f484686bc7ca39e532d900b86ebf6ed37da8ee13534a4</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ef4c1774-9263-4d11-8dc6-f29697f9b114" condition="is" preserve-case="false" negate="false">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="string">6972ba198ed0d30de9f66be5777ecdba2d657078f138325ee6db225c20b29e6e</Content>
+        </IndicatorItem>
+        <IndicatorItem id="bf9e9005-5f2d-4742-a56c-3704e18980d3" condition="is" preserve-case="false" negate="false">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="string">5cf61c0b865fd2ab897c72ff2cc01ac4c31ea9c50ecc3d47693f3482fd8f91d4</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b30d62e9-4608-47ac-8353-2c4142d3fddf" condition="is" preserve-case="false" negate="false">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="string">b2162d4cbeee907d1af13918900e6e4f13232d00915563d841aa7c904d94589c</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2f4bbf9c-63b3-471f-99da-5452adb0a03a" condition="is" preserve-case="false" negate="false">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="string">c109ddd4f43bc38a50b07b4fc22fe568cced4fb4d8c5bd71546407c2c6219048</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e68bae62-a11b-4d4b-a8ab-cba1527523b8" condition="is" preserve-case="false" negate="false">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="string">3016ea94e3c5bd7f9d8e503b1817491bcf9e2ee5bb82fc106aa5d692dd0ff5c6</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8a962744-9b28-4b66-8f8e-3b2512dad449" condition="is" preserve-case="false" negate="false">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="string">75ac4478c1729d1b5434724cf0c2bd53cc5940d251a4ca07b17c239c8f62da8d</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4dcc653a-21c9-4012-8a99-640d979d98b3" condition="is" preserve-case="false" negate="false">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="string">5d01150ade4b302b9fd765fd0fb70aa17ee9cb9fcb219c2d270fd90ad8d01188</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b725befc-dfce-420a-840c-21b19d0f83c3" condition="is" preserve-case="false" negate="false">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="string">a4a448d40aa8b4ff1d18de7a84b7fbc4c41c00062a56cd7c74ac443b61438f47</Content>
+        </IndicatorItem>
+      </Indicator>
+    </Indicator>
+  </criteria>
+  <parameters/>
+</OpenIOC>

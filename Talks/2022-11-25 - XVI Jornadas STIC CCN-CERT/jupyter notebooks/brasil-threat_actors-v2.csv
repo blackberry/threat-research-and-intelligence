@@ -1,0 +1,41 @@
+source,target,value
+APT10,Private sector,1
+APT10,Government,1
+APT29,Government,1
+APT29,Private sector,1
+Careto,Government,1
+Careto,Private sector,1
+El Machete,Military,1
+El Machete,Government,1
+Lazarus Group,Government,1
+Lazarus Group,Private sector,1
+Sowbug,Government,1
+CN,APT10,1
+ES,Careto,1
+KP,Lazarus Group,1
+RU,APT29,1
+CO,El Machete,1
+Non Attributed,Sowbug,1
+APT29,Financial,1
+APT29,Pharmacy,1
+APT29,Telecommunications,1
+APT29,Energy,1
+APT29,Defense,1
+Lazarus Group,Financial,1
+APT20,Defense,1
+APT20,Education,1
+APT20,Financial,1
+APT20,Pharmacy,1
+APT20,Private sector,1
+CN,APT20,1
+Carbanak,Financial,1
+Carbanak,Health,1
+Guacamaya Hackers,Government,1
+Non Attributed,Guacamaya Hackers,1
+Lapsus,Health,1
+Lapsus,Government,1
+Lapsus,Education,1
+Lapsus,Energy,1
+Lapsus,Telecommunications,1
+Non Attributed,Lapsus,1
+Various countries,Carbanak,1

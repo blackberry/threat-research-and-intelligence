@@ -1,0 +1,60 @@
+source,target,value
+APT21,Government,1
+APT21,Military,1
+BRONZE SPRING,IT,1
+BRONZE SPRING,Health,1
+BRONZE SPRING,Education,1
+BRONZE SPRING,Game,1
+BRONZE SPRING,Energy,1
+BRONZE SPRING,Pharmacy,1
+BRONZE SPRING,Defense,1
+Careto,Government,1
+Careto,Private sector,1
+ENERGETIC BEAR,Private sector,1
+ENERGETIC BEAR,Government,1
+El Machete,Military,1
+El Machete,Government,1
+SNOWGLOBE,Government,1
+SNOWGLOBE,Private sector,1
+CN,APT21,1
+ES,Careto,1
+FR,SNOWGLOBE,1
+RU,ENERGETIC BEAR,1
+CN,BRONZE SPRING,1
+CO,El Machete,1
+RU,APT29,1
+APT29,Financial,1
+APT29,Government,1
+APT29,Pharmacy,1
+APT29,Telecommunications,1
+APT29,Energy,1
+APT29,Defense,1
+Various Countries,Carbanak,1
+Carbanak,Financial,1
+Carbanak,Health,1
+RU,APT28,1
+APT28,Automotive,1
+APT28,Aviation,1
+APT28,Defense,1
+APT28,Education,1
+APT28,Financial,1
+APT28,Health,1
+APT28,Government,1
+IR,APT39,1
+APT39,Aviation,1
+APT39,Government,1
+APT39,Private sector,1
+APT39,Telecommunications,1
+RU,Turla,1
+CN,APT20,1
+Turla,Government,1
+Turla,Energy,1
+Turla,Pharmacy,1
+Turla,Defense,1
+Turla,Military,1
+Turla,Education,1
+APT20,Defense,1
+APT20,Education,1
+APT20,Financial,1
+APT20,Pharmacy,1
+APT20,Private sector,1

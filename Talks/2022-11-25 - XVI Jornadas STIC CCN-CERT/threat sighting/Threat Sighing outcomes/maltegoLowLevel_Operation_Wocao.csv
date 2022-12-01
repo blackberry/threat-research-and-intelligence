@@ -1,0 +1,14 @@
+adversaries,behaviors,weapons,iocs
+APT20,Other threat actors not related to Operation Wocao deployed JexBoss webshells in the web servers.,JexBoss,a34a7430936ce37e78b995c321ff626933c364c50f1e7689aa1b0660432b4618
+APT20,Other threat actors not related to Operation Wocao deployed JexBoss webshells in the web servers.,JexBoss,fdc94d0dedf6e53dd435d2b5eacb4c34923fadee50529db6f3de38c71f325e05
+APT20,"Using the previous webshell, threat actors upload their own webshells",Unknown webshell,08f87f8c64a4c98b0e99592a436d601249feeaec4a2c4effbf69a166e4f592a0
+APT20,"Using the previous webshell, threat actors upload another own webshell with more features",Unknown webshell,2047e464627e36410b3458e23062f23eecbd383e7854b55b497ec8db017c0d5e
+APT20,"The actor makes use of a reconnaissance script, written in Visual Basic Script (VBS), to retrieve detailed information from a system",Unknown webshell,d43251480775f224517f484686bc7ca39e532d900b86ebf6ed37da8ee13534a4
+APT20,The XServer backdoor is deployed on the victim system. Is a C# tool which is executed using PowerShell.,XServer,6972ba198ed0d30de9f66be5777ecdba2d657078f138325ee6db225c20b29e6e
+APT20,Two versions of Agent were found on the systems. One was written in C# and the other one in Python and compiled with py2exe.,XServer,5cf61c0b865fd2ab897c72ff2cc01ac4c31ea9c50ecc3d47693f3482fd8f91d4
+APT20,Two versions of Agent were found on the systems. One was written in C# and the other one in Python and compiled with py2exe.,XServer,b2162d4cbeee907d1af13918900e6e4f13232d00915563d841aa7c904d94589c
+APT20,A basic custom tool is deployed in the victim system to get info from files and directories,XServer,c109ddd4f43bc38a50b07b4fc22fe568cced4fb4d8c5bd71546407c2c6219048
+APT20,A custom process launcher tool was used to execute processes as a child of others already running,Process Launcher,3016ea94e3c5bd7f9d8e503b1817491bcf9e2ee5bb82fc106aa5d692dd0ff5c6
+APT20,Threat actors deploy an old version checkadmin.exe to identify on local and remote computers privileged users,CheckAdmin.exe,75ac4478c1729d1b5434724cf0c2bd53cc5940d251a4ca07b17c239c8f62da8d
+APT20,"Besides the old version of checkadmin.exe, threat actors deploy another new version of this tool less verbose",CheckAdmin.exe,5d01150ade4b302b9fd765fd0fb70aa17ee9cb9fcb219c2d270fd90ad8d01188
+APT20,Threat actors deploy a custom tool to get information about OS versions of systems connected to the network sending SMB packets to every IP.,getos.py,a4a448d40aa8b4ff1d18de7a84b7fbc4c41c00062a56cd7c74ac443b61438f47
