@@ -1,0 +1,5 @@
+﻿Indicator,Type,Description
+1df11bc19aa52b623bdf15380e3fded56d8eb6fb7b53a2240779864b1a6474ad,sha256,Blackbyte sample packed
+94ce428f04f35e434dc9bd81e17fe506d8f81fe51ea40fca530f1f2ef00e2881,sha256,Blackbyte sample unpacked
+0097b8722c8c0840e8c1a4dd579438344b3e6b4d630d17b0bbe9c55159f43142,sha256,ExByte
+hxxp://13.107.4.50/spider.png,url,Raw encryption key download link
