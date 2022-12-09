@@ -1,0 +1,16 @@
+﻿Indicator,Type,Description
+104.42.43.178,ipv4,network indicators
+64.34.216.50,ipv4,network indicators
+45.147.26.45,ipv4,network indicators
+45.32.101.7,ipv4,network indicators
+64.34.216.44,ipv4,network indicators
+185.80.201.4,ipv4,network indicators
+103.192.226.87,ipv4,network indicators
+194.124.227.90,ipv4,network indicators
+43.254.218.128,ipv4,network indicators
+62.233.57.49,ipv4,network indicators
+5.34.178.156,ipv4,C2 connected to the main file
+F70d3601fb456a18ed7e7ed599d10783447016da78234f5dca61b8bd3a084a15,sha256,main file with the name Political Guidance for the new EU approach towards Russia.rar
+9c1ea202237726984b754d17528cfab0212ff9587bbffaf01c8535277b01c24a,sha256,.dat payload distributed called ClassicExplorerLog.dat
+8e27900949a087349488d82e7434937bd253d31749041bb0233000a7339fc3e1,sha256,ClassicExplorer32.dll
+b44cc792ae7f58e9a12a121c14a067ee1dd380df093339b4bf2b02df5937b2af,sha256,ClassicExplorerSettings.exe
