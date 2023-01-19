@@ -1,0 +1,116 @@
+Indicator,Type,Description
+*.hungzo.ru,Domain,C2
+*.mexv.ru,Domain,C2
+*.nikiforta.ru,Domain,C2
+019e0910c6d62d6948ea6f2c83c62491b24cefa4dedc830b93b3c6176a7d9c76,SHA256,Maldoc
+104.131.39[.]154,IP,C2
+104.248.36[.]191,IP,C2
+108.160.138[.]159,IP,C2
+136.244.108[.]115,IP,C2
+137.184.236[.]196,IP,C2
+140.82.29[.]65,IP,C2
+143.110.221[.]189,IP,C2
+157.230.123[.]48,IP,C2
+157.230.223[.]20,IP,C2
+158.247.199[.]225,IP,C2
+158.247.199[.]37,IP,C2
+159.65.174[.]140,IP,C2
+159.89.31[.]49,IP,C2
+164.92.126[.]130,IP,C2
+164.92.234[.]195,IP,C2
+165.22.7[.]242,IP,C2
+167.172.173[.]7,IP,C2
+167.99.42[.]231,IP,C2
+170.64.152[.]42,IP,C2
+178.128.244[.]248,IP,C2
+188.166.49[.]113,IP,C2
+198.13.42[.]40,IP,C2
+206.189.139[.]249,IP,C2
+206.189.143[.]206,IP,C2
+21a2e24fc146a7baf47e90651cf397ad,MD5,Maldoc
+295654e3284158bdb94b40d7fb98ede8f3eab72171e027360a654f9523ece566,SHA256,VBA script 
+2d99e762a41abec05e97dd1260775bad361dfa4e8b4120b912ce9c236331dd3f,SHA256,Maldoc
+3a1d6d4a2a9022cb919959a73bd57a5b62b05f8502d2e7988c86efb34d07dc73,SHA256,VBA script 
+45.32.63[.]2,IP,C2
+45.63.42[.]255,IP,C2
+45.77.229[.]159,IP,C2
+5.199.169[.]245,IP,C2
+5001878474bb580531b83dfb56ec1e44,MD5,Maldoc
+54c20281d74df35f625925d9c941e25b,MD5,Maldoc
+64.227.1[.]3,IP,C2
+64.227.7[.]134,IP,C2
+663e94eba5cb00d9233321fc52adca097d879dbb01046af3a817ef69d5609198,SHA256,VBA script 
+68.183.3[.]178,IP,C2
+84.32.128[.]215,IP,C2
+84.32.128[.]41,IP,C2
+9ecf13027af42cec0ed3159b1bc48e265683feaefa331f321507d12651906a91,SHA256,Maldoc
+a890ae751310f3cdf83a428a4c9e123a6b74c349ea225b5cd567d38289ab6100,SHA256,Maldoc
+a8d1b963b5de74e24733fd6766dd9082e091a19143525675208b7222111f03da,SHA256,VBA script 
+acc2b78ce1c0fc806663e3258135cdb4fed60682454ab0646897e3f240690bb8,SHA256,Maldoc
+actiniumo.ru,Domain,C2
+alebont.ru,Domain,C2
+antropa.ru,Domain,C2
+axehar.ru,Domain,C2
+b8df201e9b01b8d9b629ab3c72381540,MD5,VBA script 
+beetlur.ru,Domain,C2
+bf39fa0f6a90c0aeae7b01ea33253540431bc6ffcb087a2335d702445180869c,SHA256,Maldoc
+bihitros.ru,Domain,C2
+bishoten.ru,Domain,C2
+bishtorg.ru,Domain,C2
+blositro.ru,Domain,C2
+brooklyno.ru,Domain,C2
+cadmiumo.ru,Domain,C2
+canalas.ru,Domain,C2
+chromatol.ru,Domain,C2
+da84f8b5c335deaef354958c62b8dafd,MD5,VBA script 
+drivento.ru,Domain,C2
+dudocilo.ru,Domain,C2
+e15063d776cdc2160ed7837eca98c139,MD5,VBA script 
+eb50fcd5f1bf56268892384dd4f4a7e3,MD5,VBA script 
+erostipa.ru,Domain,C2
+eshirto.ru,Domain,C2
+f1593c4cd631d595410e246993241b5,MD5,Maldoc
+f59107a3d93bba3bf31d3cfe6f85ef8a,MD5,Maldoc
+fc1e99c1bbb9bf93df4f46e7dc2e5d6cd0a85a52090f49f930dc9a8c3e4441cc,SHA256,Maldoc
+fd1628fd235e683f0ccf35523a1ca081,MD5,Maldoc
+fef34c28f4e73d1c8d60dde708819b1a,MD5,Maldoc
+flashiko.ru,Domain,C2
+hortoban.ru,Domain,C2
+hxxp://213.69.3[.]218/get[.]php,URL,C2
+hxxp://t[.]me/s/chanellsac,URL,Telegram account
+hxxp://t[.]me/s/digitli,URL,Telegram account
+hxxp://t[.]me/s/dracarc,URL,Telegram account
+hxxp://t[.]me/s/randomnulls,URL,Telegram account
+hxxp://t[.]me/s/vozmoz2,URL,Telegram account
+hxxp://t[.]me/s/zalup2,URL,Telegram account
+hxxp://t[.]me/s/zapula2,URL,Telegram account
+hxxp[:]//allow.all25.ihsana[.]ru/BABENKO/luke/interface/allowance/luke.asp,Domain,C2
+hxxp[:]//council23.artupora[.]ru/WIN-Q7CDI1KHONQ/allows64/allegiance/council[.]mot,Domain,C2
+hxxp[:]//council7.artupora[.]ru/WIN-Q7CDI1KHONQ/allows39/allegiance/council[.]mot,Domain,C2
+hxxp[:]//council72.artupora[.]ru/WIN-Q7CDI1KHONQ/allows86/allegiance/council[.]mot,Domain,C2
+hxxp[:]//lunch.reins69.ziyafat[.]ru/USER-__/almond/almond/prime[.]asp,Domain,C2
+hxxp[:]//pretend[.]goal75[.]koportas[.]ru/WIN-HP59CQH9A1H/almost/presume[.]wft,Domain,C2
+hxxp[:]//reins.allen5[.]buckso[.]ru/_______/faithfully/perfectly/priest/perfectly[.]prv,Domain,C2
+hxxp[:]//stoppage[.]stoppage20[.]alborzt[.]ru/KI12461692/endure/rehearsal/endure/rehearsal[.]mdm,Domain,C2
+hxxps://t[.]me/s/newtesta1,URL,Telegram account
+hxxps://t[.]me/s/oearps,URL,Telegram account
+hxxps://t[.]me/s/templ5,URL,Telegram account
+hxxps://t[.]me/s/zacreq,URL,Telegram account
+klotrast.ru,Domain,C2
+kolotran.ru,Domain,C2
+lakerso.ru,Domain,C2
+lortova.ru,Domain,C2
+lotrosita.ru,Domain,C2
+milashto.ru,Domain,C2
+motorada.ru,Domain,C2
+nokratis.ru,Domain,C2
+ovinuso.ru,Domain,C2
+plumbumo.ru,Domain,C2
+portalahr.ru,Domain,C2
+saviti.ru,Domain,C2
+screato.ru,Domain,C2
+silentar.ru,Domain,C2
+skymagra.ru,Domain,C2
+torfasta.ru,Domain,C2
+vasitron.ru,Domain,C2
+vipertos.ru,Domain,C2
