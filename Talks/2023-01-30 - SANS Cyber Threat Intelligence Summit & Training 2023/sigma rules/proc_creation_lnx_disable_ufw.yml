@@ -1,0 +1,27 @@
+title: Ufw Force Stop
+id: 84c9e83c-599a-458a-a0cb-0ecce44e807a
+status: experimental
+description: Force stop of ufw using ufw-init
+references:
+    - https://blogs.blackberry.com/
+author: 'Joseliyo Sanchez @Joseliyo_Jstnk' 
+date: 2023/01/18
+tags:
+    - attack.defense_evasion
+    - attack.t1562.004
+logsource:
+    product: linux
+    category: process_creation
+detection:
+    selection_init:
+        CommandLine|contains|all:
+            - '-ufw-init'
+            - 'force-stop'
+    selection_ufw:
+        CommandLine|contains|all:
+            - 'ufw'
+            - 'disable'
+    condition: selection_init or selection_ufw
+falsepositives:
+    - Network administrators
+level: medium

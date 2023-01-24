@@ -1,0 +1,427 @@
+{
+    "name": "layer1",
+    "versions": {
+        "attack": "12",
+        "navigator": "4.7.1",
+        "layer": "4.4"
+    },
+    "domain": "enterprise-attack",
+    "description": "",
+    "filters": {
+        "platforms": [
+            "Linux",
+            "macOS",
+            "Windows",
+            "Azure AD",
+            "Office 365",
+            "SaaS",
+            "IaaS",
+            "Google Workspace",
+            "PRE",
+            "Network",
+            "Containers"
+        ]
+    },
+    "sorting": 0,
+    "layout": {
+        "layout": "side",
+        "aggregateFunction": "average",
+        "showID": false,
+        "showName": true,
+        "showAggregateScores": false,
+        "countUnscored": false
+    },
+    "hideDisabled": false,
+    "techniques": [
+        {
+            "techniqueID": "T1071",
+            "tactic": "command-and-control",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Uses HTTPS"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Performs DNS lookups"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Uses HTTPS"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1059",
+            "tactic": "execution",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Executes the \"sed\" command used to modify input streams (typically from files or pipes)"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Executes the \"sed\" command used to modify input streams (typically from files or pipes)"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1543.002",
+            "tactic": "persistence",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Executes the \"systemctl\" command used for controlling the systemd system and service manager"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Executes the \"systemctl\" command used for controlling the systemd system and service manager"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Executes the \"systemctl\" command used for controlling the systemd system and service manager"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Executes the \"systemctl\" command used for controlling the systemd system and service manager"
+                }
+            ],
+            "showSubtechniques": false
+        },
+        {
+            "techniqueID": "T1543.002",
+            "tactic": "privilege-escalation",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Executes the \"systemctl\" command used for controlling the systemd system and service manager"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Executes the \"systemctl\" command used for controlling the systemd system and service manager"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Executes the \"systemctl\" command used for controlling the systemd system and service manager"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Executes the \"systemctl\" command used for controlling the systemd system and service manager"
+                }
+            ],
+            "showSubtechniques": false
+        },
+        {
+            "techniqueID": "T1573",
+            "tactic": "command-and-control",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Uses HTTPS"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Uses HTTPS"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1083",
+            "tactic": "discovery",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Sample reads /proc/mounts (often used for finding a writable filesystem)"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Sample reads /proc/mounts (often used for finding a writable filesystem)"
+                }
+            ],
+            "showSubtechniques": false
+        },
+        {
+            "techniqueID": "T1222",
+            "tactic": "defense-evasion",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Executes the \"chown\" command used to modify ownership and group ownership"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Sample tries to set the executable flag"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Executes the \"chmod\" command used to modify permissions"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Sample tries to set the executable flag"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1564.001",
+            "tactic": "defense-evasion",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Drops invisible ELF files"
+                }
+            ],
+            "showSubtechniques": false
+        },
+        {
+            "techniqueID": "T1070.004",
+            "tactic": "defense-evasion",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Executes the \"rm\" command used to delete files or directories"
+                }
+            ],
+            "showSubtechniques": false
+        },
+        {
+            "techniqueID": "T1036",
+            "tactic": "defense-evasion",
+            "score": 3,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Sample contains symbols with suspicious names"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Sample contains symbols with suspicious names"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Sample contains symbols with suspicious names"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1095",
+            "tactic": "command-and-control",
+            "score": 1,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Performs DNS lookups"
+                }
+            ],
+            "showSubtechniques": false
+        },
+        {
+            "techniqueID": "T1518.001",
+            "tactic": "discovery",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Uses the \"uname\" system call to query kernel version information (possible evasion)"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Uses the \"uname\" system call to query kernel version information (possible evasion)"
+                }
+            ],
+            "showSubtechniques": false
+        },
+        {
+            "techniqueID": "T1082",
+            "tactic": "discovery",
+            "score": 2,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Reads CPU information from /sys indicative of miner or evasive malware"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Reads system information from the proc file system"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Reads system information from the proc file system"
+                },
+                {
+                    "divider": true
+                },
+                {
+                    "name": "behavior",
+                    "value": "Reads CPU information from /sys indicative of miner or evasive malware"
+                }
+            ],
+            "showSubtechniques": false
+        }
+    ],
+    "gradient": {
+        "colors": [
+            "#8ec843",
+            "#ffe766",
+            "#ff6666"
+        ],
+        "minValue": 0,
+        "maxValue": 10
+    },
+    "legendItems": [],
+    "metadata": [],
+    "links": [],
+    "showTacticRowBackground": false,
+    "tacticRowBackground": "#dddddd",
+    "selectTechniquesAcrossTactics": true,
+    "selectSubtechniquesWithParent": false
+}
