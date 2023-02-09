@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[Full Intelligence Blogs][bbblogs]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Blog Outcomes][blogs]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Report Outcomes][reports]&nbsp;&nbsp;&nbsp;
+[Full Intelligence Blogs][bbblogs]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Blog Outcomes][blogs]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Report Outcomes][reports]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Public Talks][btalks]&nbsp;&nbsp;&nbsp;
 
 </div>
 
@@ -45,3 +45,4 @@ Reference Links
 [reports]:https://github.com/blackberry/threat-research-and-intelligence/tree/main/Blogs%20%26%20Reports/Reports
 [yara_repo]:https://github.com/blackberry/threat-research-and-intelligence/search?l=yara
 [ir_contact]:https://www.blackberry.com/us/en/forms/cylance/handraiser/emergency-incident-response-containment
+[btalks]:https://github.com/blackberry/threat-research-and-intelligence/tree/main/Talks
