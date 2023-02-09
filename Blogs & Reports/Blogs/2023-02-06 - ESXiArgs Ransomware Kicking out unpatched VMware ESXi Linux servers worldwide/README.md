@@ -17,8 +17,8 @@ Once compromised a shell script is used to execute the encryptor and deliver the
 
 | File | Description | Type | 
 |--------|--------|--------|
-| [ESXiArgs_Ransomware.yar](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2023-02-06%20-%20ESXiArgs%20Ransomware%20Kicking%20out%20unpatched%20VMware%20ESXi%20Linux%20servers%20worldwide/ESXiArgs_Ransomware.yar) | 3 YARA Rules. 2 of them to detect an ELF files and the other one to detect Shell Script used to deploy this ransomware | YARA Rule |
+| [ESXiArgs_Ransomware.yar](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2023-02-06%20-%20ESXiArgs%20Ransomware%20Kicking%20out%20unpatched%20VMware%20ESXi%20Linux%20servers%20worldwide/ESXiArgs_Ransomware.yar) | 3 YARA Rules. 2 of them to detect an ELF file and the other one to detect Shell Script used to deploy this ransomware | YARA Rule |
 
 ## Reference
 
-Blog: Coming soon...
+Blog: https://blogs.blackberry.com/en/2023/02/esxiargs-ransomware-knocking-out-unpatched-vmware-esxi-linux-servers-worldwide
