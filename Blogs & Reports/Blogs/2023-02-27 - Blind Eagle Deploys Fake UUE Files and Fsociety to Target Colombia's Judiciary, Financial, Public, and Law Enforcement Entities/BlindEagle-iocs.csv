@@ -1,0 +1,32 @@
+Indicator ,Type ,Description 
+e4d2799f3001a531d15939b1898399b4 ,MD5 ,Fv3608799004720042L900483000P19878099700001537012.pdf pdf file distributed via email 
+fc85d3da6401b0764a2e8a5f55334a7d683ec20fb8210213feb6148f02a30554 ,SHA256 ,Fv3608799004720042L900483000P19878099700001537012.pdf pdf file distributed via email 
+website[.]org/s8Xwt2 ,URL ,URL rendering the DIAN lure 
+website[.]org/render/s8Xwt2 ,URL ,URL rendering the DIAN lure 
+dian.server[.]tl ,URL ,URL rendering the DIAN lure 
+hxxps://cdn.discordapp[.]com/attachments/1067819339090243727/1071063499494666240/Asuntos_DIAN_N34000137L287004P08899997012-03-02-2023-pdf.uue ,URL ,Discord CDN distributing uue compressed file 
+hxxps://cdn.discordapp[.]com/attachments/1067819339090243727/1071063499494666240/Asuntos_DIAN_N34000137L287004P08899997012-03-02-2023-pdf.uue ,URL ,Discord CDN distributing uue compressed file 
+hxxps://cdn.discordapp[.]com/attachments/1072851594812600351/1072851643583967272/Asuntos_DIAN_N3663000227L2870000002456880-08-02-2023-pdf.uue ,URL ,Discord CDN distributing uue compressed file 
+B432202CF7F00B4A4CBE377C284F3F28 ,MD5 ,Asuntos_DIAN_N6440005403992837L2088970004-01-02-2023-pdf.uue.pdf UUE compressed file 
+6D9D0EB5E8E69FFE9914C63676D293DA1B7D3B7B9F3D2C8035ABE0A3DE8B9FCA ,SHA256 ,Asuntos_DIAN_N6440005403992837L2088970004-01-02-2023-pdf.uue.pdf UUE compressed file 
+6BEF68F58AFCFDD93943AFCC894F8740 ,MD5 ,Asuntos_DIAN_N°6440005403992837L2088970004-01-02-2023-pdf.vbs VBS file 
+430BE2A37BAC2173CF47CA1376126A3E78A94904DBC5F304576D87F5A17ED366 ,SHA256 ,Asuntos_DIAN_N°6440005403992837L2088970004-01-02-2023-pdf.vbs VBS file 
+C75F9D3DA98E57B973077FDE8EC3780F ,MD5 ,Fiber.dll (Dll.ppam) 
+5399BF1F18AFCC125007D127493082005421C5DDEBC34697313D62D8BC88DAEC ,SHA256 ,Fiber.dll (Dll.ppam) 
+07AF8778DE9F2BC53899AAC7AD671A72 ,MD5 ,Fsociety.dll (Rump.xls) 
+03B7D19202F596FE4DC556B7DA818F0F76195912E29D728B14863DDA7B91D9B5 ,SHA256 ,Fsociety.dll (Rump.xls) 
+5E518B80C701E17259F3E7323EFFC83F ,MD5 ,Stub.exe (AsyncRAT Payload injected into RegSvcs.exe) 
+64A08714BD5D04DA6E2476A46EA620E3F7D2C8A438EDA8110C3F1917D63DFCFC ,SHA256 ,Stub.exe (AsyncRAT Payload injected into RegSvcs.exe) 
+asy1543.duckdns[.]org:1543 ,Domain ,AsyncRAT C2 
+cachi.duckdns[.]org ,Domain ,AsyncRAT C2 
+05042109.duckdns[.]org ,Domain ,AsyncRAT C2 
+mayo21.duckdns[.]org ,Domain ,AsyncRAT C2 
+qsar1928.duckdns[.]org ,Domain ,AsyncRAT C2 
+www.cachi.duckdns[.]org ,Domain ,AsyncRAT C2 
+46.246.86[.]3 ,IPv4 ,AsyncRAT C2 duckdns resolutions found 
+46.246.12[.]6 ,IPv4 ,AsyncRAT C2 duckdns resolutions found 
+46.246.86[.]9 ,IPv4 ,AsyncRAT C2 duckdns resolutions found 
+hxxp://172.174.176[.]153/ ,URL ,Web application used to distribute payloads during the intrusion. 
+hxxp://172.174.176[.]153/dll/ ,URL ,Web application used to distribute payloads during the intrusion. 
+hxxp://172.174.176[.]153/rump/ ,URL ,Web application used to distribute payloads during the intrusion. 
+172.174.176[.]153 ,IPv4 ,IP of the web application used to distribute payloads 
