@@ -1,19 +1,19 @@
 Type,Indicator,Description
 SHA256,c1ebaee855b5d9b67657f45d6d764f3c1e46c1fa6214329a3b51d14eba336256,NV.iso
-MD5,89f716d32461880cd0359ffbb902f06e
+MD5,89f716d32461880cd0359ffbb902f06e,
 SHA256,505f1e5aed542e8bfdb0052bbe8d3a2a9b08fc66ae49efbc9d9188a44c3870ed,Schedule.iso
-MD5,E693777A3A85583A1BBBD569415BE09C
+MD5,E693777A3A85583A1BBBD569415BE09C,
 SHA256,c1ebaee855b5d9b67657f45d6d764f3c1e46c1fa6214329a3b51d14eba336256,NV.iso
 SHA256,dbb39c2f143265ad86946d1c016226b0e01614af35a2c666afa44ac43b76b276,BugSplatRc64.dll
-MD5,e0cb8157e6791390463714b38158195a
+MD5,e0cb8157e6791390463714b38158195a,
 SHA256,e957326b2167fa7ccd508cbf531779a28bfce75eb2635ab81826a522979aeb98,BugSplatRc64.dll
 MD5,cf36bf564fbb7d5ec4cec9b0f185f6c9,BugSplatRc64.dll
 SHA256,3a489ef91058620951cb185ec548b67f2b8d047e6fdb7638645ec092fc89a835,BugSplatRc64.dll
-MD5,8d5c0f69c1caa29f8990fbc440ab3388
+MD5,8d5c0f69c1caa29f8990fbc440ab3388,
 SHA256,4d92a4cecb62d237647a20d2cdfd944d5a29c1a14b274d729e9c8ccca1f0b68b,BugSplatRc64.dll
-MD5,82ecb8474efe5fedcb8f57b8aafa93d2
-IP,108[.]167.180[.]186
-URL,hxxps[:]//literaturaelsalvador[.]com/Instructions[.]html
-URL,hxxps[:]//literaturaelsalvador[.]com/Schedule[.]html
+MD5,82ecb8474efe5fedcb8f57b8aafa93d2,
+IP,108[.]167.180[.]186,
+URL,hxxps[:]//literaturaelsalvador[.]com/Instructions[.]html,Visual lure masquerading as the European Commission
+URL,hxxps[:]//literaturaelsalvador[.]com/Schedule[.]html,Visual lure masquerading as the Polish Ministry of Foreign Affairs
 SHA256,dffaefaabbcf6da029f927e67e38c0d1e6271bf998040cfd6d8c50a4eff639df,Schedule.lnk
 MD5,38b05aa4b5ba651ba95f7173c5145270,Schedule.lnk
