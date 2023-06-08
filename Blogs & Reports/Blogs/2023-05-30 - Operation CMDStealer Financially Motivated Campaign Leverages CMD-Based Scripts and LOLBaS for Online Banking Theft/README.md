@@ -10,7 +10,7 @@ The campaign utilizes phishing emails in Portuguese and Spanish, and social engi
 
 | File | Description | Type | 
 |--------|--------|--------|
-| [cmdstealer-iocs.csv](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2023-05-30%20-%20Operation%20CMDStealer%20Financially%20Motivated%20Campaign%20Leverages%20CMD-Based%20Scripts%20and%20LOLBaS%20for%20Online%20Banking%20Theft/spanish-campaign-iocs.csv) | IOCs related to the CMDStealer campaign | CSV File |
+| [cmdstealer-iocs.csv](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2023-05-30%20-%20Operation%20CMDStealer%20Financially%20Motivated%20Campaign%20Leverages%20CMD-Based%20Scripts%20and%20LOLBaS%20for%20Online%20Banking%20Theft/cmdstealer-iocs.csv) | IOCs related to the CMDStealer campaign | CSV File |
 
 
 ## Reference
