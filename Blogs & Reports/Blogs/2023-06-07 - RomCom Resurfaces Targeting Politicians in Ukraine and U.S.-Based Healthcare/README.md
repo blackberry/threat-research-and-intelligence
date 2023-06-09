@@ -1,18 +1,18 @@
-# 2023-05-30 - Operation CMDStealer Financially Motivated Campaign Leverages CMD-Based Scripts and LOLBaS for Online Banking Theft in Portugal, Peru, and Mexico
+# 2023-05-30 - RomCom Resurfaces: Targeting Politicians in Ukraine and U.S.-Based Healthcare Providing Aid to Refugees from Ukraine
 
 ## Summary
 
-An unknown financially motivated threat actor, very likely from Brazil, is targeting Spanish- and Portuguese-speaking victims, with the goal of stealing online banking access. The victims are primarily in Portugal, Mexico, and Peru. This threat actor employs tactics such as LOLBaS (Living Off the Land Binaries and Scripts), along with CMD-based scripts to carry out its malicious activities.
+The RomCom threat actor has been carefully following geopolitical events surrounding the war in Ukraine, targeting [militaries](https://blogs.blackberry.com/en/2022/11/romcom-spoofing-solarwinds-keepass), food supply chains, and [IT companies](https://blogs.blackberry.com/en/2022/10/unattributed-romcom-threat-actor-spoofing-popular-apps-now-hits-ukrainian-militaries). In RomCom’s latest campaign, the BlackBerry Threat Research and Intelligence team observed RomCom targeting politicians in Ukraine who are working closely with Western countries, and a U.S.-based healthcare company providing humanitarian aid to the refugees fleeing from Ukraine and receiving medical assistance in the U.S.
 
-The campaign utilizes phishing emails in Portuguese and Spanish, and social engineering tactics to target victims. The emails exploit commonly encountered issues, such as transit infractions and taxes, to create a sense of urgency and legitimacy in their phishing messages. By posing as authoritative entities or government agencies, the messages are intended to deceive unsuspecting individuals and get them to disclose their online banking credentials.
+This report is the first part of our research covering the details of RomCom’s latest malicious campaign, while the second part will cover RomCom's behaviors, including detection engineering.
 
 ## Actionable Intelligence
 
 | File | Description | Type | 
 |--------|--------|--------|
-| [RomCom-March-iocs.csv](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2023-05-30%20-%20Operation%20CMDStealer%20Financially%20Motivated%20Campaign%20Leverages%20CMD-Based%20Scripts%20and%20LOLBaS%20for%20Online%20Banking%20Theft/RomCom-March-iocs.csv) | IOCs related to this RomCom campaign | CSV File |
+| [RomCom-March-iocs.csv](https://github.com/blackberry/threat-research-and-intelligence/blob/main/Blogs%20%26%20Reports/Blogs/2023-06-07%20-%20RomCom%20Resurfaces%20Targeting%20Politicians%20in%20Ukraine%20and%20U.S.-Based%20Healthcare/RomCom-March-iocs.csv) | IOCs related to this RomCom campaign | CSV File |
 
 
 ## Reference
 
-Blog: https://blogs.blackberry.com/en/2023/05/cmdstealer-targets-portugal-peru-and-mexico
+Blog: https://blogs.blackberry.com/en/2023/06/romcom-resurfaces-targeting-ukraine
