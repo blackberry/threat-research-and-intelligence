@@ -1,0 +1,43 @@
+Indicator, Type, Description
+6d3ab9e729bb03ae8ae3fcd824474c5052a165de6cb4c27334969a542c7b261d, sha256, Main Windows 64-bit (Signed Binary) contains installer and bundled RomCom malware (Installer.RemoteDesktopManager.2022.3.35.0.exe)
+56 E1 49 7E FD DA B4 55 B2 35 E6 0C 3C 53 E7 F4, Certificate, certificate name Noray Consulting Ltd.
+1A D6 08 A7 D6 34 B5 CD DE 97 CB A3 CC F0 D0 4B, Certificate, SSL.com Timestamping Unit 2022
+c94e889a6c9f4c37f34f75bf54e6d1b2cd7ee654cd397df348d46abe0b0f6ca3, sha256, File dropped in %USERS%\PUBLIC\LIBRARIES with filename installer.RemoteDesktopManager.2022.3.35.0.exe
+0501d09a219131657c54dba71faf2b9d793e466f2c7fdf6b0b3c50ec5b866b2a, sha256, netid3231462335.dll0 dropped which is the core romcom binary
+65778e3afc448f89680e8de9791500d21a22e2279759d8d93e2ece2bc8dae04d, sha256, RomCom Loader prxyms3231462335.dll
+8d805014ceb45195be5bab07a323970a1aa8bc60cdc529712bccaf6f3103e6a6, sha256, Additional infostealer procsys.dll
+3b26e27031a00a32f3616de5179a003951a9c92381cd8ec552d39f7285ff42ee, sha256, RomCom RAT Dropper created by GoTo Meeting opener MSI420A.tmp
+3e293680e0f78e404fccb1ed6daa0b49d3f6ea71c81dbaa53092b7dd32e81a0d, sha256, Core RomCom binary netid [0-9] .dll
+916153d8265a2f9344648e302c6b7b8d7e1f40f704b0df83edde43986ab68e56, sha256, Loader RomCom binary prxyms[0-9] .dll
+e7914f823ed0763c7a03c3cfdbcf9344e1da93597733ac22fe3d31a5a4e179aa, sha256, RomCom binary winipfile[0-9] .dll
+a5dae9b7ff88276f699eece44eb4b183f1b1de6bef9e159c417ba621a949f744, sha256, RomCom binary bnert.dll0
+1308146f161ed60c86532dd2d2de8de8b0401e27023fc56f83903f137fccacfd, sha256, RomCom loader xlmtdm.dll
+rdp-devolutions[.]com, domain, phishing web page
+74[.]119[.]239[.]234, ipv4, resolution of rdp-devolutions[.]com
+startleague[.]net, domain, C2 server
+46[.]246[.]98[.]15, ipv4, resolution of startleague[.]net
+2[.]57[.]90[.]16, ipv4, old resolution of startleague[.]net
+104[.]234[.]10[.]207:7931, ipv4, C2 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
