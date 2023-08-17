@@ -1,0 +1,9 @@
+Indicator, Type, Description
+a61b2eafcf39715031357df6b01e85e0d1ea2e8ee1dfec241b114e18f7a1163f, sha256, Lure used during the campaign Overview_of_UWCs_UkraineInNATO_campaign.docx
+3a3138c5add59d2172ad33bc6761f2f82ba344f3d03a2269c623f22c1a35df97, sha256, Lure used during the campaign Letter_NATO_Summit_Vilnius_2023_ENG(1).docx
+e7cfeb023c3160a7366f209a16a6f6ea5a0bc9a3ddc16c6cba758114dfe6b539, sha256, Malicious RTF embedded in the docx afchunk.rtf
+07377209fe68a98e9bca310d9749daa4eb79558e9fc419cf0b02a9e37679038d, sha256, File with .url extension used during the campaign
+hxxp://finformservice[.]com:80/api/v1.5/subscriptiontoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIzNDU2Nzg5LCJuYW1lIjoiSm9zZXBoIn0.OpOSSw7e485LOP5PrzScxHb7SR6sAOMRckfFwi4rp7o, URL, C2 observed during the infection
+hxxp://65.21.27.250:8080/mds/O--------------------------, url, c2 observed during the campaign
+hxxp://65.21.27.250:8080/mds/D--------------------------, url, c2 observed during the campaign
+hxxp://65.21.27.250:8080/mds/S--------------------------, url, c2 observed during the campaign
