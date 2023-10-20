@@ -1,0 +1,9 @@
+This talk will provide an in-depth look at the evolving cyber threat landscape in the APAC region, with a focus on Adversaries targeting the region and their tactics, techniques, and procedures (TTPs). As the world becomes increasingly interconnected, the APAC region has become a hotspot for cybercrime and cyber espionage, with threat actors and cybercrimminals constantly evolving their offensive capabilities.
+
+Drawing on cyber threat intelligence from the frontline, this talk will explore how threat actors in the Pacific region are scaling up their operations and adopting new techniques and tools to carry out attacks. During the talk, we will provide an overview of some well-known threat actors operating in the APAC region, including Mustang Panda, Dark Pink, SideWinder and other TAs. We will also be looking at some effective initial access methods that commonly plagues this region.
+
+It will provide valuable insights into how detection engineering approaches to new and old techniques which can help mitigate the risks within organizations. Attendees will come away with a deeper understanding of how to detect and respond to targeted attacks, as well as practical techniques for protecting their assets and networks from cyber threats.
+Overall, this talk will provide a valuable opportunity for attendees to gain insights into the latest cyber threat trends and learn practical strategies for protecting their organizations from targeted attacks. Join us to learn about the latest threat actor tactics and how to stay ahead of the game.
+
+Speaker
+Eoin Healy | [@_eohealy](https://twitter.com/_eohealy)
